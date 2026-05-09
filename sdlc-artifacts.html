@@ -229,6 +229,101 @@
       </table>
     </div>
 
+    <h3>📈 Chart Interpretation Guide</h3>
+
+    <div class="acc-item">
+      <div class="acc-header">📅 Gantt Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Horizontal bars = task duration. Diamond ◆ = milestone. Arrows = dependencies. Red/bold bars = critical path tasks (zero float).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: calendar time (days/weeks/months). Y-axis: task list ordered by execution sequence.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>All bars complete before the project deadline. Critical path has positive float (&gt; 0 days). Milestones stable across plan revisions. Workload spread evenly across time periods.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>Float = 0 on critical path → any slip = immediate project delay. Tasks stacked in a single period → resource overload. Milestones shifting right week after week → schedule erosion. Long sequential critical-path chain → high coordination risk.</td></tr>
+              <tr><td><strong>Action</strong></td><td><strong>Fast-track:</strong> Run tasks in parallel → reduces time, increases risk and coordination cost. <strong>Crash:</strong> Add resources to critical-path tasks → reduces time, increases cost. Always present both options with trade-offs to the sponsor before acting.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">💰 Budget S-Curve (Planned vs Actual Spend) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Two cumulative lines: <strong>PV</strong> (Planned Value — budgeted spend per plan) and <strong>AC</strong> (Actual Cost — money actually spent). Both form an S-shape: slow start → steep execution peak → gradual closure tail.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: project timeline. Y-axis: cumulative cost ($). The S-shape is expected and normal.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>AC line tracks close to PV. AC slightly below PV is acceptable — verify work is being delivered, not just deferred. S-curves are similar in shape.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>AC above PV = cost overrun. Widening gap over time = overrun worsening. AC flat while PV rises = under-reporting or stalled work. AC rising steeply while EV stays flat = burning money without delivering value.</td></tr>
+              <tr><td><strong>Action</strong></td><td>If AC &gt; PV and CPI &lt; 1.0: project EAC = BAC ÷ CPI and report to sponsor immediately. Identify which work packages are overspending. A CPI below 1.0 for 3+ consecutive periods rarely recovers.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">🔥 Risk Heat Map (Probability × Impact Matrix) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>A 5×5 grid (or 3×3). Each cell = a risk severity zone, color-coded green/yellow/red. Each bubble on the grid = a specific identified risk, plotted at its probability and impact scores.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: Impact (1 = negligible → 5 = catastrophic). Y-axis: Probability (1 = rare → 5 = near-certain). Top-right corner = highest risk zone.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Most risks in the green/yellow zone. Risks migrating toward green over time (mitigation working). No new red-zone risks without a mitigation plan. Total risk count stable or declining.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>Multiple risks clustering in red zone. New risks appearing weekly without owners. Risks marked "Accepted" without a contingency plan. Same risk appearing on every report with no movement.</td></tr>
+              <tr><td><strong>Action</strong></td><td>Every red-zone risk needs an owner, a mitigation action, and a deadline — not just a color label. Review weekly. Any risk moving toward red triggers escalation. "Accepted" risks still require a written contingency plan.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📊 EVM Dashboard (PV / EV / AC / CPI / SPI / EAC) — How to Read It</div>
+      <div class="acc-body">
+        <p style="margin-bottom:10px">Earned Value Management is the PM's primary health monitor. Each metric tells a different story:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Metric</th><th>Formula</th><th>What It Tells You</th><th>Target</th></tr></thead>
+            <tbody>
+              <tr><td><strong>PV</strong> — Planned Value</td><td>Budget baseline</td><td>How much work <em>should</em> be done by today (per the approved plan)</td><td>Fixed at baseline</td></tr>
+              <tr><td><strong>EV</strong> — Earned Value</td><td>% complete × BAC</td><td>Budgeted value of work <em>actually completed</em></td><td>Track close to PV</td></tr>
+              <tr><td><strong>AC</strong> — Actual Cost</td><td>Actual spend</td><td>Total money <em>spent</em> to date</td><td>Track close to EV</td></tr>
+              <tr><td><strong>CPI</strong> — Cost Performance Index</td><td>EV ÷ AC</td><td>Cost efficiency: value per dollar spent. &gt;1 = under budget; &lt;1 = over budget</td><td>≥ 1.0 ✅ / &lt; 0.9 ⚠️</td></tr>
+              <tr><td><strong>SPI</strong> — Schedule Performance Index</td><td>EV ÷ PV</td><td>Schedule efficiency: delivery rate vs plan. &gt;1 = ahead; &lt;1 = behind</td><td>≥ 1.0 ✅ / &lt; 0.8 ⚠️</td></tr>
+              <tr><td><strong>CV</strong> — Cost Variance</td><td>EV − AC</td><td>Dollar gap between earned and spent. Negative = over budget.</td><td>&gt; 0 ✅</td></tr>
+              <tr><td><strong>SV</strong> — Schedule Variance</td><td>EV − PV</td><td>Dollar gap between earned and planned. Negative = behind schedule.</td><td>&gt; 0 ✅</td></tr>
+              <tr><td><strong>EAC</strong> — Estimate At Completion</td><td>BAC ÷ CPI</td><td>Projected total cost at current efficiency. Use for all forecasts once CPI is established.</td><td>≤ BAC ✅</td></tr>
+              <tr><td><strong>ETC</strong> — Estimate To Complete</td><td>EAC − AC</td><td>Money still needed to finish the project</td><td>Declining over time ✅</td></tr>
+              <tr><td><strong>VAC</strong> — Variance At Completion</td><td>BAC − EAC</td><td>Projected final over/under on budget. Negative = finishing over budget.</td><td>&gt; 0 ✅</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:12px;padding:10px 14px;background:#fef3c7;border-left:3px solid #d97706;border-radius:0 6px 6px 0;font-size:.85rem"><strong>CPI Recovery Rule:</strong> If CPI has been below 1.0 for three or more consecutive reporting periods, it will not recover to 1.0. A project with CPI = 0.75 would need to deliver all remaining work for 25 cents on the dollar to finish on budget — nearly impossible. Use EAC = BAC ÷ CPI as your honest forecast and report it to the sponsor. Never say "we'll recover" without a concrete, funded corrective action plan.</p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📉 CPI / SPI Trend Chart (over time) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Two lines — CPI and SPI — plotted over the project timeline. Reference line at 1.0 = perfect performance. Some dashboards add an EAC trend line as a third line.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: reporting periods (weekly or monthly). Y-axis: index value (typically 0.0–1.5).</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Both lines stable at or above 1.0. Gradual improvement in CPI over time. SPI naturally improves toward 1.0 in the final project phase as remaining work must be completed.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>Lines declining for 2+ consecutive periods → systemic problem, not a one-off blip. CPI sustained below 0.9 → use EAC = BAC÷CPI in all future reports. SPI may recover near project end; CPI recovery almost never happens without additional funding.</td></tr>
+              <tr><td><strong>Action</strong></td><td>Show the trend (not just this week's snapshot) to the steering committee. A single bad period = investigate. Three bad periods = require a formal corrective action plan with owner, target date, and budget impact analysis.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <div class="box box-exam">
       <span class="b-icon">📌</span>
       <div class="b-body">
@@ -386,6 +481,97 @@
       </table>
     </div>
 
+    <h3>📈 Chart Interpretation Guide</h3>
+
+    <div class="acc-item">
+      <div class="acc-header">🔻 Sprint Burndown Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Ideal line (perfect diagonal from [Day 1, total SP] to [Day 10, 0 SP]). Actual line (daily remaining story points). Optional scope line (tracks SP added or removed mid-sprint).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: sprint working days (Day 1–10 for a 2-week sprint). Y-axis: remaining story points.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Actual line tracks near the ideal line. Slight lag early (stories need startup time) is normal. Line reaches 0 on Day 10. Small scope adjustments are acceptable with PO sign-off.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Line flat for 2+ days → stories blocked or too large to start completing<br>
+                Line trending upward → scope added mid-sprint (Scrum Master must protect the sprint boundary)<br>
+                Not converging to 0 by Day 7 → sprint goal at serious risk; action required<br>
+                Large single drop then flat → one big story completed, rest still blocked<br>
+                Perfect diagonal every sprint → team may be gaming estimates to match capacity exactly
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Flag at daily standup if actual line is not converging by Day 5. Work with PO to descope lowest-priority stories to protect the sprint goal. A delivered partial sprint goal beats a fully missed one. Never add scope to a struggling sprint.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📊 Velocity Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Bar chart: one bar per completed sprint. Each bar height = story points completed that sprint. Some tools show committed vs. completed bars side by side.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: sprint number (chronological). Y-axis: story points completed.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Bars stable with low variance (±15–20%). Slight upward trend = team maturing. Committed ≈ Completed. At least 5 sprints of data before using velocity for release forecasting.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                High variance (large spikes and valleys) → personnel changes, constant interruptions, or unclear stories<br>
+                Consistent decline over 3+ sprints → process breakdown or morale issue; investigate in retrospective<br>
+                Spike followed by crash → overtime/crunch (unsustainable; leads to burnout)<br>
+                Committed always much higher than Completed → chronic overcommitting; estimation needs fixing<br>
+                Committed always much lower than Completed → sandbagging or lack of confidence in estimates
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Use the <strong>average of the last 3–5 sprints</strong> for sprint planning — never the highest sprint. Never use velocity to compare teams (story points are not standardized). Never pressure teams to increase velocity; it leads to inflated estimates and technical debt. Declining velocity for 3+ sprints requires a focused retrospective on systemic root causes.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📉 Release Burndown Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Ideal line from [Sprint 1, total backlog SP] to [target release sprint, 0 SP]. Actual remaining SP plotted per sprint. Scope line (if backlog is growing or shrinking).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: sprint number. Y-axis: total remaining story points for the release.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Actual line tracks or is below the ideal line (delivering faster than planned). Scope line flat or declining. Team consistently delivering toward the target release sprint.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Actual line above ideal line → release date at risk<br>
+                Scope line rising → backlog growing faster than team is delivering (scope creep)<br>
+                Actual and ideal lines parallel but offset above → consistently behind and not recovering<br>
+                Flat actual line for 2+ sprints → delivery is blocked
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>If projected completion &gt; target release sprint: (1) defer lower-priority scope to the next release, (2) add team capacity, or (3) negotiate the release date with stakeholders. Always show the data — never hide a slipping release. Projection formula: Sprints remaining = Remaining SP ÷ Average velocity.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📋 Cumulative Flow Diagram (CFD) — Scrum Context</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Stacked area chart showing item counts across sprint board columns over the sprint duration. Each colored band = a workflow stage (To Do, In Progress, Review, Done).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: time (sprint days). Y-axis: cumulative item count. Width of each band = WIP in that stage. Slope of the Done band = daily throughput rate.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Done band slopes steadily upward. "In Progress" band stays narrow (low WIP). Bands flow smoothly from left to right.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                "In Progress" band widening → too many stories started, none finishing (encourage swarming on stories)<br>
+                Done band flat → no stories completing (stories too large, or team context-switching)<br>
+                "To Do" band shrinking rapidly while Done is flat → stories starting but not finishing
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>If "In Progress" band is bulging, encourage the team to swarm on the most advanced story (closest to Done) rather than starting new ones. Stories should be completed one at a time before pulling new work.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
     <div class="tmpl">
       <div class="tmpl-label">Scrum Sprint Wiki Template (Confluence)</div>
 <span class="c-comment">── SPRINT [N] — [YYYY-MM-DD] to [YYYY-MM-DD] ────────────</span>
@@ -506,6 +692,143 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <h3>📈 Chart Interpretation Deep Dive</h3>
+    <p style="color:var(--text-muted);margin-bottom:12px">The six Kanban metrics work as a system. Read them together, not in isolation.</p>
+
+    <div class="acc-item">
+      <div class="acc-header">🌊 CFD (Cumulative Flow Diagram) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Stacked area chart. Each colored band = a workflow stage. Total height = total items in the system. Rightmost edge = items completed (Done band). The width of any band = WIP in that stage. The slope of the Done band = throughput rate.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: time (days/weeks). Y-axis: cumulative item count. Steeper Done slope = faster delivery. Wider bands = more WIP in that stage.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Bands roughly parallel. Steady upward slope on all bands. Done band slopes consistently upward. Band widths stable (WIP under control). Total height stable or slowly growing.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Band bulging (widening) in one stage → WIP accumulating = bottleneck immediately downstream of that stage<br>
+                Done band flat → no items completing; delivery has stalled<br>
+                Total height growing rapidly → more items entering than leaving (WIP explosion)<br>
+                Bands converging to a narrow strip → work drying up; backlog needs replenishment<br>
+                Stepwise Done band → batch releases (items held and released together, not continuous flow)
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Where the band bulges = where to investigate and reduce WIP. The CFD is the team's X-ray — read it daily, not weekly. A bulge in "In Review" means PR bottleneck; in "Testing" means QA bottleneck. Act on the constraint.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📊 Lead Time Distribution (Histogram) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Histogram (bar chart). Each bar = a time bucket (e.g., "1–3 days," "4–6 days"). Bar height = number of items completed in that time range. Reference lines at p50, p85, p95 percentiles. Lead time = from item creation to delivery (includes all wait time).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: lead time buckets (days). Y-axis: count of work items completed in each bucket.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Bars clustered in a narrow, predictable range. Right-skewed curve is normal and expected. p85 is close to the main cluster. Most items fall within the SLA target. Distribution consistent across different time periods.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Long right tail → many outliers taking far longer than the norm; investigate the slow items<br>
+                Bimodal distribution (two separate peaks) → two types of work mixed that need separate Classes of Service<br>
+                Wide, flat histogram → highly unpredictable system; tighten policies and WIP limits<br>
+                Items beyond the SLA line → confirmed SLA breaches; stakeholders already affected
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Use <strong>p85 (85th percentile)</strong> for SLA commitments — not the average. The average is skewed by outliers. Investigate items in the right tail: what type were they? What stage took longest? Use that insight to update policies or WIP limits.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">⚡ Cycle Time Scatterplot — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Each dot = one completed work item. Reference lines at p50 (median), p85, and p95 percentiles. Items above the p95 line are extreme outliers. Cycle time = from when work started to when it was delivered (excludes pre-work wait time).</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: completion date (showing when items finished over time). Y-axis: cycle time in days (how long that item took once started).</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Dots randomly scattered below the p85 line. No visible upward trend over time. Consistent density of dots (stable throughput). Outliers are rare and do not cluster.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Dots trending upward over time → cycle time degrading; system is getting slower<br>
+                Cluster of dots above p85 in a specific period → an event caused slowdown (deployment freeze, team absence, external dependency)<br>
+                Vertical cluster on one date → batch delivery (items held and released together; not healthy flow)<br>
+                Increasing dot density near p95+ → systemic problem accumulating
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Investigate every outlier above p95. Most common root causes: blocked by external dependency, wrong Class of Service applied, rework required, single-person bottleneck. Add a "blocked reason" field in Jira to track patterns. The scatterplot tells you that something went wrong; the board policy tells you what to do about it.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📈 Throughput Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Bar chart showing items completed per time period (week or month). Often includes a rolling 4-week average line overlaid on the bars.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: time periods (weeks). Y-axis: number of items completed per period.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Stable bars with small variance. Rolling average line flat or gently rising. Consistent throughput regardless of which team members are present (process-dependent, not person-dependent).</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Declining trend over 4+ weeks → system degrading (WIP too high, quality rework, team morale, or interrupt rate)<br>
+                Single-week spike followed by a crash → batch release behavior; hidden WIP building up off-board<br>
+                Near-zero weeks → blocked system, outage, or team event; mark and exclude from forecasting<br>
+                High variance week-over-week → unstable demand intake or irregular work patterns
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Use the <strong>rolling 4-week average</strong> as input to Monte Carlo forecasting — never use the best week or worst week. If throughput is declining: check WIP levels, blocked item count, and interrupt rate. Stable throughput is more valuable than high throughput. Predictability beats speed.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">⏳ Aging WIP Chart — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Each dot = one item currently on the Kanban board, plotted at its current workflow stage and the number of days it has been in that stage. Reference lines at p50 and p85 based on historical cycle time data.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: workflow stages (board columns from left to right). Y-axis: days the item has been in its current stage.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Most dots below the p50 line. No dots above p85 in active stages. Items appear on the chart one day and move forward the next (regular flow). Few items persisting across multiple daily checks.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Items above p85 → already exceeding normal cycle time; likely to breach SLA soon<br>
+                Items above p95 → SLA breach in progress unless unblocked immediately<br>
+                Many items concentrated in one stage → WIP violation or stage bottleneck<br>
+                Item aging in "In Review" for days → PR stuck; unblock or escalate<br>
+                Items at p85+ in "Done" column → delivery delay; deployment pipeline problem
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Check the Aging WIP chart every morning standup. Items above p85 get immediate attention — assign a rescuer, remove the blocker, or escalate. Use it in standup: "What's aging that we haven't discussed?" Never let items silently age past their SLA without action. This chart is your daily intervention tool.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">🎲 Monte Carlo Forecast — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>A probability distribution showing forecast completion dates or item counts. Runs thousands of simulations using historical throughput data. Typical output: "X% probability of completing N items by [date]." Often shown as a date histogram or cumulative probability curve.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: forecast completion dates. Y-axis: probability percentage (0–100%). The curve shows the cumulative probability of completing the target scope by each date.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Tight distribution (narrow cone between p50 and p85). Forecast aligns with stakeholder commitments. Based on at least 10–20 throughput data points for statistical reliability.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Wide cone (p50 and p85 dates far apart) → high throughput variability; low predictability<br>
+                p50 date already past the committed delivery date → &gt;50% chance of missing target<br>
+                p85 date past committed date → 85% chance of missing target; escalate immediately<br>
+                Based on fewer than 10 data points → statistically unreliable; label as "preliminary estimate"
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Use <strong>p85</strong> for stakeholder commitments — never p50 (that is a coin flip). Use p50 for internal planning and team goals. If the cone is too wide: reduce scope variability, tighten WIP limits, or separate by Class of Service before running the simulation. Never give a single-point date — always give a range with a confidence level.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <div class="tmpl">
@@ -651,6 +974,94 @@
           <tr><td><strong>Closure</strong></td><td>Final report, lessons learned, benefits plan handoff</td><td>Release retrospective, DoD archive, backlog handoff to operations</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <h3>📈 Chart Interpretation Guide</h3>
+
+    <div class="acc-item">
+      <div class="acc-header">🚦 Milestone RAG Dashboard — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>A table or visual board listing all major milestones. Each row shows: milestone name, planned date, current forecast date, delta (days variance), owner, and a written narrative for any non-green status. RAG = 🟢 On Track / 🟡 At Risk / 🔴 Behind.</td></tr>
+              <tr><td><strong>Structure</strong></td><td>Rows ordered by date (next milestone at top). Columns: Status | Milestone | Planned Date | Forecast Date | Delta | Owner | Narrative.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>All milestones green with forecast ≤ planned date. Amber milestones have active, named recovery plans. No milestone jumps from green directly to red without an amber phase (early warning is working).</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Multiple amber milestones simultaneously → systemic delivery problem, not isolated events<br>
+                Red milestone → formal escalation required; sponsor must be informed the same day<br>
+                Amber with no owner or no action plan → cosmetic status tracking, not real management<br>
+                Milestone dates shifting right over multiple reports → underlying problem not being addressed
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>PM must provide a written narrative for every amber/red status — the color alone is not enough. Narrative must include: root cause, impact on downstream milestones, recovery plan, and whether a sponsor decision is needed. Present at every steering committee. "It's amber but we're watching it" is not a plan.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📉 Release Burndown (Phase Gate Connected) — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Same structure as Scrum release burndown, but in a Hybrid context it connects directly to a formal phase gate milestone. The target date = gate date approved by the steering committee. Budget implications are visible.</td></tr>
+              <tr><td><strong>Axes</strong></td><td>X-axis: sprint numbers leading up to the phase gate. Y-axis: remaining story points in the phase scope. Vertical marker at the gate sprint.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Actual line tracks the ideal line or is below it. Projected completion (SP remaining ÷ average velocity) = at or before the gate sprint. Scope stable. No rising scope line.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Projected completion sprint &gt; gate sprint → trigger a formal change request immediately<br>
+                Scope line rising while gate date is fixed → CCB must review which scope to defer<br>
+                Velocity declining while gate approaches → double risk; escalate at next steering meeting<br>
+                Gate sprint is 1–2 sprints away but significant SP remain → gate is at serious risk
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>Unlike pure Scrum (where the team self-adjusts), Hybrid requires formal governance approval to change a phase gate date. When the burndown shows the gate is at risk: immediately raise a change request through the CCB to defer scope, extend the gate, or add resources. The PM bridges sprint velocity data to governance decision-making.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">📊 EVM at Milestone Level (Hybrid) — How to Read It</div>
+      <div class="acc-body">
+        <p style="margin-bottom:10px">In Hybrid, EVM is measured at <strong>phase gate level</strong>, not sprint level. Teams deliver via sprints inside each phase, but governance tracks cumulative EVM for the entire phase at each gate.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Metric at Gate</th><th>What It Represents</th><th>Threshold</th></tr></thead>
+            <tbody>
+              <tr><td><strong>PV at gate</strong></td><td>Total planned budget from project start to this phase gate</td><td>Fixed at baseline</td></tr>
+              <tr><td><strong>EV at gate</strong></td><td>% of phase deliverables formally accepted × total phase budget</td><td>Track close to PV</td></tr>
+              <tr><td><strong>AC at gate</strong></td><td>Total actual spend across all sprints in this phase</td><td>Track close to EV</td></tr>
+              <tr><td><strong>CPI at gate</strong></td><td>Phase cost efficiency (EV ÷ AC). Below 1.0 = phase overspent relative to value delivered</td><td>≥ 1.0 ✅ / &lt; 0.9 ⚠️</td></tr>
+              <tr><td><strong>SPI at gate</strong></td><td>Phase schedule efficiency (EV ÷ PV). Below 1.0 = phase deliverables behind plan</td><td>≥ 0.9 ✅ / &lt; 0.8 ⚠️</td></tr>
+              <tr><td><strong>EAC (full project)</strong></td><td>Projected total cost to completion (BAC ÷ CPI). Report this to sponsor at every gate.</td><td>≤ BAC ✅</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top:10px;padding:10px 14px;background:#fef3c7;border-left:3px solid #d97706;border-radius:0 6px 6px 0;font-size:.85rem"><strong>Gate Decision Rule:</strong> The steering committee uses CPI, SPI, and EAC to make a go/no-go decision. A gate review without EVM data is just a status report — it doesn't give the sponsor the information needed to protect the program budget. CPI &lt; 0.9 and SPI &lt; 0.8 together = high severity; sponsor must decide whether to proceed, re-baseline, or cancel.</p>
+      </div>
+    </div>
+
+    <div class="acc-item">
+      <div class="acc-header">🗺️ Feature-to-Milestone Heatmap — How to Read It</div>
+      <div class="acc-body">
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr><td style="width:130px"><strong>Elements</strong></td><td>Grid where rows = features/epics and columns = milestones/phase gates. Each cell shows the RAG status of whether the feature will be ready by that gate. Used as a cross-reference between agile delivery and formal milestones.</td></tr>
+              <tr><td><strong>Structure</strong></td><td>Rows: Features (from the product backlog). Columns: Milestones (phase gates). Cells: 🟢 On track / 🟡 At risk / 🔴 Won't make it / ⚪ Not in scope for this gate.</td></tr>
+              <tr><td><strong>✅ Healthy</strong></td><td>Features marked for a gate are green. Any amber feature has a clear action plan. Gate columns have a clear "must-have" set that is all green, and a "nice-to-have" set that can be amber.</td></tr>
+              <tr><td><strong>⚠️ Warning</strong></td><td>
+                Multiple must-have features in red for an upcoming gate → gate cannot proceed; escalate<br>
+                Scope creep: cells being added to a gate that is already at risk<br>
+                All features amber with no clear priority → PM has not made the "what must be done by this gate" decision
+              </td></tr>
+              <tr><td><strong>Action</strong></td><td>PM must distinguish between must-have (gate-blocking) and nice-to-have (deferrable) features before each gate review. Share the heatmap with the PO and steering committee weekly in the final 4 sprints before a gate. Red must-have features trigger an immediate scope deferral or resource add discussion.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
 
     <div class="tmpl">

@@ -102,6 +102,7 @@
     '<div class="nav-section-title">Tài nguyên</div>' +
     link({ icon: '🔧', en: 'Tools & Templates', vi: 'Công cụ & Mẫu', href: 'tools-templates.html' }) +
     link({ icon: '🔄', en: 'SDLC Artifacts & Dashboards', vi: 'Tài liệu theo SDLC', href: 'sdlc-artifacts.html' }) +
+    link({ icon: '📄', en: 'Document Templates', vi: 'Mẫu tài liệu chuẩn', href: 'document-templates.html' }) +
     '</div>';
 
   var el = document.getElementById('sidebar');
