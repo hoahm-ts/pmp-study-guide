@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDLC Artifacts & Dashboards | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <span>SDLC Artifacts & Dashboards</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-hybrid">Waterfall + Agile + Hybrid</span>
+      <span class="tag tag-eco">SDLC Reference</span>
+    </div>
+    <h1>SDLC Artifacts & Dashboards</h1>
+    <div class="title-vi">Tài liệu & Dashboard theo từng phương pháp và giai đoạn dự án</div>
+    <p class="description">What documents to create, what charts to maintain, and what dashboards to build — organized by methodology (Waterfall, Scrum, Kanban, Hybrid) and project phase. Includes Jira/Confluence setup and AI prompt toolkits.</p>
+  </div>
+
+  <!-- OVERVIEW COMPARISON TABLE -->
+  <div class="section">
+    <h2><span class="ico">📊</span> Quick Comparison — Artifacts by Methodology</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Artifact Type</th><th>Waterfall</th><th>Scrum</th><th>Kanban</th><th>Hybrid</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Scope definition</strong></td><td>Project Scope Statement + WBS</td><td>Product Backlog + Epics</td><td>Service catalog / Work types</td><td>Milestone plan + Backlog</td></tr>
+          <tr><td><strong>Schedule artifact</strong></td><td>Gantt chart (baseline)</td><td>Sprint burndown + Release burndown</td><td>Cumulative Flow Diagram (CFD)</td><td>Milestone roadmap + Sprint plan</td></tr>
+          <tr><td><strong>Budget tracking</strong></td><td>EVM dashboard (PV/EV/AC)</td><td>Velocity-based forecast</td><td>Cost per ticket / throughput cost</td><td>EVM at milestone + velocity at sprint</td></tr>
+          <tr><td><strong>Risk tracking</strong></td><td>Risk register (formal)</td><td>Risk-adjusted backlog + impediment log</td><td>Class of Service + WIP limits</td><td>Risk register + impediment board</td></tr>
+          <tr><td><strong>Quality artifact</strong></td><td>Quality Management Plan + inspection reports</td><td>Definition of Done + sprint demo</td><td>Lead time SLA + defect rate</td><td>DoD + phase gate QA</td></tr>
+          <tr><td><strong>Stakeholder comms</strong></td><td>Communications Management Plan + status reports</td><td>Sprint Review + release notes</td><td>Flow metrics report</td><td>Steering committee deck + sprint review</td></tr>
+          <tr><td><strong>Team health</strong></td><td>Resource utilization report</td><td>Velocity trend + retrospective actions</td><td>Throughput + morale pulse</td><td>Both</td></tr>
+          <tr><td><strong>Close artifact</strong></td><td>Final report + lessons learned + formal acceptance</td><td>Release retrospective + DoD closure</td><td>Service decommission doc</td><td>Phase gate report + final sprint retro</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- WATERFALL -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section">
+    <h2><span class="ico">🌊</span> Waterfall / Predictive SDLC</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Waterfall follows sequential phases with formal gates between each. Every phase produces documented artifacts that become the baseline for the next. Change is controlled and formal.</p>
+        <p><strong>Best for:</strong> Fixed-scope projects with clear requirements, regulatory-heavy environments, infrastructure/construction, large enterprise programs.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Waterfall theo các giai đoạn tuần tự với cổng kiểm soát chính thức giữa mỗi giai đoạn. Mỗi giai đoạn tạo ra tài liệu trở thành baseline cho giai đoạn tiếp theo.</p>
+        <p><strong>Phù hợp với:</strong> Dự án phạm vi cố định, yêu cầu rõ ràng, môi trường tuân thủ cao, hạ tầng, chương trình doanh nghiệp lớn.</p>
+      </div>
+    </div>
+
+    <!-- Phase 1: Initiation -->
+    <h3>Phase 1 — Initiation</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Project Charter</strong> — formal authorization<br>
+              <strong>Business Case</strong> — ROI, strategic fit<br>
+              <strong>Feasibility Study</strong> — technical, financial, operational<br>
+              <strong>Stakeholder Register</strong> — initial identification<br>
+              <strong>Assumptions Log</strong> — key project assumptions
+            </td>
+            <td>
+              None yet — project not approved<br><br>
+              <em>Optional:</em> Business case ROI model (spreadsheet), High-level timeline graphic for sponsor approval
+            </td>
+            <td>
+              <strong>Confluence:</strong> Create project space, add Charter page, Stakeholder Register page<br>
+              <strong>Jira:</strong> Not yet active — project not approved
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phase 2: Planning -->
+    <h3>Phase 2 — Planning</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Project Management Plan</strong> (master + subsidiary plans)<br>
+              <strong>Work Breakdown Structure (WBS)</strong><br>
+              <strong>Project Schedule</strong> (activity list, dependencies)<br>
+              <strong>Cost Baseline</strong> (budget by phase/activity)<br>
+              <strong>Risk Register</strong><br>
+              <strong>Communications Management Plan</strong><br>
+              <strong>Quality Management Plan</strong><br>
+              <strong>Resource Management Plan</strong><br>
+              <strong>Procurement Plan</strong> (if vendors)<br>
+              <strong>Stakeholder Engagement Plan</strong>
+            </td>
+            <td>
+              <strong>Gantt Chart</strong> — schedule baseline with critical path<br>
+              <strong>Risk Heat Map</strong> — probability × impact matrix<br>
+              <strong>Resource Loading Chart</strong> — utilization forecast by week<br>
+              <strong>Budget S-Curve</strong> — planned spend over time<br>
+              <strong>Milestone Roadmap</strong> — key dates for executive view
+            </td>
+            <td>
+              <strong>Confluence:</strong> PMP index page, Risk Register page, Comms Plan page, Assumptions Log<br>
+              <strong>Jira:</strong> Create project, set up epics (= WBS work packages), create milestone versions, set up labels for risk/issue categories<br>
+              <strong>Jira Roadmap:</strong> Map epics to timeline = Gantt view
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phase 3: Execution -->
+    <h3>Phase 3 — Execution</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Weekly Status Report</strong> (RAG + EVM summary)<br>
+              <strong>Issue Log</strong> — active problems<br>
+              <strong>Change Request Log</strong> — all CRs with CCB status<br>
+              <strong>Quality Inspection Reports</strong><br>
+              <strong>Meeting Minutes</strong> (steering committee, CCB, working sessions)<br>
+              <strong>Vendor/Procurement documents</strong><br>
+              <strong>Updated Risk Register</strong> (weekly review)<br>
+              <strong>Team Performance Reports</strong>
+            </td>
+            <td>
+              <strong>EVM Dashboard</strong> — PV, EV, AC, CPI, SPI, EAC trend<br>
+              <strong>Milestone Tracker</strong> — RAG per milestone<br>
+              <strong>Budget Burn Chart</strong> — planned vs actual spend<br>
+              <strong>Issue Aging Chart</strong> — open issues by age<br>
+              <strong>Change Request Tracker</strong> — CR volume and status<br>
+              <strong>Risk Status Heatmap</strong> — updated weekly
+            </td>
+            <td>
+              <strong>Confluence:</strong> Weekly status report (create from template, one page per week), Meeting minutes pages, Change log table<br>
+              <strong>Jira:</strong> Tasks/stories linked to epics, Issues tracked as "Bug" or custom type, Change Requests as custom issue type with CCB labels<br>
+              <strong>Jira Dashboard:</strong> EVM widgets (via EVM plugin or spreadsheet link), Milestone status board
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phase 4: Monitoring & Control -->
+    <h3>Phase 4 — Monitoring &amp; Control (runs in parallel with Execution)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Variance Analysis Report</strong> — schedule and cost variance explanation<br>
+              <strong>Corrective Action Plans</strong><br>
+              <strong>Updated Baselines</strong> (after approved changes)<br>
+              <strong>Performance Reports</strong> (for steering committee)<br>
+              <strong>Forecast Reports</strong> — EAC, ETC, VAC
+            </td>
+            <td>
+              <strong>EVM Trend Chart</strong> — CPI/SPI over time (are we improving?)<br>
+              <strong>Schedule Variance Chart</strong> — SV trend<br>
+              <strong>Cost Variance Chart</strong> — CV trend<br>
+              <strong>Risk Trend</strong> — total risk score over time<br>
+              <strong>Quality Control Chart</strong> — defect rate trend<br>
+              <strong>Forecast Accuracy Chart</strong> — EAC vs BAC
+            </td>
+            <td>
+              <strong>Confluence:</strong> Monthly variance analysis page, Corrective action register<br>
+              <strong>Jira:</strong> Filter boards for open issues/risks sorted by priority, Weekly saved filters for PM review<br>
+              <strong>Jira Reports:</strong> Created vs. Resolved chart for issue velocity
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phase 5: Closure -->
+    <h3>Phase 5 — Closure</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Final Project Report</strong> — performance vs. baseline<br>
+              <strong>Formal Acceptance / Sign-off</strong> — customer/sponsor signature<br>
+              <strong>Lessons Learned Register</strong><br>
+              <strong>Procurement Closure</strong> — vendor sign-off, final payments<br>
+              <strong>Benefits Realization Plan</strong> — handed to operations<br>
+              <strong>Archive Package</strong> — all project documents
+            </td>
+            <td>
+              <strong>Final EVM Summary</strong> — BAC vs EAC vs AC<br>
+              <strong>Milestone Completion Report</strong> — all milestones hit/missed with reason<br>
+              <strong>Lessons Learned Summary</strong> — top themes chart<br>
+              <strong>Benefits Baseline Chart</strong> — KPIs handed to operations for tracking
+            </td>
+            <td>
+              <strong>Confluence:</strong> Final Report page, Lessons Learned page (submitted to PMO space), Archive label on all project pages<br>
+              <strong>Jira:</strong> Close all open issues/risks (resolve, won't fix, or defer), Archive the project, Export issue data for records<br>
+              <strong>Label all pages:</strong> archived-[project-name]
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">📌</span>
+      <div class="b-body">
+        <div class="b-title">Waterfall — Key PM Rule</div>
+        <p>Every phase produces a <strong>baseline</strong>. Changes to the baseline require formal CCB approval. Never skip the gate review — it's the only mechanism that keeps scope, cost, and schedule under control. EVM is your early warning system during execution.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SCRUM -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section">
+    <h2><span class="ico">🏃</span> Scrum SDLC</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Scrum delivers in fixed-length iterations (Sprints, typically 2 weeks). The Product Owner defines what gets built; the team decides how. Transparency through artifacts and ceremonies is the core control mechanism.</p>
+        <p><strong>Best for:</strong> Product development with evolving requirements, digital products, startups, cross-functional teams with good collaboration, when fast feedback loops matter.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Scrum deliver theo các vòng lặp cố định (Sprints, thường 2 tuần). Product Owner định nghĩa cái gì cần xây dựng; team quyết định cách thực hiện.</p>
+        <p><strong>Phù hợp với:</strong> Phát triển sản phẩm với yêu cầu thay đổi, sản phẩm kỹ thuật số, startup, team cross-functional tốt, khi feedback loop nhanh quan trọng.</p>
+      </div>
+    </div>
+
+    <!-- Sprint 0 -->
+    <h3>Sprint 0 — Project Setup (1–2 weeks)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Product Vision Statement</strong> — why this product exists<br>
+              <strong>Initial Product Backlog</strong> — epics and high-level stories<br>
+              <strong>Definition of Done (DoD)</strong> — quality exit criteria<br>
+              <strong>Team Working Agreement</strong> — norms and expectations<br>
+              <strong>Release Plan</strong> — high-level milestone map<br>
+              <strong>Technical Architecture Decision</strong> (ADRs)<br>
+              <strong>Risk-adjusted Backlog</strong> — high-risk stories identified<br>
+              <strong>Stakeholder Map</strong> + engagement plan
+            </td>
+            <td>
+              <strong>Release Burndown (initial)</strong> — total story points vs. target sprints<br>
+              <strong>Capacity Planner</strong> — team availability per sprint<br>
+              <strong>Dependency Map</strong> — inter-team or external dependencies<br>
+              <em>Note: No velocity data yet — use historical or T-shirt sizing</em>
+            </td>
+            <td>
+              <strong>Confluence:</strong> Product Vision page, DoD page, Working Agreement page, Architecture Decision Records (ADR) space<br>
+              <strong>Jira:</strong> Create Scrum project, set up Epic → Story → Task hierarchy, create initial backlog with story points, configure sprint board columns, set up "Definition of Done" checklist field<br>
+              <strong>Jira Roadmap:</strong> Map epics across release timeline
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sprint Cycle -->
+    <h3>Each Sprint — The Core Loop (2-week cycle)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ceremony → Artifact</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Sprint Planning</strong> → Sprint Backlog, Sprint Goal statement<br>
+              <strong>Daily Standup</strong> → Async standup log (Slack/Confluence), Impediment list<br>
+              <strong>Sprint Review</strong> → Demo notes, Accepted/rejected stories list, Updated Product Backlog<br>
+              <strong>Retrospective</strong> → Retro action items (max 3), Team health score<br>
+              <strong>Backlog Refinement</strong> → Refined stories with ACs and estimates<br>
+              <strong>Sprint Report</strong> → Completed vs. committed, velocity
+            </td>
+            <td>
+              <strong>Sprint Burndown Chart</strong> — story points remaining per day<br>
+              <strong>Velocity Chart</strong> — completed SP per sprint (visible after Sprint 2+)<br>
+              <strong>Cumulative Flow Diagram (CFD)</strong> — work item flow through board columns<br>
+              <strong>Defect Trend</strong> — bugs created vs resolved per sprint<br>
+              <strong>Story Cycle Time</strong> — how long stories take from start to done<br>
+              <strong>Sprint Completion Rate</strong> — % of committed stories delivered
+            </td>
+            <td>
+              <strong>Confluence:</strong> Sprint wiki page (goal, team, retro notes), Sprint retrospective page per sprint, Decision log table<br>
+              <strong>Jira:</strong> Active sprint board, sprint reports (built-in), velocity chart (built-in), CFD (built-in under Reports)<br>
+              <strong>Jira Automation:</strong> Auto-transition stories on PR merge, Auto-assign on sprint start
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Release -->
+    <h3>Release Planning &amp; Delivery</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>Release Plan</strong> — which features go in which release<br>
+              <strong>Release Notes</strong> — what changed, known issues<br>
+              <strong>UAT Sign-off</strong> — customer/PO acceptance<br>
+              <strong>Deployment Runbook</strong> — step-by-step ops guide<br>
+              <strong>Go/No-Go Checklist</strong> — criteria before releasing<br>
+              <strong>Rollback Plan</strong> — how to revert if release fails
+            </td>
+            <td>
+              <strong>Release Burndown</strong> — remaining SP vs. target release sprint<br>
+              <strong>Feature Completion Tracker</strong> — epic-level RAG dashboard<br>
+              <strong>Test Coverage Dashboard</strong> — % stories with passing tests<br>
+              <strong>Defect Dashboard</strong> — P0/P1 count before release gate
+            </td>
+            <td>
+              <strong>Confluence:</strong> Release notes page (one per release), Go/No-Go checklist page, Runbook page under Operations space<br>
+              <strong>Jira:</strong> Create Version for each release, tag stories to version, use "Fix Version" field, generate Release Report<br>
+              <strong>Jira Releases tab:</strong> Tracks all stories/bugs in a version
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SAFe / Program Level -->
+    <h3>Program Level — SAFe / LeSS (Multiple Scrum Teams)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Documents</th><th>Charts / Dashboards</th><th>Jira / Confluence</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>
+              <strong>PI Objectives</strong> — Program Increment goals per team<br>
+              <strong>Program Backlog</strong> — features above story level<br>
+              <strong>ROAM Board</strong> — risks: Resolved, Owned, Accepted, Mitigated<br>
+              <strong>Dependency Board</strong> — cross-team dependencies<br>
+              <strong>ART Sync Notes</strong> — Agile Release Train sync meeting minutes<br>
+              <strong>PI Planning Board</strong> — team iteration plans for the PI
+            </td>
+            <td>
+              <strong>PI Burndown</strong> — features completed vs. PI target<br>
+              <strong>Program Board</strong> — dependencies across teams visualized<br>
+              <strong>Team Burndowns</strong> — each team's sprint progress<br>
+              <strong>Predictability Measure</strong> — PI objectives met % per team<br>
+              <strong>Portfolio Kanban</strong> — epics flowing through stages
+            </td>
+            <td>
+              <strong>Confluence:</strong> PI Planning space, ROAM board page, Team objectives pages<br>
+              <strong>Jira Align / Advanced Roadmaps:</strong> Portfolio-level planning<br>
+              <strong>Jira:</strong> Program Board using Dependency linking between stories across projects, Portfolio roadmap view<br>
+              <strong>Miro/FigJam:</strong> PI Planning board (visual, team-based)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Scrum Sprint Wiki Template (Confluence)</div>
+<span class="c-comment">── SPRINT [N] — [YYYY-MM-DD] to [YYYY-MM-DD] ────────────</span>
+<span class="c-key">Goal:</span>      [One sentence: what does success look like for this sprint?]
+<span class="c-key">Team:</span>      [Members] | Capacity: [SP] | SM: [name] | PO: [name]
+
+<span class="c-comment">── COMMITTED STORIES ─────────────────────────────────────</span>
+[Jira filter macro: sprint = "Sprint N" AND project = "Alpha"]
+
+<span class="c-comment">── DAILY LOG ─────────────────────────────────────────────</span>
+<span class="c-key">Day 1:</span>  [Key update — impediment raised / decision made]
+<span class="c-key">Day 3:</span>  [Mid-sprint check — on track? blockers?]
+<span class="c-key">Day 8:</span>  [End-of-sprint note before review]
+
+<span class="c-comment">── SPRINT REVIEW ─────────────────────────────────────────</span>
+<span class="c-key">Completed:</span>   [SP] / [SP committed] ([%])
+<span class="c-key">Accepted:</span>    [Story list]
+<span class="c-key">Not accepted:</span> [Story list + reason]
+<span class="c-key">PO feedback:</span> [Key feedback from demo]
+
+<span class="c-comment">── RETROSPECTIVE ─────────────────────────────────────────</span>
+<span class="c-key">+ Went well:</span>  [Top 2 themes]
+<span class="c-key">△ Improve:</span>   [Top 2 themes]
+<span class="c-val">Actions (max 3): [Action] → [Owner] → Sprint [N+1]</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">📌</span>
+      <div class="b-body">
+        <div class="b-title">Scrum — Key PM Rule</div>
+        <p>Velocity is a <strong>forecasting tool</strong>, not a performance metric. Never use velocity to compare teams or pressure individuals. The sprint burndown tells you if the sprint goal is at risk — the velocity chart tells you if the team's capacity is stable over time. Both are needed.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- KANBAN -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section">
+    <h2><span class="ico">📋</span> Kanban SDLC</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Kanban is a continuous flow system — no sprints, no iterations. Work is pulled when capacity is available. Control comes from WIP limits, explicit policies, and flow metrics rather than planning ceremonies.</p>
+        <p><strong>Best for:</strong> Operations/support teams, maintenance work, teams with highly variable request types, bug-fix queues, service desks, teams not ready for full Scrum ceremonies.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Kanban là hệ thống luồng liên tục — không có sprints. Công việc được kéo khi có dung lượng. Kiểm soát đến từ giới hạn WIP, chính sách rõ ràng và số liệu luồng.</p>
+        <p><strong>Phù hợp với:</strong> Team vận hành/hỗ trợ, bảo trì, yêu cầu biến thiên cao, hàng đợi sửa lỗi, service desk.</p>
+      </div>
+    </div>
+
+    <h3>Board Setup — The Foundation Document</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Board Element</th><th>What to Define</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Columns</strong></td><td>Each column = a stage of work. Define entry and exit criteria for each.</td><td>Backlog → Ready → In Progress → In Review → Testing → Done</td></tr>
+          <tr><td><strong>WIP Limits</strong></td><td>Maximum items allowed in each active column. Violations = system signal.</td><td>In Progress: max 3 | In Review: max 2 | Testing: max 4</td></tr>
+          <tr><td><strong>Work Types / Classes of Service</strong></td><td>Different work types get different priority treatment and SLAs.</td><td>Expedite (P0) / Fixed Date / Standard / Intangible (tech debt)</td></tr>
+          <tr><td><strong>Pull Policies</strong></td><td>When can an item be pulled to the next stage? Who can pull?</td><td>Story must have AC written and approved before entering "In Progress"</td></tr>
+          <tr><td><strong>Done Definition</strong></td><td>What does "Done" mean? Same as DoD in Scrum.</td><td>Code reviewed, tests passing, deployed to staging, PO accepted</td></tr>
+          <tr><td><strong>Meeting Cadence</strong></td><td>Unlike Scrum, meetings are triggered by need or a light cadence.</td><td>Daily standup (15 min) + weekly replenishment + monthly retrospective</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key Documents</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Document</th><th>Purpose</th><th>Update Frequency</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Kanban Board Policies</strong></td><td>Written rules for each column — entry/exit criteria, WIP limits, escalation</td><td>As needed (after retrospective)</td></tr>
+          <tr><td><strong>Service Level Agreements (SLA)</strong></td><td>Max cycle time commitment per work type — e.g., P0 resolved in 4h, P2 in 5 days</td><td>Quarterly review</td></tr>
+          <tr><td><strong>Work Item Types Definition</strong></td><td>What categories of work exist, how they're prioritized, who can create them</td><td>Quarterly review</td></tr>
+          <tr><td><strong>Flow Metrics Report</strong></td><td>Weekly/monthly summary of throughput, cycle time, lead time, SLA compliance</td><td>Weekly or monthly</td></tr>
+          <tr><td><strong>Backlog Health Report</strong></td><td>Aging items, blocked items, items at risk of SLA breach</td><td>Weekly</td></tr>
+          <tr><td><strong>Retrospective Notes</strong></td><td>Monthly or triggered by flow blockage events</td><td>Monthly</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Key Charts &amp; Dashboards</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Chart</th><th>What It Shows</th><th>How to Use It</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Cumulative Flow Diagram (CFD)</strong></td>
+            <td>Volume of work in each column over time. Bands widen = WIP increasing. Flat band = bottleneck.</td>
+            <td>Monitor daily. Widening "In Progress" band = team overloaded or blocked.</td>
+          </tr>
+          <tr>
+            <td><strong>Lead Time Distribution</strong></td>
+            <td>How long items take from creation to done. Histogram shows spread and outliers.</td>
+            <td>Use p85 (85th percentile) as your SLA commitment — not average.</td>
+          </tr>
+          <tr>
+            <td><strong>Cycle Time Scatterplot</strong></td>
+            <td>Each dot = one work item. X = date completed, Y = days to complete. Shows outliers and patterns.</td>
+            <td>Outliers above the p85 line need investigation — what made them slow?</td>
+          </tr>
+          <tr>
+            <td><strong>Throughput Chart</strong></td>
+            <td>Items completed per week over time. Shows team capacity trend.</td>
+            <td>Use for forecasting: "at X items/week, when will the backlog be done?"</td>
+          </tr>
+          <tr>
+            <td><strong>Aging WIP Chart</strong></td>
+            <td>Items currently on board, sorted by how long they've been in the current stage.</td>
+            <td>Items above p85 threshold = at risk. Escalate or investigate.</td>
+          </tr>
+          <tr>
+            <td><strong>Monte Carlo Forecast</strong></td>
+            <td>Probabilistic forecast of when backlog will be complete, based on throughput history.</td>
+            <td>"85% probability of completing 30 items by [date]." Use for stakeholder commitments.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Kanban — Board Policy Document (Confluence)</div>
+<span class="c-comment">── KANBAN BOARD POLICIES — [Team Name] ──────────────────</span>
+<span class="c-key">Last updated:</span>  [YYYY-MM-DD] | Next review: [YYYY-MM-DD]
+
+<span class="c-comment">── COLUMN POLICIES ───────────────────────────────────────</span>
+<span class="c-key">BACKLOG</span>       No WIP limit | Replenished weekly | Priority: CoS order
+  Entry: Any stakeholder can add. PM triages daily.
+  Exit:  Item has title, description, AC, and priority assigned.
+
+<span class="c-key">READY</span>         WIP limit: 8 | Prioritized queue, pull-based
+  Entry:  Full AC written, story estimated, dependencies clear.
+  Exit:   Developer picks up (pull, don't push).
+
+<span class="c-key">IN PROGRESS</span>   WIP limit: 3 | Each dev owns max 1 item at a time
+  Entry:  Developer starts work.
+  Exit:   Code complete, unit tests passing, PR opened.
+  Blocked signal: Add 🚫 label. PM notified same day.
+
+<span class="c-key">IN REVIEW</span>     WIP limit: 2 | Max 24h in this stage
+  Entry:  PR opened and linked to Jira ticket.
+  Exit:   PR approved by 2 reviewers.
+
+<span class="c-key">TESTING</span>       WIP limit: 4 | Max 48h in this stage
+  Entry:  Code merged to staging branch.
+  Exit:   QA sign-off. No P0/P1 open.
+
+<span class="c-key">DONE</span>          No WIP limit | Production deploy complete
+  Entry:  Deployed to production + monitoring verified.
+
+<span class="c-comment">── CLASS OF SERVICE (Priority Rules) ────────────────────</span>
+<span class="c-key">🔴 Expedite:</span>   Production incident. Bypass WIP limits. PM notified immediately.
+<span class="c-key">🟠 Fixed Date:</span>  Regulatory deadline. Tracked daily. Never deprioritized.
+<span class="c-key">🟡 Standard:</span>   Normal feature/bug work. FIFO within priority.
+<span class="c-val">⚪ Intangible:  Tech debt / refactoring. Fill spare capacity only.</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">📌</span>
+      <div class="b-body">
+        <div class="b-title">Kanban — Key PM Rule</div>
+        <p>Stop starting, start finishing. WIP limits exist for a reason — a team that violates them constantly is telling you something about their process, not their discipline. Use the CFD and Aging WIP chart as your daily early warning system, not as reports you generate after the fact.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HYBRID -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section">
+    <h2><span class="ico">🔀</span> Hybrid SDLC</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Hybrid combines predictive governance (milestones, formal approvals, change control) with agile delivery (sprints, backlog, iterative releases). Common in enterprises that need executive reporting but want team-level agility.</p>
+        <p><strong>Best for:</strong> Regulated industries with fixed compliance gates, large programs with multiple delivery teams, projects with some fixed scope and some evolving features.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Hybrid kết hợp quản trị predictive (milestones, phê duyệt chính thức, change control) với delivery agile (sprints, backlog, release lặp lại). Phổ biến trong doanh nghiệp cần báo cáo cấp cao nhưng muốn agility ở cấp team.</p>
+      </div>
+    </div>
+
+    <h3>Two-Layer Artifact Model</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Layer</th><th>Audience</th><th>Documents</th><th>Charts</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Executive / Governance Layer</strong><br><em>(Predictive)</em></td>
+            <td>Sponsor, Steering Committee, PMO, Regulators</td>
+            <td>
+              Project Charter<br>
+              Milestone Roadmap<br>
+              Risk Register<br>
+              Change Log (CCB decisions)<br>
+              Phase Gate Reports<br>
+              Monthly Status Report<br>
+              Benefits Realization Plan<br>
+              Compliance Documentation
+            </td>
+            <td>
+              Milestone RAG Dashboard<br>
+              EVM at phase/milestone level (not sprint)<br>
+              Risk Heatmap<br>
+              Budget S-Curve<br>
+              Compliance Status Tracker
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Team / Delivery Layer</strong><br><em>(Agile)</em></td>
+            <td>Development Team, Tech Lead, Product Owner</td>
+            <td>
+              Product Backlog<br>
+              Sprint Backlog<br>
+              Definition of Done<br>
+              Sprint Review Notes<br>
+              Retrospective Actions<br>
+              Impediment Log<br>
+              Technical ADRs
+            </td>
+            <td>
+              Sprint Burndown<br>
+              Velocity Chart<br>
+              Cumulative Flow Diagram<br>
+              Defect Trend<br>
+              Feature Completion Tracker
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Integration Points</strong></td>
+            <td>PM bridges both layers</td>
+            <td>
+              Sprint-to-Milestone mapping<br>
+              Requirements Traceability Matrix (RTM)<br>
+              Release Plan (connects sprint output to milestone)<br>
+              UAT Sign-off per Phase Gate
+            </td>
+            <td>
+              Release Burndown (connects sprint velocity to milestone ETA)<br>
+              Feature-to-Milestone heatmap<br>
+              Sprint output → Phase Gate dashboard
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Hybrid Project Lifecycle</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Phase</th><th>Governance Action</th><th>Agile Action</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Initiation</strong></td><td>Project Charter, Business Case, Stakeholder Register</td><td>Product Vision, initial Epics, team formation</td></tr>
+          <tr><td><strong>Planning</strong></td><td>Milestone plan, Risk Register, Budget baseline, CCB setup</td><td>Product Backlog created, DoD defined, Sprint 0, architecture ADRs</td></tr>
+          <tr><td><strong>Phase Gate 1</strong></td><td>Steering committee approves go-ahead for development phase</td><td>Sprint 1 begins</td></tr>
+          <tr><td><strong>Development Sprints</strong></td><td>Monthly status reports, weekly EVM at milestone level, change requests through CCB</td><td>Sprint ceremonies, velocity tracking, backlog refinement, sprint reviews</td></tr>
+          <tr><td><strong>Phase Gate 2</strong></td><td>Formal sign-off on Phase 1 deliverables (scope validation)</td><td>Release planning for Phase 2 features</td></tr>
+          <tr><td><strong>UAT / Pre-launch</strong></td><td>Formal UAT acceptance, go-live decision, risk review</td><td>Hardening sprint, bug-fix backlog, regression testing</td></tr>
+          <tr><td><strong>Go-live</strong></td><td>Sponsor sign-off, change freeze, runbook handoff</td><td>Hypercare sprint, production monitoring, urgent fix backlog</td></tr>
+          <tr><td><strong>Closure</strong></td><td>Final report, lessons learned, benefits plan handoff</td><td>Release retrospective, DoD archive, backlog handoff to operations</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Hybrid — Sprint-to-Milestone Mapping (Confluence)</div>
+<span class="c-comment">── SPRINT → MILESTONE MAPPING ───────────────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | PM: [name] | Updated: [YYYY-MM-DD]
+
+<span class="c-comment">── MILESTONE MAP ─────────────────────────────────────────</span>
+Milestone          | Target Date   | Sprints       | Status
+───────────────────|───────────────|───────────────|────────
+M1: Dev complete   | [YYYY-MM-DD]  | Sprint 1-8    | 🟢 On track
+M2: UAT sign-off   | [YYYY-MM-DD]  | Sprint 9-10   | 🟡 At risk
+M3: Go-live        | [YYYY-MM-DD]  | Sprint 11-12  | 🔵 Future
+
+<span class="c-comment">── VELOCITY-BASED FORECAST ───────────────────────────────</span>
+<span class="c-key">Remaining backlog:</span>  [N] story points
+<span class="c-key">Avg velocity:</span>       [SP] / sprint
+<span class="c-key">Sprints to complete:</span> [N remaining SP / avg velocity] = [X] sprints
+<span class="c-key">Forecast date:</span>      [Sprint end date + X sprints]
+<span class="c-val">Delta from M1 target: [+/- days] → Milestone: 🟢 / 🟡 / 🔴</span>
+
+<span class="c-comment">── PHASE GATE CHECKLIST ──────────────────────────────────</span>
+Gate: M1 — Development Complete
+[ ] All Sprint 1-8 committed features: Done or formally deferred
+[ ] Zero P0/P1 open defects
+[ ] RTM 100% coverage confirmed
+[ ] Performance SLAs met (p95 &lt; 500ms)
+[ ] Security audit: passed
+[ ] Sponsor sign-off: [ ] obtained
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">📌</span>
+      <div class="b-body">
+        <div class="b-title">Hybrid — Key PM Rule</div>
+        <p>The PM's job in a hybrid model is to <strong>translate between layers</strong> — convert sprint velocity into milestone forecast language for executives, and convert compliance/regulatory requirements into backlog items the team can implement. Never let the two layers drift apart without a clear mapping.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- AI TOOLS -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for SDLC Artifact Management</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments SDLC Artifact Work</div>
+        <p>AI dramatically reduces the time to create, review, and maintain SDLC artifacts. Use it to generate first drafts, audit completeness, convert between methodology formats, and translate team data into executive-ready dashboards.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Waterfall — Generate a WBS from project description</span>
+You are a senior PM. Help me create a Work Breakdown Structure (WBS) for my project.
+Project: [name and brief description]
+Key deliverables: [list the main outputs]
+Team: [roles involved]
+Duration: [months]
+
+Create a WBS with:
+1. Level 1: Major deliverable categories (5-7 max)
+2. Level 2: Work packages under each category (3-6 per L1)
+3. Level 3: Tasks under each work package (for complex items only)
+
+Rules:
+- Every node must be a noun (deliverable), not a verb (activity)
+- 100% rule: WBS must include 100% of project scope
+- No overlap between branches
+- Work packages should be estimable (3-10 days each)
+
+Also flag: which work packages are on the critical path (highest risk if delayed)?
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Scrum — Generate sprint planning inputs from backlog</span>
+Help me prepare for sprint planning.
+Sprint: [Sprint N] | Duration: [2 weeks] | Team capacity: [SP available — account for leave, ceremonies]
+Product Backlog (top items, with story points):
+  [Story 1] — [SP] — Priority: [High/Med/Low] — AC: [brief]
+  [Story 2] — [SP] — Priority: [...]
+  [add more...]
+Sprint goal direction from PO: [what the PO wants to achieve this sprint]
+Previous sprint velocity: [SP] | Unplanned work typical %: [%]
+
+Generate:
+1. Recommended sprint scope (which stories to pull, total SP)
+2. Sprint Goal statement (1 sentence, outcome-focused)
+3. Risk flags (stories with unclear AC, external dependencies, technical unknowns)
+4. Stories to split (any > 8 SP should be broken down)
+5. Capacity check: does committed scope fit within team capacity?
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Kanban — Interpret flow metrics and diagnose bottleneck</span>
+Analyze my Kanban flow metrics and diagnose what's happening.
+Team: [size, roles]
+Period: [last 4 weeks]
+
+Flow data:
+  Throughput (items/week): Week1:[n] Week2:[n] Week3:[n] Week4:[n]
+  Avg cycle time: [days] | p85 cycle time: [days] | SLA target: [days]
+  WIP at each stage (current): Backlog:[n] Ready:[n] InProgress:[n] Review:[n] Testing:[n] Done:[n]
+  WIP violations this week: [count]
+  Items blocked: [count] | Oldest blocked item: [days]
+  Items past SLA: [count out of total done]
+
+CFD observation: [describe what you see — widening band? flat area? sudden drop?]
+
+Analyze:
+1. Where is the bottleneck? (which column is the constraint?)
+2. Is throughput stable, improving, or declining? Root cause?
+3. Is cycle time within SLA? What's the main driver of slow items?
+4. What WIP limit should I adjust?
+5. Top 3 actions to improve flow next week
+    </div>
+
+    <h3>Jira Dashboard Setup Guide</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Methodology</th><th>Jira Dashboard Widgets to Add</th><th>Who Sees It</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Waterfall</strong></td>
+            <td>
+              • Filter Results (open issues by priority)<br>
+              • Created vs. Resolved (issue trend)<br>
+              • Average Age Chart (issue aging)<br>
+              • Milestone Tracker (via Roadmap)<br>
+              • Two Dimensional Filter (issues by type × status)
+            </td>
+            <td>PM, PMO, Sponsor</td>
+          </tr>
+          <tr>
+            <td><strong>Scrum</strong></td>
+            <td>
+              • Sprint Health Gadget<br>
+              • Velocity Chart<br>
+              • Burndown Chart<br>
+              • Cumulative Flow Diagram<br>
+              • Recently Created Issues (defect tracking)<br>
+              • Sprint Report
+            </td>
+            <td>Team, PO, PM</td>
+          </tr>
+          <tr>
+            <td><strong>Kanban</strong></td>
+            <td>
+              • Cumulative Flow Diagram<br>
+              • Control Chart (cycle time scatterplot)<br>
+              • Throughput Chart<br>
+              • Filter Results (blocked items)<br>
+              • Two Dimensional Filter (items by CoS × stage)
+            </td>
+            <td>Team, PM, Operations</td>
+          </tr>
+          <tr>
+            <td><strong>Hybrid</strong></td>
+            <td>
+              • Roadmap (executive milestones)<br>
+              • Sprint Health + Velocity (team layer)<br>
+              • Filter (open risks + issues)<br>
+              • CFD or Burndown (delivery layer)<br>
+              • EVM metrics (via custom gadget or linked spreadsheet)
+            </td>
+            <td>Sponsor (milestone view), Team (sprint view), PM (both)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="tools-templates.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>Tools &amp; Templates</span></a>
+    <a href="index.html" class="nav-btn"><span><span class="nb-dir">Về trang chủ</span>🏠 Home</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
