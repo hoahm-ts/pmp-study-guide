@@ -101,6 +101,7 @@
     buildDomain('8%', 'd-badge-3', 'Domain 3: Business', 'Môi trường KD', 'domain-3-overview.html', domain3Tasks) +
     '<div class="nav-section-title">Tài nguyên</div>' +
     link({ icon: '🔧', en: 'Tools & Templates', vi: 'Công cụ & Mẫu', href: 'tools-templates.html' }) +
+    link({ icon: '🔄', en: 'SDLC Artifacts & Dashboards', vi: 'Tài liệu theo SDLC', href: 'sdlc-artifacts.html' }) +
     '</div>';
 
   var el = document.getElementById('sidebar');
