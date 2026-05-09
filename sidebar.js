@@ -103,6 +103,7 @@
     link({ icon: '🔧', en: 'Tools & Templates', vi: 'Công cụ & Mẫu', href: 'tools-templates.html' }) +
     link({ icon: '🔄', en: 'SDLC Artifacts & Dashboards', vi: 'Tài liệu theo SDLC', href: 'sdlc-artifacts.html' }) +
     link({ icon: '📄', en: 'Document Templates', vi: 'Mẫu tài liệu chuẩn', href: 'document-templates.html' }) +
+    link({ icon: '📚', en: 'Reference Materials', vi: 'Tài liệu tham khảo', href: 'references.html' }) +
     '</div>';
 
   var el = document.getElementById('sidebar');
