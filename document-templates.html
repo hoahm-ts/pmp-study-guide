@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Templates | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .tmpl-jump { display:flex; flex-wrap:wrap; gap:8px; margin:16px 0 24px; }
+    .tmpl-jump a { padding:5px 14px; border-radius:20px; font-size:.78rem; font-weight:600; background:var(--surface); border:1px solid var(--border); color:var(--secondary); text-decoration:none; transition:all .2s; }
+    .tmpl-jump a:hover { background:var(--secondary); color:#fff; border-color:var(--secondary); }
+    .meth-badge { display:inline-block; padding:3px 10px; border-radius:12px; font-size:.68rem; font-weight:700; margin-right:8px; }
+    .mb-w { background:#dbeafe; color:#1d4ed8; }
+    .mb-s { background:#d1fae5; color:#065f46; }
+    .mb-k { background:#fef3c7; color:#92400e; }
+    .mb-h { background:#ede9fe; color:#6d28d9; }
+    .acc-item { margin-bottom:8px; }
+    .acc-header { font-size:.88rem; }
+    .acc-body .tmpl { margin:0; border-radius:0 0 8px 8px; font-size:.76rem; }
+  </style>
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="sdlc-artifacts.html">SDLC Artifacts</a><span class="sep">›</span>
+    <span>Document Templates</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-hybrid">All Methodologies</span>
+      <span class="tag tag-eco">Industry Standard</span>
+    </div>
+    <h1>Document Templates</h1>
+    <div class="title-vi">Mẫu tài liệu chuẩn ngành theo từng phương pháp</div>
+    <p class="description">Ready-to-use templates for every document type across Waterfall, Scrum, Kanban, and Hybrid projects. Based on PMI PMBOK, Scrum Guide 2020, and Kanban Method industry standards. Click any document to expand.</p>
+  </div>
+
+  <!-- JUMP NAV -->
+  <div class="tmpl-jump">
+    <a href="#waterfall">🌊 Waterfall (12)</a>
+    <a href="#scrum">🏃 Scrum (9)</a>
+    <a href="#kanban">📋 Kanban (4)</a>
+    <a href="#hybrid">🔀 Hybrid (4)</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- WATERFALL -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="waterfall">
+    <h2><span class="ico">🌊</span> Waterfall / Predictive Documents</h2>
+
+    <!-- 1. Project Charter -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Project Charter <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI PMBOK — Initiation</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Formal document that authorizes the project and grants the PM authority to apply resources. Must be signed by the sponsor.</p>
+        <div class="tmpl">
+<span class="c-comment">PROJECT CHARTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project Name:</span>    [Full project name]
+<span class="c-key">Project ID:</span>      [Org-assigned identifier]
+<span class="c-key">Version:</span>         1.0   <span class="c-key">Date:</span> [YYYY-MM-DD]
+<span class="c-key">Prepared by:</span>     [PM Name]   <span class="c-key">Sponsor:</span> [Name / Title]
+
+<span class="c-comment">── 1. PURPOSE & JUSTIFICATION ───────────────────────────</span>
+<span class="c-key">Business need:</span>
+  [Why is this project needed? What problem or opportunity does it address?]
+<span class="c-key">Strategic alignment:</span>
+  [Which organizational goal or initiative does this support?]
+<span class="c-key">Cost of inaction:</span>
+  [What happens if the project is NOT done?]
+
+<span class="c-comment">── 2. MEASURABLE OBJECTIVES ─────────────────────────────</span>
+<span class="c-key">Objective 1:</span> [SMART — e.g., Reduce loan processing time from 45 min to &lt;5 min by Q3]
+<span class="c-key">Objective 2:</span> [...]
+<span class="c-key">Success criteria:</span> [How will we know the project succeeded?]
+
+<span class="c-comment">── 3. HIGH-LEVEL SCOPE ──────────────────────────────────</span>
+<span class="c-key">In scope:</span>
+  • [Deliverable / feature 1]
+  • [Deliverable / feature 2]
+  • [...]
+<span class="c-key">Out of scope:</span>
+  • [Explicitly excluded item — prevents scope creep]
+  • [...]
+
+<span class="c-comment">── 4. SUMMARY MILESTONE SCHEDULE ────────────────────────</span>
+<span class="c-key">Project start:</span>    [YYYY-MM-DD]
+<span class="c-key">Milestone 1:</span>      [Name] — [YYYY-MM-DD]
+<span class="c-key">Milestone 2:</span>      [Name] — [YYYY-MM-DD]
+<span class="c-key">Go-live / Close:</span>  [YYYY-MM-DD]
+
+<span class="c-comment">── 5. BUDGET SUMMARY ────────────────────────────────────</span>
+<span class="c-key">Estimated total:</span>      $[amount]
+<span class="c-key">Contingency reserve:</span>  $[amount]  ([%] of total)
+<span class="c-key">Budget authority:</span>     [Name — approval limit: $X]
+
+<span class="c-comment">── 6. HIGH-LEVEL RISKS ──────────────────────────────────</span>
+  1. [Risk description]  Probability: H/M/L  Impact: H/M/L
+  2. [Risk description]  Probability: H/M/L  Impact: H/M/L
+  3. [Risk description]  Probability: H/M/L  Impact: H/M/L
+
+<span class="c-comment">── 7. KEY STAKEHOLDERS ──────────────────────────────────</span>
+<span class="c-key">Sponsor:</span>          [Name] | [Title] | [Org]
+<span class="c-key">Project Manager:</span>  [Name] | PM authority level: [define scope of authority]
+<span class="c-key">Key stakeholders:</span>
+  • [Name] — [Role] — [Interest in project]
+  • [Name] — [Role] — [Interest in project]
+
+<span class="c-comment">── 8. ASSUMPTIONS & CONSTRAINTS ─────────────────────────</span>
+<span class="c-key">Assumptions:</span>
+  • [Key assumption the project plan rests on]
+  • [...]
+<span class="c-key">Constraints:</span>
+  • Fixed deadline: [date]
+  • Budget cap: $[amount]
+  • [Regulatory / technology / resource constraint]
+
+<span class="c-comment">── 9. AUTHORIZATION ─────────────────────────────────────</span>
+<span class="c-val">Sponsor signature: ________________________  Date: ___________</span>
+<span class="c-val">PM acceptance:     ________________________  Date: ___________</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Business Case -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Business Case <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI / PRINCE2 — Pre-Initiation</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Justifies the investment and is the basis for sponsor approval. Should quantify benefits and compare alternatives.</p>
+        <div class="tmpl">
+<span class="c-comment">BUSINESS CASE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>     [Name]   <span class="c-key">Version:</span> 1.0   <span class="c-key">Date:</span> [YYYY-MM-DD]
+<span class="c-key">Prepared by:</span> [Name / Role]   <span class="c-key">Reviewed by:</span> [Sponsor]
+
+<span class="c-comment">── 1. EXECUTIVE SUMMARY ─────────────────────────────────</span>
+[3-4 sentences: state the problem, propose the solution,
+summarize the expected ROI, and make the recommendation clearly.]
+
+<span class="c-comment">── 2. PROBLEM / OPPORTUNITY STATEMENT ──────────────────</span>
+<span class="c-key">Current situation:</span>
+  [What is happening now? Use data to quantify the problem.]
+<span class="c-key">Impact of status quo:</span>
+  [What is the cost of doing nothing — financial, operational, risk?]
+<span class="c-key">Target state:</span>
+  [What does success look like after the project?]
+<span class="c-key">Urgency:</span>
+  [Why now? What changes if we wait 6-12 months?]
+
+<span class="c-comment">── 3. ANALYSIS OF ALTERNATIVES ─────────────────────────</span>
+<span class="c-key">Option A — Do Nothing:</span>
+  Description: [what happens if we don't act]
+  Estimated cost: $[ongoing cost of problem]
+  Risk: [high]
+
+<span class="c-key">Option B — [Alternative 1]:</span>
+  Description: [e.g., buy off-the-shelf solution]
+  Cost: $[amount]   Timeline: [months]
+  Pros: [...]   Cons: [...]
+
+<span class="c-key">Option C — [Recommended Solution]:</span>
+  Description: [e.g., build custom platform]
+  Cost: $[amount]   Timeline: [months]
+  Pros: [...]   Cons: [...]
+
+<span class="c-key">Recommended:</span> Option [X] — [1-sentence rationale]
+
+<span class="c-comment">── 4. COST-BENEFIT ANALYSIS ─────────────────────────────</span>
+<span class="c-key">INVESTMENT:</span>
+  Project cost (one-time):      $[amount]
+  Ongoing operational cost/yr:  $[amount]
+  Total 3-year investment:      $[amount]
+
+<span class="c-key">BENEFITS (quantified):</span>
+  Revenue increase/yr:          $[amount]  [confidence: H/M/L]
+  Cost reduction/yr:            $[amount]  [confidence: H/M/L]
+  Risk reduction value/yr:      $[amount]  [confidence: H/M/L]
+  Total 3-year benefit:         $[amount]
+
+<span class="c-key">FINANCIAL METRICS:</span>
+  ROI = (Benefit - Cost) / Cost × 100  = [%]
+  Payback period:               [N months]
+  NPV (at [%] discount rate):   $[amount]
+  IRR:                          [%]
+  Break-even:                   [Month/Year]
+
+<span class="c-comment">── 5. KEY ASSUMPTIONS ───────────────────────────────────</span>
+  • [Assumption 1 + what happens if wrong]
+  • [Assumption 2]
+
+<span class="c-comment">── 6. KEY RISKS TO BUSINESS CASE ───────────────────────</span>
+  • [Risk that could undermine financial projections]
+  • [Market / regulatory / technology risk]
+
+<span class="c-comment">── 7. RECOMMENDATION & DECISION ────────────────────────</span>
+<span class="c-val">Decision requested: [ ] Approve  [ ] Reject  [ ] Defer  [ ] More info</span>
+<span class="c-val">Decision maker: [Name / Role]   Decision date: ___________</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Stakeholder Register -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Stakeholder Register <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI PMBOK — Initiation / Ongoing</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Living document updated throughout the project. Captures who each stakeholder is, what they care about, and how to engage them.</p>
+        <div class="tmpl">
+<span class="c-comment">STAKEHOLDER REGISTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span> [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Last updated:</span> [YYYY-MM-DD]
+
+<span class="c-comment">── STAKEHOLDER PROFILES ──────────────────────────────────</span>
+<span class="c-key">ID:</span>              STK-001
+<span class="c-key">Name / Role:</span>     [Name] — [Title]
+<span class="c-key">Organization:</span>   [Dept / Company]
+<span class="c-key">Contact:</span>        [Email / Slack handle]
+
+<span class="c-key">Classification:</span>
+  Power (ability to impact project):  [ ] High  [ ] Medium  [ ] Low
+  Interest (care level):              [ ] High  [ ] Medium  [ ] Low
+  Quadrant:  [ ] Manage Closely  [ ] Keep Satisfied  [ ] Inform  [ ] Monitor
+
+<span class="c-key">Role in project:</span>     [Sponsor / Decision-maker / Approver / User / Reviewer]
+<span class="c-key">Requirements:</span>       [What they need from this project]
+<span class="c-key">Expectations:</span>       [How they expect to be treated / informed]
+<span class="c-key">Primary concern:</span>    [What they worry about most]
+<span class="c-key">Current stance:</span>     [ ] Strongly supports  [ ] Supports  [ ] Neutral  [ ] Resistant  [ ] Strongly opposes
+<span class="c-key">Target stance:</span>      [ ] Supports  [ ] Neutral  (realistic goal)
+
+<span class="c-key">Engagement strategy:</span>
+  [How to engage: frequency, channel, tone, who initiates contact]
+<span class="c-key">Communication:</span>
+  Channel: [email / Slack / meeting / report]
+  Frequency: [weekly / monthly / as-needed]
+  Content: [what they receive — status report / demo invite / decision request]
+
+<span class="c-key">Last engagement:</span>    [YYYY-MM-DD]   Outcome: [what happened]
+<span class="c-key">Next action:</span>        [what PM will do next]   By: [YYYY-MM-DD]
+
+<span class="c-comment">── ENGAGEMENT HEALTH ─────────────────────────────────────</span>
+<span class="c-val">At-risk stakeholders (not engaged as planned): [list]</span>
+<span class="c-val">Last full register review: [date]   Next review: [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Risk Register -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Risk Register <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI PMBOK — Planning / Ongoing</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Central repository for all identified risks. Updated weekly during execution. A risk register with vague entries is useless — every entry must be specific and actionable.</p>
+        <div class="tmpl">
+<span class="c-comment">RISK REGISTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span> [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Last updated:</span> [YYYY-MM-DD]
+<span class="c-key">Threshold:</span> Escalate to sponsor if risk score &gt; 12 (on 5×5 matrix)
+
+<span class="c-comment">── RISK ENTRY ────────────────────────────────────────────</span>
+<span class="c-key">Risk ID:</span>     RISK-[001]
+<span class="c-key">Category:</span>   [ ] Technical  [ ] Schedule  [ ] Cost  [ ] Resource  [ ] External  [ ] Scope
+<span class="c-key">Type:</span>       [ ] Threat  [ ] Opportunity
+
+<span class="c-key">Risk statement:</span>
+  "There is a risk that [EVENT] may occur, resulting in [IMPACT]"
+
+<span class="c-key">Probability:</span>   [ ] Very High(5)  [ ] High(4)  [ ] Medium(3)  [ ] Low(2)  [ ] Very Low(1)
+<span class="c-key">Impact:</span>        [ ] Very High(5)  [ ] High(4)  [ ] Medium(3)  [ ] Low(2)  [ ] Very Low(1)
+<span class="c-key">Risk Score:</span>    [P × I = score]   Status: [ ] 🔴 Critical(&gt;15) [ ] 🟠 High(9-15) [ ] 🟡 Medium(4-8) [ ] 🟢 Low(1-3)
+<span class="c-key">Risk Owner:</span>    [Name / Role — person responsible for monitoring and response]
+
+<span class="c-key">Response strategy:</span>
+  THREAT:      [ ] Avoid  [ ] Transfer  [ ] Mitigate  [ ] Escalate  [ ] Accept
+  OPPORTUNITY: [ ] Exploit  [ ] Share  [ ] Enhance  [ ] Accept
+
+<span class="c-key">Response actions:</span>
+  1. [Specific action]  Owner: [name]  Due: [YYYY-MM-DD]
+  2. [Specific action]  Owner: [name]  Due: [YYYY-MM-DD]
+
+<span class="c-key">Trigger / Early warning:</span>
+  [Observable signal that this risk is starting to materialize]
+
+<span class="c-key">Contingency plan:</span>
+  [What we do IF the risk occurs despite mitigation]
+<span class="c-key">Contingency reserve:</span>  $[amount] / [N days]
+
+<span class="c-key">Status:</span>     [ ] Open  [ ] Monitoring  [ ] Response in progress  [ ] Closed  [ ] Occurred
+<span class="c-key">Opened:</span>     [YYYY-MM-DD]   <span class="c-key">Last reviewed:</span> [YYYY-MM-DD]   <span class="c-key">Next review:</span> [YYYY-MM-DD]
+
+<span class="c-comment">── RISK SUMMARY ──────────────────────────────────────────</span>
+<span class="c-val">Total risks: [n]  Critical: [n]  High: [n]  Medium: [n]  Low: [n]</span>
+<span class="c-val">Risks occurred this period: [n]   New risks identified: [n]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Communications Management Plan -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Communications Management Plan <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI PMBOK — Planning</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">COMMUNICATIONS MANAGEMENT PLAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span> [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Version:</span> 1.0   <span class="c-key">Date:</span> [YYYY-MM-DD]
+
+<span class="c-comment">── COMMUNICATION MATRIX ──────────────────────────────────</span>
+What               | Who (sender→receiver)   | How          | When          | Format
+───────────────────|─────────────────────────|──────────────|───────────────|────────
+Weekly status rpt  | PM → Sponsor + PMO      | Email+Conflu | Every Monday  | RAG template
+Steering comm mtg  | PM → Steering Cmte      | Video call   | Monthly       | Slide deck
+Sprint review demo | PO+PM → Stakeholders    | Video call   | End of sprint | Live demo
+Risk register updt | PM → PMO               | Confluence   | Bi-weekly     | Updated log
+Technical update   | Tech Lead → Dev team    | Slack+call   | Weekly        | Meeting notes
+Partner update     | PM → External partner  | Email        | As needed     | Formal email
+
+<span class="c-comment">── ESCALATION PROCEDURES ─────────────────────────────────</span>
+<span class="c-key">Trigger:</span> Schedule slips &gt; 1 sprint → <span class="c-key">To:</span> Sponsor within 24h  <span class="c-key">Via:</span> Call first, email follow-up
+<span class="c-key">Trigger:</span> Budget variance &gt; 10%   → <span class="c-key">To:</span> PMO within 24h       <span class="c-key">Via:</span> Formal variance report
+<span class="c-key">Trigger:</span> P0 production defect    → <span class="c-key">To:</span> Sponsor + partner     <span class="c-key">Via:</span> Call within 2 hours
+<span class="c-key">Trigger:</span> Team member exit        → <span class="c-key">To:</span> Sponsor same day      <span class="c-key">Via:</span> Call
+
+<span class="c-comment">── SENSITIVE TOPICS PROTOCOL ─────────────────────────────</span>
+Bad news:       Always verbal first, written confirmation within 24h
+Scope changes:  CCB process — never by email announcement alone
+Personnel:      Via PM only, not in group channels
+
+<span class="c-comment">── COMMUNICATION CONSTRAINTS ─────────────────────────────</span>
+<span class="c-key">Language:</span>         [Primary: English | Secondary: Vietnamese]
+<span class="c-key">Confidentiality:</span>  [Risk register is internal-only / Partner NDA in place]
+<span class="c-key">Technology:</span>       [Approved tools: Confluence, Jira, Slack, Email, Zoom]
+
+<span class="c-comment">── MEETING STANDARDS ─────────────────────────────────────</span>
+<span class="c-val">Agendas shared 24h before meeting. Minutes distributed within 24h after.</span>
+<span class="c-val">Decisions documented in Decision Log (Confluence). Actions in Jira.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Weekly Status Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Weekly Status Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Execution — Weekly</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">PROJECT STATUS REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>   [Name]       <span class="c-key">Reporting period:</span> [YYYY-MM-DD] to [YYYY-MM-DD]
+<span class="c-key">PM:</span>        [Name]       <span class="c-key">Phase:</span> [Sprint X / Planning / Execution]
+<span class="c-key">Report #:</span>  [N]          <span class="c-key">Distribution:</span> [Sponsor, PMO, Steering Cmte]
+
+<span class="c-comment">── OVERALL STATUS ────────────────────────────────────────</span>
+<span class="c-key">Schedule:</span>  🟢 Green / 🟡 Amber / 🔴 Red
+<span class="c-key">Budget:</span>    🟢 Green / 🟡 Amber / 🔴 Red
+<span class="c-key">Scope:</span>     🟢 Green / 🟡 Amber / 🔴 Red
+<span class="c-key">Quality:</span>   🟢 Green / 🟡 Amber / 🔴 Red
+<span class="c-key">Summary:</span>   [1 sentence — the most important thing for leadership to know this week]
+
+<span class="c-comment">── ACCOMPLISHMENTS THIS PERIOD ──────────────────────────</span>
+  ✓ [Completed deliverable / milestone — link to Jira or Confluence]
+  ✓ [...]
+  ✓ [...]
+
+<span class="c-comment">── PLANNED NEXT PERIOD ──────────────────────────────────</span>
+  → [Activity / milestone — owner — target date]
+  → [...]
+
+<span class="c-comment">── EARNED VALUE METRICS ─────────────────────────────────</span>
+<span class="c-key">BAC:</span>  $[total budget]    <span class="c-key">Budget consumed:</span> $[AC] ([%]%)
+<span class="c-key">PV:</span>   $[planned value]   <span class="c-key">EV:</span> $[earned value]    <span class="c-key">AC:</span> $[actual cost]
+<span class="c-key">CPI:</span>  [EV/AC]  [&gt;1.0 = under budget / &lt;1.0 = over budget]
+<span class="c-key">SPI:</span>  [EV/PV]  [&gt;1.0 = ahead / &lt;1.0 = behind schedule]
+<span class="c-key">EAC:</span>  $[BAC/CPI]   <span class="c-key">VAC:</span> $[BAC-EAC]   [+ = savings / - = overrun]
+
+<span class="c-comment">── RISKS & ISSUES ────────────────────────────────────────</span>
+<span class="c-key">New risk:</span>  [Description]  Prob: H/M/L  Impact: H/M/L  Owner: [name]  Response: [action]
+<span class="c-key">Issue:</span>     [Description]  Impact: [what's blocked]  Owner: [name]  Due: [date]  Status: [open/resolving]
+
+<span class="c-comment">── CHANGES THIS PERIOD ──────────────────────────────────</span>
+<span class="c-key">Approved CRs:</span>   [CR# — title — baseline impact]
+<span class="c-key">Pending CRs:</span>    [CR# — title — awaiting CCB decision]
+
+<span class="c-comment">── DECISIONS NEEDED ─────────────────────────────────────</span>
+<span class="c-val">1. [Decision needed — from whom — by when — consequence if delayed]</span>
+<span class="c-val">Next report: [YYYY-MM-DD]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. Change Request Form -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Change Request Form <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Execution — As needed</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">CHANGE REQUEST FORM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">CR Number:</span>     CR-[###]         <span class="c-key">Date submitted:</span> [YYYY-MM-DD]
+<span class="c-key">Project:</span>       [Name]           <span class="c-key">PM:</span> [Name]
+<span class="c-key">Requested by:</span>  [Name / Role]    <span class="c-key">Priority:</span> [ ] Critical  [ ] High  [ ] Normal  [ ] Low
+<span class="c-key">Change type:</span>   [ ] Scope  [ ] Schedule  [ ] Budget  [ ] Technical  [ ] Regulatory  [ ] Other
+
+<span class="c-comment">── 1. CHANGE DESCRIPTION ────────────────────────────────</span>
+<span class="c-key">Current state:</span>     [What exists / what is planned now]
+<span class="c-key">Requested change:</span> [What specifically should be different — clear and unambiguous]
+<span class="c-key">Business driver:</span>  [Why is this change needed? Business value, risk, regulatory, customer request]
+
+<span class="c-comment">── 2. IMPACT ANALYSIS ───────────────────────────────────</span>
+<span class="c-key">Scope impact:</span>
+  [What is added / removed / modified. New work packages or deliverables.]
+
+<span class="c-key">Schedule impact:</span>
+  Days added to project: +[N] days
+  Milestones affected: [list]
+  New go-live date (if applicable): [YYYY-MM-DD]
+
+<span class="c-key">Cost impact:</span>
+  Additional effort: [person-days] × $[rate] = $[amount]
+  Direct costs (tools, licenses, vendor): $[amount]
+  Total cost increase: $[amount]   New budget total: $[amount]
+
+<span class="c-key">Quality impact:</span>
+  [Any risk to existing deliverables, regression risk, testing required]
+
+<span class="c-key">Resource impact:</span>
+  [Additional roles or capacity needed]
+
+<span class="c-key">Risk introduced:</span>
+  [New risks this change creates]
+
+<span class="c-comment">── 3. OPTIONS ANALYSIS ───────────────────────────────────</span>
+<span class="c-key">Option A — Full implementation:</span>   Cost $[X]  Duration +[N]d  Risk [H/M/L]
+<span class="c-key">Option B — Partial implementation:</span>  Cost $[X]  Duration +[N]d  Risk [H/M/L]
+<span class="c-key">Option C — Reject / Alternative:</span>   [What happens if rejected? Alternative approach?]
+
+<span class="c-key">Recommended option:</span> [A/B/C] — [1-sentence rationale]
+
+<span class="c-comment">── 4. CCB DECISION ──────────────────────────────────────</span>
+<span class="c-key">CCB review date:</span>  [YYYY-MM-DD]
+<span class="c-key">Decision:</span>         [ ] Approved  [ ] Rejected  [ ] Deferred  [ ] Needs more info
+<span class="c-key">Conditions:</span>       [Any approval conditions]
+<span class="c-key">Approved by:</span>      [Name / Role]   <span class="c-key">Signature:</span> _____________
+
+<span class="c-comment">── 5. IMPLEMENTATION ─────────────────────────────────────</span>
+<span class="c-val">Baseline updated: [ ] Yes — [date]  Stakeholders notified: [ ] Yes — [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Issue Log -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Issue Log <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Execution — Ongoing</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">ISSUE LOG
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span> [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Last updated:</span> [YYYY-MM-DD]
+
+<span class="c-comment">── ISSUE ENTRY ───────────────────────────────────────────</span>
+<span class="c-key">Issue ID:</span>      ISS-[001]
+<span class="c-key">Category:</span>     [ ] Technical  [ ] Process  [ ] Resource  [ ] External  [ ] Dependency
+<span class="c-key">Severity:</span>     [ ] Critical (blocks work) [ ] High (major impact) [ ] Medium (workaround exists) [ ] Low
+
+<span class="c-key">Title:</span>         [Short, descriptive title]
+<span class="c-key">Description:</span>   [Specific observable problem — not vague. What happened, where, when.]
+<span class="c-key">Impact:</span>        [What work is blocked or degraded. Business terms, not just technical.]
+
+<span class="c-key">Identified:</span>   [YYYY-MM-DD]   <span class="c-key">By:</span> [Name / Role]
+<span class="c-key">Owner:</span>         [Name responsible for resolution]
+<span class="c-key">Target date:</span>   [YYYY-MM-DD — when must this be resolved to protect the project?]
+
+<span class="c-key">Root cause:</span>    [Why did this happen? Use 5 Whys if needed.]
+<span class="c-key">Actions:</span>
+  1. [Immediate containment action]   Owner: [name]   Due: [date]
+  2. [Corrective action]              Owner: [name]   Due: [date]
+  3. [Preventive action]              Owner: [name]   Due: [date]
+
+<span class="c-key">Escalated?</span>     [ ] No  [ ] Yes — Escalated to: [name/role] on [date]
+<span class="c-key">Status:</span>        [ ] Open  [ ] In Progress  [ ] Escalated  [ ] Resolved  [ ] Closed
+<span class="c-key">Resolved:</span>      [YYYY-MM-DD]   Resolution: [what was done]
+
+<span class="c-comment">── ISSUE SUMMARY ─────────────────────────────────────────</span>
+<span class="c-val">Open: [n]  Critical: [n]  Overdue (past target): [n]  Resolved this period: [n]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Meeting Minutes -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Meeting Minutes <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">All phases — Every meeting</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">MEETING MINUTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Meeting:</span>      [Meeting name / type]
+<span class="c-key">Date:</span>         [YYYY-MM-DD]   <span class="c-key">Time:</span> [HH:MM] – [HH:MM]
+<span class="c-key">Location:</span>     [Room / Video link]
+<span class="c-key">Facilitator:</span>  [Name]         <span class="c-key">Note-taker:</span> [Name]
+
+<span class="c-key">Attendees:</span>
+  ✓ [Name] — [Role]
+  ✓ [Name] — [Role]
+  ✗ [Name] — [Role] — Absent (regrets / no notice)
+
+<span class="c-comment">── AGENDA & DISCUSSION ──────────────────────────────────</span>
+<span class="c-key">1. [Agenda item]</span>
+   Discussion: [Key points raised, different perspectives]
+   Decision:   [What was decided — be specific]
+   Outcome:    [ ] Decision made  [ ] Further discussion needed  [ ] Escalated
+
+<span class="c-key">2. [Agenda item]</span>
+   Discussion: [...]
+   Decision:   [...]
+
+<span class="c-key">3. [Agenda item]</span>
+   Discussion: [...]
+   Decision:   [...]
+
+<span class="c-comment">── ACTION ITEMS ──────────────────────────────────────────</span>
+#  | Action                          | Owner    | Due date   | Status
+───|─────────────────────────────────|──────────|────────────|────────
+1  | [Specific action — verb first]  | [Name]   | [YYYY-MM-DD] | Open
+2  | [Specific action]               | [Name]   | [YYYY-MM-DD] | Open
+3  | [Specific action]               | [Name]   | [YYYY-MM-DD] | Open
+
+<span class="c-comment">── PARKING LOT (deferred topics) ───────────────────────</span>
+  • [Topic deferred — why — who owns it — when to revisit]
+
+<span class="c-comment">── NEXT MEETING ──────────────────────────────────────────</span>
+<span class="c-val">Date: [YYYY-MM-DD]  Time: [HH:MM]  Location: [room/link]</span>
+<span class="c-val">Pre-reads to send: [what attendees should review in advance]</span>
+<span class="c-val">Minutes distributed: [YYYY-MM-DD] — within 24h of meeting</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Variance Analysis Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Variance Analysis Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Monitor & Control — Monthly</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">VARIANCE ANALYSIS REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>  [Name]   <span class="c-key">Period:</span> [YYYY-MM-DD] to [YYYY-MM-DD]   <span class="c-key">PM:</span> [Name]
+
+<span class="c-comment">── EVM SNAPSHOT ──────────────────────────────────────────</span>
+<span class="c-key">BAC</span>  (Budget at Completion):   $[total approved budget]
+<span class="c-key">PV</span>   (Planned Value):          $[amount]   ([%]% planned complete)
+<span class="c-key">EV</span>   (Earned Value):           $[amount]   ([%]% actually complete)
+<span class="c-key">AC</span>   (Actual Cost):            $[amount]   ([%]% budget consumed)
+
+<span class="c-comment">── VARIANCE ANALYSIS ─────────────────────────────────────</span>
+<span class="c-key">Schedule:</span>
+  SV = EV - PV = $[amount]   [🟢 + ahead / 🔴 - behind]
+  SPI = EV/PV = [value]      [🟢 &gt;1.0 ahead / 🔴 &lt;1.0 behind]
+  Explanation: [Why are we ahead/behind? Specific activities causing the variance]
+  Trend: [SPI improving / stable / declining over last 3 periods]
+
+<span class="c-key">Cost:</span>
+  CV = EV - AC = $[amount]   [🟢 + under budget / 🔴 - over budget]
+  CPI = EV/AC = [value]      [🟢 &gt;1.0 efficient / 🔴 &lt;1.0 over-spending]
+  Explanation: [Why are we over/under? Specific cost drivers]
+  Trend: [CPI improving / stable / declining]
+
+<span class="c-comment">── FORECAST ──────────────────────────────────────────────</span>
+<span class="c-key">EAC</span> (Est. at Completion) = BAC/CPI:  $[amount]
+<span class="c-key">ETC</span> (Est. to Complete)  = EAC - AC:  $[amount]
+<span class="c-key">VAC</span> (Variance at Comp)  = BAC - EAC: $[amount]  [+ savings / - overrun]
+<span class="c-key">TCPI</span> (efficiency needed to meet BAC): [value]  [&gt;1.1 = unrealistic]
+
+<span class="c-key">Schedule forecast:</span>  Original end: [date]  Current forecast: [date]  Delta: +/-[N] days
+
+<span class="c-comment">── ROOT CAUSE & CORRECTIVE ACTIONS ─────────────────────</span>
+<span class="c-key">Primary variance driver:</span>  [Main cause of schedule/cost variance]
+<span class="c-key">Contributing factors:</span>     [Secondary causes]
+<span class="c-key">Controllable vs external:</span> [What PM can fix vs. external factors]
+
+<span class="c-key">Corrective actions:</span>
+  1. [Action]  Owner: [name]  Timeline: [date]  Expected impact: [improvement]
+  2. [Action]  Owner: [name]  Timeline: [date]  Expected impact: [improvement]
+
+<span class="c-comment">── MANAGEMENT DECISION NEEDED ───────────────────────────</span>
+<span class="c-val">[ ] No decision needed — variance within acceptable threshold</span>
+<span class="c-val">[ ] Decision needed: [what sponsor/PMO must decide] by [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. Final Project Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Final Project Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Closure</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">FINAL PROJECT REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>  [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Report date:</span> [YYYY-MM-DD]
+<span class="c-key">Start:</span>    [YYYY-MM-DD]   <span class="c-key">End:</span> [YYYY-MM-DD]   <span class="c-key">Duration:</span> [N months]
+
+<span class="c-comment">── 1. EXECUTIVE SUMMARY ─────────────────────────────────</span>
+[3-4 sentences: was the project successful, what was delivered,
+key performance vs. baseline, and what value was realized.]
+
+<span class="c-comment">── 2. PROJECT OBJECTIVES — ACHIEVED? ───────────────────</span>
+Objective                    | Target              | Result              | Met?
+─────────────────────────────|─────────────────────|─────────────────────|──────
+[Objective 1]                | [target metric]     | [actual metric]     | ✅/❌
+[Objective 2]                | [target metric]     | [actual metric]     | ✅/❌
+[Objective 3]                | [target metric]     | [actual metric]     | ✅/⚠️
+
+<span class="c-comment">── 3. SCOPE PERFORMANCE ──────────────────────────────────</span>
+<span class="c-key">Planned deliverables:</span>   [list]
+<span class="c-key">Delivered:</span>              [list — mark any that were deferred or cancelled]
+<span class="c-key">Scope changes:</span>          [N changes approved via CCB]
+<span class="c-key">Deferred items:</span>         [what was moved to Phase 2 / operations]
+
+<span class="c-comment">── 4. SCHEDULE PERFORMANCE ──────────────────────────────</span>
+<span class="c-key">Planned end date:</span>   [YYYY-MM-DD]
+<span class="c-key">Actual end date:</span>    [YYYY-MM-DD]
+<span class="c-key">Variance:</span>          +/-[N] days  ([variance explanation])
+<span class="c-key">Final SPI:</span>         [value]
+
+<span class="c-comment">── 5. BUDGET PERFORMANCE ─────────────────────────────────</span>
+<span class="c-key">Approved budget (BAC):</span>  $[amount]
+<span class="c-key">Actual cost (AC):</span>       $[amount]   ([%]% of BAC)
+<span class="c-key">Variance:</span>               $[+/-amount]  [under budget = savings / over = overrun]
+<span class="c-key">Final CPI:</span>              [value]
+<span class="c-key">Contingency used:</span>       $[amount] of $[reserve] allocated
+
+<span class="c-comment">── 6. QUALITY PERFORMANCE ───────────────────────────────</span>
+<span class="c-key">Defects found in QA:</span>   [n]   <span class="c-key">Escaped to prod:</span> [n]
+<span class="c-key">Customer acceptance:</span>   [First pass / required N revision cycles]
+<span class="c-key">Quality goals met:</span>     [Yes / Partially — explain]
+
+<span class="c-comment">── 7. KEY LESSONS LEARNED ───────────────────────────────</span>
+  1. [Most important lesson — specific, actionable recommendation]
+  2. [Lesson 2]
+  3. [Lesson 3]
+Full lessons learned register: [Confluence link]
+
+<span class="c-comment">── 8. FORMAL ACCEPTANCE ─────────────────────────────────</span>
+All project deliverables have been completed and accepted.
+<span class="c-val">Sponsor sign-off:  ________________________  Date: ___________</span>
+<span class="c-val">Customer sign-off: ________________________  Date: ___________</span>
+<span class="c-val">PM sign-off:       ________________________  Date: ___________</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Lessons Learned Register -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-w">W</span> Lessons Learned Register <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Closure / Ongoing</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">LESSONS LEARNED REGISTER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>  [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Period:</span> [phase or project]
+<span class="c-key">Session date:</span> [YYYY-MM-DD]   <span class="c-key">Facilitator:</span> [Name]
+
+<span class="c-comment">── LESSON ENTRY ──────────────────────────────────────────</span>
+<span class="c-key">ID:</span>          LL-[001]
+<span class="c-key">Category:</span>   [ ] Process  [ ] Technical  [ ] Stakeholder  [ ] Risk  [ ] People  [ ] Tools
+<span class="c-key">Type:</span>       [ ] What Worked Well  [ ] What Didn't Work  [ ] Surprise / Unexpected
+<span class="c-key">Phase:</span>      [ ] Initiation  [ ] Planning  [ ] Execution  [ ] Closure
+
+<span class="c-key">Description:</span>
+  [Specific, factual account of what happened. No blame. Observable, verifiable.]
+<span class="c-key">Root cause:</span>
+  [Why did this happen?]
+<span class="c-key">Impact:</span>
+  [Quantified effect — e.g., cost $15K, delayed 2 weeks, caused 3 re-works]
+<span class="c-key">Recommendation:</span>
+  [Specific, actionable advice for future projects. Starts with a verb.
+  E.g., "Define data localization requirements in Sprint 0 before architecture is finalized."]
+<span class="c-key">Applicable to:</span>
+  [What type of future project benefits from this lesson]
+<span class="c-key">Captured by:</span>  [Name]   <span class="c-key">Date:</span> [YYYY-MM-DD]
+<span class="c-key">Shared to PMO:</span> [ ] Yes  [ ] No — Reason: [if not shared]
+
+<span class="c-comment">── LESSONS SUMMARY ───────────────────────────────────────</span>
+<span class="c-val">Total: [n]  What worked: [n]  What didn't: [n]  Surprises: [n]</span>
+<span class="c-val">Top 3 to apply to next project: [titles]</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /waterfall -->
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- SCRUM -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="scrum">
+    <h2><span class="ico">🏃</span> Scrum Documents</h2>
+
+    <!-- 13. Product Vision -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Product Vision Statement <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum Guide — Sprint 0</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Geoffrey Moore's "Elevator Pitch" format — widely used in Agile product development. The whole team should be able to recite this from memory.</p>
+        <div class="tmpl">
+<span class="c-comment">PRODUCT VISION STATEMENT (Geoffrey Moore format)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">FOR</span>        [Target customer / user — who they are]
+<span class="c-key">WHO</span>        [Statement of the need or opportunity — what problem they have]
+<span class="c-key">THE</span>        [Product name]
+<span class="c-key">IS A</span>       [Product category — what type of product it is]
+<span class="c-key">THAT</span>       [Key benefit — the compelling reason to use it]
+<span class="c-key">UNLIKE</span>     [Primary competitive alternative / current solution]
+<span class="c-key">OUR PRODUCT</span> [Primary differentiation — why ours is better]
+
+<span class="c-comment">── EXAMPLE ───────────────────────────────────────────────</span>
+FOR      Loan officers at partner banks across Southeast Asia
+WHO      spend 45 minutes manually processing each loan application
+THE      Project Alpha Lending Platform
+IS A     digital loan origination system
+THAT     reduces processing time to under 5 minutes with automated credit scoring
+UNLIKE   the current spreadsheet-and-phone-call process
+OUR PRODUCT uses real-time credit engine integration and guided digital workflows
+
+<span class="c-comment">── PRODUCT GOALS (from Product Vision) ─────────────────</span>
+<span class="c-key">Goal 1:</span>  [Measurable outcome — e.g., 90% of loans processed in &lt;5 min by Q3]
+<span class="c-key">Goal 2:</span>  [Measurable outcome]
+<span class="c-key">Goal 3:</span>  [Measurable outcome]
+
+<span class="c-comment">── NON-GOALS (what we are NOT building) ────────────────</span>
+  • [Explicitly excluded — prevents scope creep]
+  • [...]
+
+<span class="c-val">Last updated: [date]  Owner: [Product Owner]  Reviewed by: [Sponsor]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14. Definition of Done -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Definition of Done (DoD) <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum Guide — Sprint 0 / Ongoing</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">The DoD is the team's quality contract. Every story must pass ALL DoD criteria before it can be marked Done. Teams should evolve the DoD based on retrospective feedback.</p>
+        <div class="tmpl">
+<span class="c-comment">DEFINITION OF DONE (DoD)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Team:</span>  [Team name]   <span class="c-key">Version:</span> [v1.x]   <span class="c-key">Effective:</span> [Sprint N]
+<span class="c-key">Note:</span>  ALL criteria must be met before a story is marked "Done".
+
+<span class="c-comment">── CODE QUALITY ──────────────────────────────────────────</span>
+[ ] Code reviewed by at least 1 other developer (PR approved)
+[ ] Code follows team style guide / linting passes
+[ ] No critical or high-severity static analysis warnings
+[ ] No secrets, credentials, or PII hardcoded in source
+[ ] Technical debt introduced is logged in backlog
+
+<span class="c-comment">── TESTING ───────────────────────────────────────────────</span>
+[ ] Unit test coverage &gt;= [X]% for changed code
+[ ] All existing unit tests pass (no regressions)
+[ ] Integration tests pass in CI/CD pipeline
+[ ] Acceptance criteria validated by QA or Product Owner
+[ ] Performance tested: API response p95 &lt; [Xms] under load
+[ ] Edge cases covered: [list key edge cases for this feature type]
+
+<span class="c-comment">── SECURITY ──────────────────────────────────────────────</span>
+[ ] OWASP Top 10 checklist reviewed for this feature
+[ ] Dependency vulnerabilities scanned (no critical/high unresolved)
+[ ] Authentication/authorization rules validated
+[ ] Input validation implemented for all user inputs
+
+<span class="c-comment">── DOCUMENTATION ─────────────────────────────────────────</span>
+[ ] Inline code comments for complex logic (not obvious code)
+[ ] API endpoints documented (Swagger/OpenAPI updated)
+[ ] README updated if setup/config changed
+[ ] User-facing change noted in release notes draft
+
+<span class="c-comment">── DEPLOYMENT READINESS ──────────────────────────────────</span>
+[ ] Deployed successfully to staging environment
+[ ] Feature flag configured (if applicable)
+[ ] Monitoring/alerting configured for new endpoints
+[ ] Rollback plan documented for high-risk changes
+
+<span class="c-comment">── PRODUCT ACCEPTANCE ────────────────────────────────────</span>
+[ ] All acceptance criteria (ACs) from the story are met
+[ ] Product Owner has reviewed/demoed the feature
+[ ] No open P0 or P1 defects related to this story
+
+<span class="c-val">DoD evolution: reviewed in retrospective. Current version: [date]. Changes logged below.</span>
+<span class="c-val">Change log: [Sprint N] — added [criterion] because [reason from retro]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 15. User Story Template -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> User Story Template <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum / Agile — Backlog</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">USER STORY TEMPLATE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Story ID:</span>    US-[###]
+<span class="c-key">Epic:</span>        [Parent epic name]
+<span class="c-key">Priority:</span>    [ ] Must Have  [ ] Should Have  [ ] Could Have  [ ] Won't Have (MoSCoW)
+<span class="c-key">Story Points:</span> [Fibonacci: 1, 2, 3, 5, 8, 13, 21]
+<span class="c-key">Sprint:</span>      [Target sprint — or "Backlog"]
+
+<span class="c-comment">── STORY STATEMENT ───────────────────────────────────────</span>
+AS A    [specific user role — not "user", be specific: "Loan Officer", "Branch Manager"]
+I WANT  [specific goal / feature / capability]
+SO THAT [business value / benefit / outcome — the "why"]
+
+<span class="c-comment">── ACCEPTANCE CRITERIA ───────────────────────────────────</span>
+Use Given / When / Then (BDD format):
+
+SCENARIO 1: [Happy path — name it]
+  GIVEN  [precondition — system state or context]
+  WHEN   [user action or event]
+  THEN   [expected observable outcome]
+  AND    [additional expected outcome if needed]
+
+SCENARIO 2: [Edge case]
+  GIVEN  [different precondition]
+  WHEN   [action]
+  THEN   [expected outcome]
+
+SCENARIO 3: [Error / failure path]
+  GIVEN  [error condition]
+  WHEN   [action]
+  THEN   [expected error handling]
+
+<span class="c-comment">── DEFINITION OF READY (before sprint) ─────────────────</span>
+[ ] Story statement written (As a / I want / So that)
+[ ] Acceptance criteria written and reviewed by PO
+[ ] Story estimated (story points assigned)
+[ ] Dependencies identified and cleared
+[ ] UI mockup attached (if frontend change)
+[ ] Story is small enough to complete in 1 sprint
+
+<span class="c-comment">── NOTES / CONTEXT ───────────────────────────────────────</span>
+<span class="c-key">Technical notes:</span>   [Implementation hints, relevant APIs, DB tables]
+<span class="c-key">Design assets:</span>    [Figma link]
+<span class="c-key">Dependencies:</span>     [Other stories or external dependencies]
+<span class="c-val">Test cases: [TC-XXX link]   Created by: [BA/PO]   Reviewed: [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 16. Sprint Review Notes -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Sprint Review Notes <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum Guide — End of Sprint</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">SPRINT REVIEW NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Sprint:</span>     [Sprint N]   <span class="c-key">Date:</span> [YYYY-MM-DD]   <span class="c-key">Duration:</span> [max 4h for 2-week sprint]
+<span class="c-key">Facilitator:</span> [PO]        <span class="c-key">Scribe:</span> [SM or PM]
+
+<span class="c-key">Attendees:</span>
+  Dev Team: [names]   Product Owner: [name]
+  Stakeholders: [names / roles]   Sponsor: [if attending]
+
+<span class="c-comment">── 1. SPRINT GOAL REVIEW ─────────────────────────────────</span>
+<span class="c-key">Sprint goal:</span>  [State the goal as set in Sprint Planning]
+<span class="c-key">Achieved?</span>     [ ] Yes — fully  [ ] Partially — [what was missing]  [ ] No — [reason]
+
+<span class="c-comment">── 2. DEMO — WHAT WAS BUILT ──────────────────────────────</span>
+Story     | Demo'd? | Accepted? | Stakeholder Feedback
+──────────|─────────|───────────|──────────────────────────────────
+US-[###]  | ✓       | ✓         | [feedback — positive or constructive]
+US-[###]  | ✓       | ✓         | [feedback]
+US-[###]  | ✓       | ✗         | [reason not accepted — what needs to change]
+US-[###]  | ✗       | —         | [not completed — moved to next sprint]
+
+<span class="c-comment">── 3. VELOCITY ───────────────────────────────────────────</span>
+<span class="c-key">Committed:</span>  [SP]   <span class="c-key">Completed:</span>  [SP]   <span class="c-key">Accepted:</span>  [SP]
+<span class="c-key">Completion rate:</span> [%]   <span class="c-key">Running avg velocity:</span> [SP over last 3 sprints]
+
+<span class="c-comment">── 4. BACKLOG UPDATE ─────────────────────────────────────</span>
+<span class="c-key">Backlog refined:</span>   [ ] Yes — during review  [ ] Scheduled separately
+<span class="c-key">New stories added from feedback:</span>  [list]
+<span class="c-key">Stories reprioritized:</span>  [list + reason]
+<span class="c-key">Stories removed:</span>  [list + reason]
+
+<span class="c-comment">── 5. KEY DECISIONS & NEXT STEPS ────────────────────────</span>
+<span class="c-val">Decision: [what was decided about product direction]</span>
+<span class="c-val">Next sprint preview: [what the team plans to work on in Sprint N+1]</span>
+<span class="c-val">Notes distributed: within 24h. Jira updated: [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 17. Retrospective Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Sprint Retrospective Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum Guide — End of Sprint</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">SPRINT RETROSPECTIVE REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Sprint:</span>  [Sprint N]   <span class="c-key">Date:</span> [YYYY-MM-DD]   <span class="c-key">Duration:</span> [max 3h for 2-week sprint]
+<span class="c-key">Facilitator:</span> [SM / PM]   <span class="c-key">Team:</span> [names]   <span class="c-key">Format:</span> [Start/Stop/Continue / 4Ls / Sailboat]
+
+<span class="c-comment">── PREVIOUS RETRO ACTIONS — CHECK-IN ──────────────────</span>
+Action from Sprint [N-1]          | Status      | Impact
+──────────────────────────────────|─────────────|────────────────────────
+[Previous action]                 | ✅ Done      | [what improved]
+[Previous action]                 | ⚠️ Partial  | [what was done, what remains]
+[Previous action]                 | ❌ Not done  | [reason + carry forward? Y/N]
+
+<span class="c-comment">── WHAT WENT WELL ▲ ──────────────────────────────────────</span>
+(Items with most votes from team — specific, not generic)
+  • [Specific thing that worked — with evidence]
+  • [...]
+Top theme: [cluster label]
+
+<span class="c-comment">── WHAT COULD IMPROVE ▼ ──────────────────────────────────</span>
+(Items with most votes — root cause, not just symptoms)
+  • [Specific pain point — why it happened]
+  • [...]
+Top theme: [cluster label]
+
+<span class="c-comment">── IDEAS / EXPERIMENTS ───────────────────────────────────</span>
+  • [Idea suggested by team — feasibility: H/M/L]
+  • [...]
+
+<span class="c-comment">── ACTION ITEMS (MAX 3) ──────────────────────────────────</span>
+<span class="c-key">1.</span> [Specific action — starts with verb — measurable outcome]
+   Owner: [name]   Due: [Sprint N+1 day X]   How we'll know it worked: [metric]
+
+<span class="c-key">2.</span> [Specific action]
+   Owner: [name]   Due: [Sprint N+1 day X]   Success signal: [...]
+
+<span class="c-key">3.</span> [Specific action]
+   Owner: [name]   Due: [...]   Success signal: [...]
+
+<span class="c-comment">── TEAM HEALTH ───────────────────────────────────────────</span>
+<span class="c-key">Energy level:</span>   [1-5]   <span class="c-key">Psychological safety:</span> [1-5]   <span class="c-key">Clarity of goal:</span> [1-5]
+<span class="c-val">Overall team health trend: [improving / stable / declining vs last sprint]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 18. Release Notes -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Release Notes <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum — Every Release</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">RELEASE NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Product:</span>       [Product / system name]
+<span class="c-key">Version:</span>       [v2.1.0] — follow Semantic Versioning (MAJOR.MINOR.PATCH)
+<span class="c-key">Release date:</span>  [YYYY-MM-DD]   <span class="c-key">Environment:</span> Production
+<span class="c-key">Released by:</span>   [Name / Role]   <span class="c-key">Approved by:</span> [PO / PM]
+
+<span class="c-comment">── SUMMARY ───────────────────────────────────────────────</span>
+[2-3 sentences for non-technical readers: what's new, what's fixed, any important notes]
+
+<span class="c-comment">── NEW FEATURES ──────────────────────────────────────────</span>
+[Feature 1 — US-###]
+  [Plain English description of what users can now do. Avoid technical jargon.]
+  User impact: [who is affected and how]
+
+[Feature 2 — US-###]
+  [Description]
+  User impact: [...]
+
+<span class="c-comment">── IMPROVEMENTS ──────────────────────────────────────────</span>
+  • [Enhancement — what improved and by how much — US-###]
+  • [Performance improvement: API response time reduced from Xms to Yms — US-###]
+
+<span class="c-comment">── BUG FIXES ─────────────────────────────────────────────</span>
+  • [BUG-###] [Brief description of bug fixed]  Severity: [P1/P2/P3]
+  • [BUG-###] [Brief description]
+
+<span class="c-comment">── KNOWN ISSUES ──────────────────────────────────────────</span>
+  • [BUG-###] [Known issue not yet fixed] — Workaround: [if available]
+  • None at this time.
+
+<span class="c-comment">── BREAKING CHANGES ──────────────────────────────────────</span>
+  ⚠️ [API endpoint / behavior that changed — what integrators must update]
+  None in this release.
+
+<span class="c-comment">── DEPLOYMENT NOTES ──────────────────────────────────────</span>
+<span class="c-key">Migration required:</span>    [ ] Yes — [migration script / steps]  [ ] No
+<span class="c-key">Config changes:</span>        [environment variables or config file changes needed]
+<span class="c-key">Rollback procedure:</span>    [steps to rollback if needed]
+<span class="c-val">Support contact: [team Slack channel / email for issues]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 19. Go/No-Go Checklist + Deployment Runbook -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Go / No-Go Checklist + Deployment Runbook <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Scrum — Pre-Release</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">GO / NO-GO CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Release:</span>  [v2.1.0]   <span class="c-key">Target date:</span> [YYYY-MM-DD HH:MM]   <span class="c-key">PM:</span> [Name]
+<span class="c-key">Decision meeting:</span> [YYYY-MM-DD HH:MM]   <span class="c-key">Attendees:</span> PM, PO, QA Lead, Tech Lead
+
+<span class="c-comment">── PRODUCT READINESS ─────────────────────────────────────</span>
+[ ] All planned features for this release: Done (DoD met)
+[ ] Zero open P0 or P1 defects
+[ ] P2 defects reviewed — [N] accepted as known issues, documented
+[ ] Product Owner sign-off on all user-facing features
+[ ] UAT completed — sign-off received from [customer/stakeholder]
+
+<span class="c-comment">── QUALITY READINESS ─────────────────────────────────────</span>
+[ ] All regression tests pass (automated suite: [N] tests, [%] pass rate)
+[ ] Performance tests pass: p95 &lt; [Xms], error rate &lt; [Y%]
+[ ] Security scan: no critical/high vulnerabilities unresolved
+[ ] Penetration test results reviewed (if applicable)
+
+<span class="c-comment">── OPERATIONAL READINESS ─────────────────────────────────</span>
+[ ] Deployment runbook reviewed and rehearsed
+[ ] Rollback procedure tested in staging
+[ ] Monitoring and alerting configured for new features
+[ ] On-call escalation path confirmed for release window
+[ ] Database migration script tested in staging
+[ ] Feature flags configured correctly
+
+<span class="c-comment">── STAKEHOLDER READINESS ─────────────────────────────────</span>
+[ ] Release notes distributed to all stakeholders
+[ ] Partner/customer comms sent (if external-facing)
+[ ] Support team briefed on new features and known issues
+[ ] Training completed for impacted users
+
+<span class="c-comment">── DECISION ──────────────────────────────────────────────</span>
+<span class="c-val">[ ] GO — all criteria met. Proceed with release.   Authorized by: _________ Date: _____</span>
+<span class="c-val">[ ] NO-GO — [specific blocking item]. Reschedule to: [date]</span>
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+<span class="c-comment">DEPLOYMENT RUNBOOK</span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+<span class="c-comment">── PRE-DEPLOYMENT (T-60 min) ─────────────────────────────</span>
+[ ] Notify on-call team: release starting at [HH:MM]
+[ ] Confirm maintenance window communicated (if downtime expected)
+[ ] Take database backup: [backup command / link to automated backup]
+[ ] Verify deployment pipeline is green in CI/CD
+
+<span class="c-comment">── DEPLOYMENT STEPS ──────────────────────────────────────</span>
+Step 1: [Action]   Run: [command / link]   Expected: [success indicator]   Time: [Xmin]
+Step 2: [Action]   Run: [command / link]   Expected: [success indicator]   Time: [Xmin]
+Step 3: Run database migration   Expected: [n rows affected, no errors]
+Step 4: Smoke test — verify [key endpoint / feature] is working
+Step 5: Monitor error rate and latency for 10 minutes post-deploy
+
+<span class="c-comment">── POST-DEPLOYMENT VERIFICATION ─────────────────────────</span>
+[ ] [Critical user journey 1] — works as expected
+[ ] [Critical user journey 2] — works as expected
+[ ] Error rate: [&lt;threshold]   Latency p95: [&lt;threshold]
+[ ] No unexpected alerts fired in monitoring
+
+<span class="c-comment">── ROLLBACK PROCEDURE ────────────────────────────────────</span>
+Trigger: Error rate &gt; [X%] OR critical feature broken AND fix time &gt; [30min]
+<span class="c-val">Step 1: [Revert command / blue-green switch]   Expected time: [Xmin]</span>
+<span class="c-val">Step 2: Verify system restored.  Step 3: Notify stakeholders. Step 4: Post-mortem within 24h.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 20. Architecture Decision Record -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-s">S</span> Architecture Decision Record (ADR) <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Michael Nygard format — Sprint 0 / Ongoing</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">ARCHITECTURE DECISION RECORD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">ADR ID:</span>      ADR-[###]
+<span class="c-key">Title:</span>       [Short noun phrase — e.g., "Use PostgreSQL as primary database"]
+<span class="c-key">Date:</span>        [YYYY-MM-DD]
+<span class="c-key">Status:</span>      [ ] Proposed  [ ] Accepted  [ ] Deprecated  [ ] Superseded by ADR-[###]
+<span class="c-key">Deciders:</span>    [Tech Lead, PM, Architect — who was in the room]
+<span class="c-key">Consulted:</span>   [Who was asked for input]
+
+<span class="c-comment">── CONTEXT ───────────────────────────────────────────────</span>
+[What is the issue we're addressing? What forces are at play?
+Include: technical constraints, business requirements, team skills,
+timeline pressure, compliance requirements, performance needs.]
+
+<span class="c-comment">── DECISION ──────────────────────────────────────────────</span>
+[State the decision clearly. "We will use [X]." Not wishy-washy.]
+
+<span class="c-comment">── OPTIONS CONSIDERED ────────────────────────────────────</span>
+<span class="c-key">Option A — [Name]:</span>
+  Pros: [...]   Cons: [...]   Why not chosen: [...]
+
+<span class="c-key">Option B — [Name] (CHOSEN):</span>
+  Pros: [...]   Cons: [...]   Why chosen: [...]
+
+<span class="c-key">Option C — [Name]:</span>
+  Pros: [...]   Cons: [...]   Why not chosen: [...]
+
+<span class="c-comment">── CONSEQUENCES ──────────────────────────────────────────</span>
+<span class="c-key">Positive:</span>
+  • [What improves as a result of this decision]
+<span class="c-key">Negative / Trade-offs:</span>
+  • [What gets worse or what we give up]
+<span class="c-key">Risks:</span>
+  • [Risk introduced — and how we'll mitigate it]
+<span class="c-key">Follow-up actions:</span>
+  • [Anything that needs to happen as a result — ADR, spike, documentation]
+
+<span class="c-val">Review date: [when to revisit this decision — e.g., if volume exceeds Xk/day]</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /scrum -->
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- KANBAN -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="kanban">
+    <h2><span class="ico">📋</span> Kanban Documents</h2>
+
+    <!-- 21. SLA Definition -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-k">K</span> Service Level Agreement (SLA) Definition <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Kanban Method — David Anderson</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">SERVICE LEVEL AGREEMENT (SLA) DEFINITION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Team:</span>  [Team name]   <span class="c-key">Version:</span> [1.x]   <span class="c-key">Effective:</span> [YYYY-MM-DD]
+<span class="c-key">Note:</span>  SLAs are based on LEAD TIME (request received → delivered to customer).
+       Use p85 (85th percentile) of historical cycle time data as your commitment.
+
+<span class="c-comment">── CLASS OF SERVICE & SLA TARGETS ──────────────────────</span>
+Class           | Description                     | Lead Time SLA  | Priority
+────────────────|─────────────────────────────────|────────────────|─────────
+🔴 Expedite     | Production incident / P0 outage | 4 hours        | Bypass WIP
+🟠 Fixed Date   | Regulatory / contractual deadline | By deadline  | Never deprioritize
+🟡 Standard     | Normal feature / bug work        | 10 days (p85)  | FIFO
+⚪ Intangible   | Tech debt / refactoring          | 30 days (p85)  | Fill spare capacity
+
+<span class="c-comment">── HOW SLA IS MEASURED ───────────────────────────────────</span>
+<span class="c-key">Start time:</span>  When item enters "Ready" column (customer committed)
+<span class="c-key">End time:</span>    When item moves to "Done" column (deployed to production)
+<span class="c-key">Measurement:</span> Weekly — % of items delivered within SLA per class of service
+<span class="c-key">Target:</span>      85% of standard items within [10] days
+
+<span class="c-comment">── SLA BREACH PROTOCOL ───────────────────────────────────</span>
+<span class="c-key">Day 7 (standard):</span>  Aging WIP alert — PM investigates and removes blockers
+<span class="c-key">Day 10 (standard):</span> SLA breach — stakeholder notification + root cause investigation
+<span class="c-key">Expedite:</span>         Alert at 2 hours — PM escalates immediately
+
+<span class="c-comment">── SLA PERFORMANCE REPORT ────────────────────────────────</span>
+<span class="c-key">Period:</span>       [YYYY-MM-DD] to [YYYY-MM-DD]
+<span class="c-key">Standard items completed:</span>  [n]   Within SLA: [n] ([%]%)
+<span class="c-key">Fixed Date items:</span>          [n]   Met deadline: [n] ([%]%)
+<span class="c-val">SLA health: 🟢 &gt;85%  /  🟡 70-85%  /  🔴 &lt;70%</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 22. Flow Metrics Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-k">K</span> Flow Metrics Weekly Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Kanban Method — Weekly</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">FLOW METRICS WEEKLY REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Team:</span>  [Name]   <span class="c-key">Period:</span> [YYYY-MM-DD] to [YYYY-MM-DD]   <span class="c-key">Report #:</span> [N]
+
+<span class="c-comment">── THROUGHPUT ────────────────────────────────────────────</span>
+<span class="c-key">Items completed this week:</span>  [n]
+<span class="c-key">4-week rolling avg:</span>        [n] items/week
+<span class="c-key">Trend:</span>                     [🟢 Stable / 🟡 Declining / 🟢 Improving]
+
+<span class="c-comment">── CYCLE TIME ────────────────────────────────────────────</span>
+<span class="c-key">Average cycle time:</span>    [N] days
+<span class="c-key">Median cycle time:</span>     [N] days
+<span class="c-key">p85 cycle time:</span>        [N] days  ← used for SLA commitments
+<span class="c-key">p95 cycle time:</span>        [N] days  ← longest "typical" item
+<span class="c-key">Longest item this week:</span> [N] days — [item description] — reason: [root cause]
+
+<span class="c-comment">── LEAD TIME ─────────────────────────────────────────────</span>
+<span class="c-key">Average lead time:</span>  [N] days  (from customer request to delivery)
+<span class="c-key">SLA compliance:</span>     [%]% within target  ← 85% is healthy
+
+<span class="c-comment">── WORK IN PROGRESS ──────────────────────────────────────</span>
+<span class="c-key">Current WIP total:</span>  [n]   <span class="c-key">WIP limit:</span> [n]   Status: [within / exceeded by N]
+<span class="c-key">Blocked items:</span>      [n]   Oldest: [N days] — [description]
+<span class="c-key">WIP violations:</span>     [n] this week — Column: [which] — Cause: [reason]
+
+<span class="c-comment">── BACKLOG HEALTH ─────────────────────────────────────────</span>
+<span class="c-key">Total backlog:</span>      [n] items
+<span class="c-key">Ready items:</span>        [n]  (should be 1-2 weeks of capacity)
+<span class="c-key">Items &gt; 14 days old in backlog:</span>  [n] — review needed
+
+<span class="c-comment">── FLOW EFFICIENCY ───────────────────────────────────────</span>
+<span class="c-key">Active time (touch time):</span>   [N] days avg
+<span class="c-key">Wait time:</span>                  [N] days avg
+<span class="c-val">Flow efficiency = Active / Total cycle time = [%]%  (world class: &gt;40%)</span>
+
+<span class="c-comment">── INSIGHTS & ACTIONS ────────────────────────────────────</span>
+<span class="c-val">Main bottleneck: [column / cause]  Action: [what PM will do]  By: [date]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 23. Backlog Health Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-k">K</span> Backlog Health Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Kanban — Weekly</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">BACKLOG HEALTH REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Team:</span>  [Name]   <span class="c-key">Date:</span> [YYYY-MM-DD]
+
+<span class="c-comment">── BACKLOG VOLUME ────────────────────────────────────────</span>
+<span class="c-key">Total items:</span>     [n]
+<span class="c-key">By class:</span>        Expedite:[n]  Fixed Date:[n]  Standard:[n]  Intangible:[n]
+<span class="c-key">Healthy target:</span>  2-4 weeks of work in "Ready" = ~[n] items at current throughput
+
+<span class="c-comment">── AGING ANALYSIS ────────────────────────────────────────</span>
+Age bucket            | Count | % of backlog | Action needed
+──────────────────────|────---|──────────────|──────────────────────
+0-7 days (fresh)      | [n]   | [%]          | None
+8-14 days             | [n]   | [%]          | Monitor
+15-30 days            | [n]   | [%]          | Review — still relevant?
+31-60 days            | [n]   | [%]          | Consider splitting or reprioritizing
+&gt;60 days (stale)      | [n]   | [%]          | Archive or delete — likely not valuable
+
+<span class="c-comment">── ITEMS APPROACHING SLA BREACH ────────────────────────</span>
+  Item: [description]  Class: [Standard]  Age: [8 days]  SLA: [10 days]  Action: [prioritize now]
+  Item: [description]  Class: [Fixed Date] Age: [N days]  Deadline: [date]  Risk: [H/M/L]
+
+<span class="c-comment">── BLOCKED ITEMS ─────────────────────────────────────────</span>
+  Item: [description]  Blocked since: [date]  Blocker: [what is blocking it]  Owner: [who resolves]
+
+<span class="c-comment">── REPLENISHMENT RECOMMENDATION ────────────────────────</span>
+<span class="c-val">Pull [n] items from backlog to Ready this week to maintain flow.</span>
+<span class="c-val">Priority order: [list top 5 items by priority]</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 24. Class of Service Definition -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-k">K</span> Class of Service Definition <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Kanban Method — Board Setup</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">CLASS OF SERVICE DEFINITION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Team:</span>  [Name]   <span class="c-key">Version:</span> [1.x]   <span class="c-key">Approved by:</span> [PM / Team]
+
+<span class="c-comment">── 🔴 EXPEDITE ───────────────────────────────────────────</span>
+<span class="c-key">What qualifies:</span>  Production incident (system down / data loss / security breach).
+                  Only 1 Expedite item at a time on the board.
+<span class="c-key">Visual:</span>          Red swimlane. Physically placed above all other cards.
+<span class="c-key">WIP limit:</span>       Bypasses all WIP limits. Team stops other work to resolve.
+<span class="c-key">SLA:</span>             Resolved within 4 hours.
+<span class="c-key">Who can create:</span>  PM or on-call engineer only.
+<span class="c-key">Cost of delay:</span>   Extreme — company reputation, regulatory, revenue at risk.
+
+<span class="c-comment">── 🟠 FIXED DATE ─────────────────────────────────────────</span>
+<span class="c-key">What qualifies:</span>  Work with a real, immovable external deadline (regulatory filing,
+                  contractual SLA, compliance date, public release with marketing).
+<span class="c-key">Visual:</span>          Orange label. Deadline date visible on card.
+<span class="c-key">WIP limit:</span>       Counts toward WIP limit but gets priority pull.
+<span class="c-key">SLA:</span>             Must complete by stated deadline — tracked daily if within 5 days.
+<span class="c-key">Cost of delay:</span>   High — penalty, fine, lost revenue, or reputational damage.
+
+<span class="c-comment">── 🟡 STANDARD ───────────────────────────────────────────</span>
+<span class="c-key">What qualifies:</span>  Normal features, enhancements, regular bug fixes.
+<span class="c-key">Visual:</span>          Default card color. Priority set by backlog position.
+<span class="c-key">WIP limit:</span>       Counts fully toward WIP limit.
+<span class="c-key">SLA:</span>             p85 target: [N] days.
+<span class="c-key">Ordering:</span>        FIFO within same priority level.
+<span class="c-key">Cost of delay:</span>   Medium — business value delayed but not catastrophic.
+
+<span class="c-comment">── ⚪ INTANGIBLE ──────────────────────────────────────────</span>
+<span class="c-key">What qualifies:</span>  Technical debt, refactoring, documentation, developer tooling.
+                  Work that improves future flow but has no immediate business ROI.
+<span class="c-key">Visual:</span>          Grey label.
+<span class="c-key">WIP limit:</span>       Counts toward WIP limit.
+<span class="c-key">SLA:</span>             p85 target: [30] days. May be deferred indefinitely if needed.
+<span class="c-key">Pull policy:</span>     Only pulled when Standard queue is empty or team has spare capacity.
+<span class="c-val">Max intangible items on board at once: [N] — prevents neglect of tech health.</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /kanban -->
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- HYBRID / CROSS-METHODOLOGY -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <div class="section" id="hybrid">
+    <h2><span class="ico">🔀</span> Hybrid &amp; Cross-Methodology Documents</h2>
+
+    <!-- 25. Phase Gate Report -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-h">H</span> Phase Gate Report <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Hybrid / Stage-Gate — At each phase boundary</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">PHASE GATE REPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>   [Name]   <span class="c-key">Gate:</span> [Gate 1 / Gate 2 / Gate 3]
+<span class="c-key">Gate name:</span> [e.g., "Development Complete", "UAT Sign-off", "Go-Live Approval"]
+<span class="c-key">Date:</span>      [YYYY-MM-DD]   <span class="c-key">Reviewers:</span> [Sponsor, PMO, Tech Lead, QA Lead]
+
+<span class="c-comment">── 1. GATE CRITERIA — MET? ───────────────────────────────</span>
+Criterion                              | Target         | Actual         | Met?
+───────────────────────────────────────|────────────────|────────────────|──────
+All planned deliverables complete      | 100%           | [%]            | ✅/❌
+Zero P0/P1 open defects                | 0              | [n]            | ✅/❌
+UAT sign-off received                  | Yes            | [Yes/No]       | ✅/❌
+Performance SLA met (p95 &lt; Xms)        | &lt;[X]ms         | [actual]ms     | ✅/❌
+Security audit: no critical findings   | Pass           | [Pass/Fail]    | ✅/❌
+Compliance requirements met            | 100%           | [%]            | ✅/❌
+Budget within approved variance (&lt;10%) | &lt;10%           | [%]            | ✅/❌
+Documentation complete                 | Yes            | [Yes/No]       | ✅/❌
+
+<span class="c-comment">── 2. PHASE PERFORMANCE SUMMARY ─────────────────────────</span>
+<span class="c-key">Phase duration:</span>     Planned [N] weeks → Actual [N] weeks → Delta: +/-[N]
+<span class="c-key">Phase budget:</span>       Planned $[X] → Actual $[X] → Delta: +/-$[X]  CPI: [value]
+<span class="c-key">Scope changes:</span>      [N] CRs approved → Impact: +[N] days / +$[X]
+<span class="c-key">Risks occurred:</span>     [N] risks materialized → Managed via: [response]
+
+<span class="c-comment">── 3. OPEN ITEMS CARRIED FORWARD ─────────────────────────</span>
+  Item: [description]  Owner: [name]  Due: [date]  Impact if delayed: [H/M/L]
+  Item: [description]  Owner: [name]  Due: [date]
+
+<span class="c-comment">── 4. NEXT PHASE PLAN ────────────────────────────────────</span>
+<span class="c-key">Next phase:</span>         [Name]   Target start: [date]   Target end: [date]
+<span class="c-key">Next phase budget:</span>  $[amount]   (approved / pending approval)
+<span class="c-key">Key risks for next phase:</span>  [top 2-3]
+<span class="c-key">Resources needed:</span>  [any new roles or vendors]
+
+<span class="c-comment">── 5. GATE DECISION ──────────────────────────────────────</span>
+<span class="c-val">[ ] GO — All criteria met. Proceed to next phase.</span>
+<span class="c-val">[ ] CONDITIONAL GO — Proceed with conditions: [list conditions + owner + deadline]</span>
+<span class="c-val">[ ] NO-GO — [reason]. Return at: [date]. Action required: [what must change]</span>
+<span class="c-val">Decision by: [Name / Role]   Signature: _____________   Date: ___________</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 26. Requirements Traceability Matrix -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-h">H</span> Requirements Traceability Matrix (RTM) <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI PMBOK — Planning / Execution</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">Traces every business requirement through to user stories, test cases, and delivery status. If it's not in the RTM, it's not in scope. Prevents gold-plating and scope creep.</p>
+        <div class="tmpl">
+<span class="c-comment">REQUIREMENTS TRACEABILITY MATRIX (RTM)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>  [Name]   <span class="c-key">Version:</span> [1.x]   <span class="c-key">Last updated:</span> [YYYY-MM-DD]
+<span class="c-key">Owner:</span>    [BA / PM]   <span class="c-key">Coverage target:</span> 100% of BRs must be traced to at least 1 story
+
+<span class="c-comment">── RTM ENTRIES ───────────────────────────────────────────</span>
+<span class="c-key">BR-ID</span> | Business Requirement          | Priority | User Story | Test Cases     | Status
+──────|───────────────────────────────|──────────|────────────|────────────────|────────
+BR-01 | [Loan credit score API call]  | Must     | US-012     | TC-045, TC-046 | Done
+BR-02 | [PII encryption at rest]      | Must     | US-018     | TC-067, TC-068 | In Dev
+BR-03 | [Partner bank OAuth 2.0]      | Must     | US-021     | TC-082         | Testing
+BR-04 | [API p95 &lt; 500ms]             | Should   | US-025     | TC-090, TC-091 | Open
+BR-05 | [All decisions audit logged]  | Must     | US-030     | TBD            | Open
+BR-06 | [Multi-language UI: EN + VI]  | Could    | US-035     | TC-100         | Backlog
+
+<span class="c-comment">── COVERAGE ANALYSIS ─────────────────────────────────────</span>
+<span class="c-key">Total BRs:</span>                [n]
+<span class="c-key">BRs with user story:</span>      [n]  ([%]%)   ← must be 100%
+<span class="c-key">BRs with test cases:</span>      [n]  ([%]%)   ← must be 100% before UAT
+<span class="c-key">Stories without a BR:</span>     [n]  ← potential gold-plating — investigate
+
+<span class="c-comment">── SCOPE VALIDATION ──────────────────────────────────────</span>
+<span class="c-key">Validate Scope process:</span>  Customer/sponsor reviews RTM to confirm 100% delivery
+<span class="c-key">Formal sign-off date:</span>    [YYYY-MM-DD]
+<span class="c-val">Any work NOT in this RTM = out of scope. Must go through CCB if needed.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 27. Benefits Realization Plan -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-h">H</span> Benefits Realization Plan <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">PMI / PRINCE2 — Closure / Post-project</span></div>
+      <div class="acc-body">
+        <div class="tmpl">
+<span class="c-comment">BENEFITS REALIZATION PLAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>  [Name]   <span class="c-key">Go-live:</span> [YYYY-MM-DD]   <span class="c-key">Plan owner (post-project):</span> [Ops Manager / Product]
+<span class="c-key">Benefits review cadence:</span> Monthly for first 6 months, then quarterly.
+
+<span class="c-comment">── BENEFIT REGISTER ──────────────────────────────────────</span>
+<span class="c-key">BEN-001</span>
+  Description:  [Reduced loan processing time]
+  Category:     [ ] Revenue  [ ] Cost reduction  [✓] Efficiency  [ ] Risk  [ ] Strategic
+  KPI:          [Average loan processing time]
+  Baseline:     [45 minutes per application]   Measurement: [System timestamp logs]
+  Target:       [&lt;5 minutes per application]   By: [3 months post go-live]
+  Owner:        [Operations Manager]
+  Measurement:  Monthly — system report from [tool]
+  Status:       [ ] Not yet measurable  [ ] On track  [ ] At risk  [ ] Realized
+  Actual:       [current measurement if available]
+
+<span class="c-key">BEN-002</span>
+  Description:  [Increased loan application volume]
+  Category:     [ ] Revenue  [ ] Cost reduction  [ ] Efficiency  [ ] Risk  [✓] Revenue
+  KPI:          [Monthly loan applications processed]
+  Baseline:     [500 applications/month]   Measurement: [CRM dashboard]
+  Target:       [2,000 applications/month]  By: [12 months post go-live]
+  Owner:        [Business Development Director]
+  Status:       [ ] Not yet measurable  [ ] On track  [ ] At risk  [ ] Realized
+
+<span class="c-comment">── MEASUREMENT SCHEDULE ──────────────────────────────────</span>
+Month 1:   [What to measure and who reports]
+Month 3:   [First meaningful assessment — early adopter data]
+Month 6:   [Benefits review meeting with sponsor]
+Month 12:  [Full benefits realization assessment]
+
+<span class="c-comment">── DECISION RULES ────────────────────────────────────────</span>
+<span class="c-key">Benefit "Realized":</span>    KPI target met for 2 consecutive measurement periods.
+<span class="c-key">Benefit "At Risk":</span>     KPI &lt; 70% of target at Month 3 check.
+<span class="c-key">Action if at risk:</span>    Convene benefits recovery meeting within 2 weeks.
+
+<span class="c-comment">── HANDOFF ───────────────────────────────────────────────</span>
+<span class="c-val">Project team hands off Benefits Register to: [Ops/Product] on [date]</span>
+<span class="c-val">Sponsor receives Benefits Report at: Month 3, Month 6, Month 12</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 28. Sprint-to-Milestone Mapping (Hybrid) -->
+    <div class="acc-item">
+      <div class="acc-header"><span class="meth-badge mb-h">H</span> Sprint-to-Milestone Mapping <span style="font-size:.72rem;color:var(--text-muted);font-weight:400;margin-left:8px;">Hybrid — Ongoing</span></div>
+      <div class="acc-body">
+        <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:8px;">The key document that bridges the agile delivery layer (sprint velocity) and the governance layer (milestone commitments). The PM must keep this current every sprint.</p>
+        <div class="tmpl">
+<span class="c-comment">SPRINT-TO-MILESTONE MAPPING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span>
+<span class="c-key">Project:</span>   [Name]   <span class="c-key">PM:</span> [Name]   <span class="c-key">Updated:</span> [YYYY-MM-DD after each sprint]
+
+<span class="c-comment">── MILESTONE MAP ─────────────────────────────────────────</span>
+Milestone              | Planned Date  | Sprints Delivering   | Status      | Forecast
+───────────────────────|───────────────|──────────────────────|─────────────|─────────
+M1: Dev Complete       | [YYYY-MM-DD]  | Sprint 1-8           | 🟢 On track | [YYYY-MM-DD]
+M2: UAT Sign-off       | [YYYY-MM-DD]  | Sprint 9-10          | 🟡 At risk  | [YYYY-MM-DD]
+M3: Go-Live            | [YYYY-MM-DD]  | Sprint 11-12         | 🔵 Future   | TBD
+
+<span class="c-comment">── VELOCITY TRACKER ──────────────────────────────────────</span>
+Sprint   | Committed SP | Delivered SP | Running Avg | Milestone Impact
+─────────|──────────────|──────────────|─────────────|──────────────────────
+Sprint 1 | [n]          | [n]          | [n]         | On track
+Sprint 2 | [n]          | [n]          | [n]         | On track
+Sprint 3 | [n]          | [n]          | [n]         | M1 at risk — [reason]
+Sprint 4 | [n]          | [n]          | [n]         | Recovery: +1 sprint scope added
+
+<span class="c-comment">── FORECAST CALCULATION ──────────────────────────────────</span>
+<span class="c-key">Remaining backlog:</span>   [N] story points
+<span class="c-key">Average velocity:</span>    [N] SP/sprint (last 3 sprints)
+<span class="c-key">Sprints to complete:</span> [N remaining / avg velocity] = [X] sprints
+<span class="c-key">Forecast end date:</span>   [current sprint end + X × sprint length]
+<span class="c-key">Delta from M1:</span>       [+/- N days] → Status: 🟢 / 🟡 / 🔴
+
+<span class="c-comment">── SCOPE TRADED (if needed to protect milestone) ────────</span>
+<span class="c-val">Feature deferred to Phase 2: [description] — [N SP] — approved by PO on [date]</span>
+<span class="c-val">Scope trade rationale: [why this feature is lower priority than milestone date]</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /hybrid -->
+
+  <div class="nav-footer">
+    <a href="sdlc-artifacts.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>SDLC Artifacts &amp; Dashboards</span></a>
+    <a href="tools-templates.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>Tools &amp; Templates</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
