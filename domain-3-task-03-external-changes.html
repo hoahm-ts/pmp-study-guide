@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T03: External Changes | Domain 3 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-3-overview.html">Domain 3: Business Environment</a><span class="sep">›</span>
+    <span>T03: External Changes</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d3">Domain 3 · Business Environment</span>
+      <span class="tag tag-eco">Task 03</span>
+    </div>
+    <h1>Evaluate and Address External Business Environment Changes</h1>
+    <div class="title-vi">Đánh giá và Xử lý Thay đổi Môi trường Kinh doanh Bên ngoài</div>
+    <p class="description">Projects operate within a dynamic external environment. PM phải monitor PESTLE factors, nhận ra khi external changes affect project viability, và adapt accordingly. "External" ≠ "outside our control" — PM can prepare and respond.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🌐</span> PESTLE Analysis Framework</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>PESTLE</strong> identifies external forces that can affect project success. PM uses it for environmental scanning — monitoring ongoing, not just at planning.</p>
+        <ul>
+          <li><strong>Political:</strong> Government stability, trade policies, regulations, political risk</li>
+          <li><strong>Economic:</strong> Interest rates, inflation, currency exchange, market growth/recession</li>
+          <li><strong>Social:</strong> Demographics, cultural shifts, consumer behavior, workforce trends</li>
+          <li><strong>Technological:</strong> Emerging technologies, digital transformation, tech obsolescence</li>
+          <li><strong>Legal:</strong> Legislation changes, compliance requirements, intellectual property</li>
+          <li><strong>Environmental:</strong> Climate change, sustainability requirements, environmental regulations</li>
+        </ul>
+        <p><strong>Enterprise Environmental Factors (EEF):</strong> External conditions not under the project team's control that influence the project. PESTLE factors are examples of EEFs.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/environmental-factors-project-success-8022" target="_blank">PMI — Enterprise Environmental Factors</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>PESTLE</strong> xác định các lực lượng bên ngoài có thể ảnh hưởng đến sự thành công của dự án. PM sử dụng để quét môi trường — giám sát liên tục, không chỉ khi lập kế hoạch.</p>
+        <ul>
+          <li><strong>Political:</strong> Ổn định chính phủ, chính sách thương mại, quy định, rủi ro chính trị</li>
+          <li><strong>Economic:</strong> Lãi suất, lạm phát, tỷ giá hối đoái, tăng trưởng/suy thoái thị trường</li>
+          <li><strong>Social:</strong> Nhân khẩu học, thay đổi văn hóa, hành vi tiêu dùng</li>
+          <li><strong>Technological:</strong> Công nghệ mới nổi, chuyển đổi số, lỗi thời công nghệ</li>
+          <li><strong>Legal:</strong> Thay đổi luật pháp, yêu cầu tuân thủ, sở hữu trí tuệ</li>
+          <li><strong>Environmental:</strong> Biến đổi khí hậu, yêu cầu bền vững</li>
+        </ul>
+        <p><strong>Enterprise Environmental Factors (EEF):</strong> Điều kiện bên ngoài không nằm trong tầm kiểm soát của nhóm dự án nhưng ảnh hưởng đến dự án.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> PESTLE Analysis — FinTech Context</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Factor</th><th>Current Environment</th><th>Project Impact</th><th>PM Response</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Political</strong></td><td>New BSP (Philippines Central Bank) fintech framework being finalized</td><td>Compliance requirements may change pre-launch</td><td>Monitor regulatory updates; compliance officer on alert</td></tr>
+          <tr><td><strong>Economic</strong></td><td>Rising interest rates affecting loan demand; VND/USD exchange impacting costs</td><td>Business case projections may shift; vendor costs in USD</td><td>Re-validate business case assumptions quarterly</td></tr>
+          <tr><td><strong>Social</strong></td><td>Increased digital financial service adoption post-COVID</td><td>Higher demand than forecasted — capacity planning opportunity</td><td>Scale architecture to handle higher volume</td></tr>
+          <tr><td><strong>Technological</strong></td><td>AI/ML credit scoring becoming standard; competitors moving fast</td><td>Current credit engine may become a differentiator or laggard</td><td>Architect for ML integration in Phase 2</td></tr>
+          <tr><td><strong>Legal</strong></td><td>Data localization requirements emerging in PH market</td><td>Database infrastructure may need PH-local hosting</td><td>Assess data localization impact on architecture early</td></tr>
+          <tr><td><strong>Environmental</strong></td><td>ESG reporting requirements increasing for investors</td><td>CSR/ESG metrics may become part of partner evaluation</td><td>Add ESG considerations to partner assessment criteria</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Environmental Scanning Process</div>
+<span class="c-comment">── WHEN TO SCAN ─────────────────────────────────────────</span>
+• At project initiation (comprehensive)
+• Monthly monitoring during execution
+• At each phase gate review
+• When triggered by news/events affecting project domain
+
+<span class="c-comment">── HOW TO SCAN ──────────────────────────────────────────</span>
+1. Subscribe to regulatory newsletters/alerts
+2. Legal team monthly regulatory watch report
+3. Industry association updates (e.g., fintech association)
+4. Competitive intelligence review
+5. Economic indicators monitoring (exchange rates, interest rates)
+
+<span class="c-comment">── WHEN EXTERNAL CHANGE IS IDENTIFIED ───────────────────</span>
+Impact assessment → Risk register update → Change request if needed
+→ Business case re-validation → Sponsor notification
+<span class="c-val">RULE: External change detected → assessed and logged within 5 business days</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — External Changes</div>
+        <ul>
+          <li>PESTLE = tool for identifying external influences. EEF = the broader category they fall into.</li>
+          <li>PM cannot control external changes — but can <strong>monitor and respond</strong> proactively</li>
+          <li>When external change affects project viability → update risk register, escalate to sponsor, reassess business case</li>
+          <li>OPAs (Organizational Process Assets) are <strong>internal</strong>; EEFs are <strong>external</strong>. Know the difference.</li>
+          <li>Regulatory changes are always compliance-first — assess impact before deciding how to respond</li>
+          <li>In Agile: environmental changes are handled via backlog reprioritization — the system is designed to absorb change</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Regulatory Change Mid-Project</h4></div>
+      <p><strong>Situation:</strong> Sprint 7. The Philippine central bank (BSP) issues a new circular requiring all digital lending platforms to implement a "cooling off period" — a mandatory 24-hour waiting period before a borrower can accept loan terms. This circular is effective in 60 days.</p>
+      <p><strong>Project impact assessment:</strong></p>
+      <ul>
+        <li><strong>Scope impact:</strong> New UI flow required (loan offer page → 24h timer → acceptance page). Currently not in scope.</li>
+        <li><strong>Technical impact:</strong> Backend state machine update (new "pending acceptance" state). Estimated 13 SP.</li>
+        <li><strong>Timeline:</strong> 60 days = ~4 sprints. We have 3 sprints left before go-live. Tight but feasible.</li>
+        <li><strong>Compliance nature:</strong> Mandatory. Cannot go live in PH market without it.</li>
+      </ul>
+      <p><strong>PM actions:</strong></p>
+      <ol>
+        <li>Raise Change Request CR-089 (regulatory-driven, non-negotiable)</li>
+        <li>Fast-track CCB approval — regulatory compliance change gets expedited process</li>
+        <li>Descope 2 Phase-1 features (low priority) to absorb the 13 SP within existing sprints</li>
+        <li>Legal team confirms BSP circular interpretation and exact technical requirements</li>
+        <li>Bank Partner A notified — they support the change (it's their regulatory requirement too)</li>
+      </ol>
+      <p><strong>PMP lesson:</strong> External regulatory changes become internal change requests. The PM's job is to detect them early (monitoring), assess quickly, and process through governance channels without delay.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A government regulation affecting your project's industry is announced that will take effect in 3 months. The regulation requires changes to your product. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Wait to see if the regulation passes before taking action</li>
+        <li>B. Conduct an impact assessment and raise a change request, escalating to sponsor as needed</li>
+        <li>C. Immediately halt the project pending regulatory clarity</li>
+        <li>D. Ask the legal team to get an exemption from the regulation</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — When a confirmed regulatory change affects the project, the PM must first assess the impact (scope, schedule, cost), then raise it as a change request and communicate to the sponsor. Option A is too passive — regulations are typically firmed up with sufficient notice. Option C is too drastic without analysis. Option D may be worth exploring, but the baseline action is impact assessment and change control — not hoping for an exemption.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">The country where your project operates announces a new data localization law requiring all customer data to be stored on servers within the country. Your current architecture uses a shared cloud infrastructure across 3 countries. What is the PM's FIRST action?</div>
+    <ul class="q-opts">
+      <li>A. Immediately migrate all data to local servers</li>
+      <li>B. Assess the technical and cost impact, confirm the regulatory timeline, and raise a change request with full impact analysis for sponsor/CCB review</li>
+      <li>C. Ignore it since the project is nearly complete</li>
+      <li>D. Ask the vendor to handle the compliance</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — The PM's first action when faced with a significant external regulatory change is to assess, not act. Immediately migrating (A) skips the impact assessment and change control process — it could create new architectural risks, cost overruns, or scope conflicts. The PM must: confirm the law's effective date and scope, work with legal and technical teams to assess the impact on architecture and cost, then formally raise a change request with the full analysis for the sponsor or CCB to decide. At FinTech Company X, data localization is a realistic risk given operations across multiple markets with Bank Partner A.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">Which PESTLE factor describes the impact of increasing consumer preference for mobile-first financial services on a digital banking project?</div>
+    <ul class="q-opts">
+      <li>A. Political</li>
+      <li>B. Legal</li>
+      <li>C. Social</li>
+      <li>D. Technological</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: C</strong> — Social factors in PESTLE include consumer behavior, cultural attitudes, demographic trends, and changing user preferences. The shift to mobile-first financial services is driven by changing consumer habits and expectations — a social trend. Technological factors (D) would refer to the availability of mobile technology itself (APIs, smartphones, app stores), not the consumer preference shift. At FinTech Company X, tracking social PESTLE factors helps anticipate feature priorities and channel strategy for Project Alpha.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs scan external environments, analyze PESTLE factors, assess regulatory change impacts, and generate proactive response strategies before changes become project threats.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">PESTLE analysis for project</span>
+Help me conduct a PESTLE analysis for my project's external environment.
+Project: [name and description]
+Industry: [fintech / healthcare / retail / logistics]
+Operating markets: [countries]
+Project timeline: [start to end]
+
+For each PESTLE factor, identify external changes or trends that could affect my project:
+
+Political: [government stability, trade policy, regulatory climate, political risk in operating markets]
+Economic: [interest rates, inflation, FX rates, market growth/recession risk, customer purchasing power]
+Social: [demographic shifts, consumer behavior changes, workforce trends, digital adoption rates]
+Technological: [emerging technologies, platform changes, cybersecurity threats, tech obsolescence]
+Legal: [new legislation, regulatory updates, compliance changes, IP/data law changes]
+Environmental: [climate regulations, ESG reporting requirements, sustainability expectations]
+
+For each significant factor:
+1. Probability of impact on project (H/M/L)
+2. Nature of impact (opportunity or threat)
+3. Time horizon (immediate / 6 months / 1-2 years)
+4. Recommended PM response (monitor / assess / act / escalate)
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Regulatory change impact assessment</span>
+A new regulation affecting my project has been announced. Help me assess the impact.
+Regulation: [name / brief description]
+Issuing body: [government / central bank / industry regulator]
+Announced: [date] | Effective: [date]
+Key requirements of the regulation: [what it mandates]
+Project: [name, current phase, go-live date]
+
+Impact assessment across:
+1. Scope: What new features, processes, or controls are required?
+2. Architecture: Does the system design need to change?
+3. Data: Are there new data handling, storage, or consent requirements?
+4. Timeline: Can we meet the effective date? What is the gap?
+5. Cost: What is the estimated additional effort and cost?
+6. Contractual: Does this affect vendor contracts or partner agreements?
+7. Organizational: New roles, training, or process changes needed?
+
+Classify:
+- Hard blocker (cannot operate without it)
+- Post-launch remediation acceptable with plan
+- Monitoring only (no immediate action needed)
+
+Output: Regulatory Impact Assessment memo for sponsor and legal review.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Environmental monitoring plan</span>
+I want to set up a proactive external environment monitoring plan for my project.
+Project: [name, industry, markets]
+Key external risks already identified: [list]
+Stakeholders who can provide environmental intelligence: [legal / compliance / strategy / industry associations]
+Project phase: [how long until go-live]
+
+Design an environmental monitoring plan:
+1. PESTLE monitoring calendar: what to watch, how often, who owns it
+2. Intelligence sources: regulatory newsletters, industry associations, news alerts, analyst reports
+3. Trigger criteria: what level of change requires PM attention and action
+4. Response process: how quickly to assess and act when a change is detected
+5. Stakeholder notification protocol: when to escalate to sponsor
+6. Integration with risk register: how to convert environmental signals into logged risks
+
+Also: what are the top 3 external changes most likely to affect this project in the next 6 months, and what early warning signs should I watch for?
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — PESTLE Environmental Scan</div>
+<span class="c-comment">── CONFLUENCE: PESTLE ENVIRONMENTAL SCAN ────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | Markets: [VN / PH] | Date: [YYYY-MM-DD]
+<span class="c-key">Next review:</span> [YYYY-MM-DD] (monthly during execution)
+
+<span class="c-comment">── SCAN RESULTS ──────────────────────────────────────────</span>
+Factor        | Signal                        | Impact  | Response
+──────────────|───────────────────────────────|─────────|─────────────────────
+Political     | New BSP fintech framework     | High    | Monitor — compliance review
+Economic      | Rising interest rates         | Medium  | Re-validate business case
+Social        | Digital adoption accelerating | Positive| Scale capacity planning
+Technological | AI credit scoring maturing    | Medium  | Architect for ML in Phase 2
+Legal         | Data localization under review| High    | Legal impact assessment now
+Environmental | ESG reporting emerging        | Low     | Add to Phase 2 scope
+
+<span class="c-comment">── ACTION ITEMS ──────────────────────────────────────────</span>
+<span class="c-key">High-impact signals requiring action:</span>
+  1. [Signal] → Action: [what] → Owner: [who] → Due: [date]
+  2. [Signal] → Action: [what] → Owner: [who] → Due: [date]
+
+<span class="c-comment">── RISK REGISTER UPDATES ─────────────────────────────────</span>
+<span class="c-val">New risks added from this scan: [Jira links] | Updated risks: [Jira links]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-3-task-02-benefits-value.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T02: Benefits &amp; Value</span></a>
+    <a href="domain-3-task-04-org-change.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T04: Org Change Management</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

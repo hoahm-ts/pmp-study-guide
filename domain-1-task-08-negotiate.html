@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T08: Negotiate | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T08: Negotiate</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 08</span>
+    </div>
+    <h1>Negotiate Project Agreements</h1>
+    <div class="title-vi">Đàm phán Thỏa thuận Dự án</div>
+    <p class="description">Đàm phán là kỹ năng sống còn của PM — với stakeholders, vendor, team và management. PMP focus vào principled negotiation và win-win outcomes.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Principled Negotiation</strong> (Fisher &amp; Ury — "Getting to Yes") is the PMI-preferred negotiation framework. It focuses on <em>interests</em>, not positions, and seeks mutual gain.</p>
+        <p><strong>4 principles of principled negotiation:</strong></p>
+        <ol>
+          <li><strong>Separate people from the problem:</strong> Attack the issue, not the person</li>
+          <li><strong>Focus on interests, not positions:</strong> Ask "Why?" not just "What?"</li>
+          <li><strong>Invent options for mutual gain:</strong> Brainstorm before committing</li>
+          <li><strong>Use objective criteria:</strong> Market rates, standards, precedents</li>
+        </ol>
+        <p><strong>BATNA</strong> (Best Alternative to a Negotiated Agreement) — know your walk-away point before negotiating.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pon.harvard.edu/daily/negotiation-skills-daily/principled-negotiation-focus-interests-not-positions/" target="_blank">Harvard PON — Principled Negotiation</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Đàm phán theo nguyên tắc</strong> (Fisher &amp; Ury — "Getting to Yes") là framework đàm phán PMI ưu tiên. Tập trung vào <em>lợi ích</em>, không phải lập trường, và tìm kiếm lợi ích chung.</p>
+        <p><strong>4 nguyên tắc của đàm phán theo nguyên tắc:</strong></p>
+        <ol>
+          <li><strong>Tách người ra khỏi vấn đề:</strong> Tấn công vấn đề, không phải người</li>
+          <li><strong>Tập trung vào lợi ích, không phải lập trường:</strong> Hỏi "Tại sao?" không chỉ "Cái gì?"</li>
+          <li><strong>Tạo ra các lựa chọn cho lợi ích chung:</strong> Brainstorm trước khi cam kết</li>
+          <li><strong>Sử dụng tiêu chí khách quan:</strong> Giá thị trường, tiêu chuẩn, tiền lệ</li>
+        </ol>
+        <p><strong>BATNA</strong> — Biết điểm bỏ cuộc của bạn trước khi đàm phán.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Negotiation Preparation Template</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Negotiation Prep Sheet</div>
+<span class="c-key">NEGOTIATION</span>: <span class="c-val">API SLA with Bank Partner A</span>
+<span class="c-key">DATE</span>:         <span class="c-val">2026-06-01</span>
+<span class="c-key">PARTICIPANTS</span>: <span class="c-val">PM, CTO vs Partner Tech Lead, Account Manager</span>
+
+<span class="c-comment">── OUR INTERESTS (not positions) ───────────────────</span>
+<span class="c-val">• API uptime ≥99.5% to ensure our platform reliability
+• Response time ≤500ms for good user experience
+• Clear error codes for debugging
+• Sandbox environment for testing before production</span>
+
+<span class="c-comment">── THEIR LIKELY INTERESTS ───────────────────────────</span>
+<span class="c-val">• Limit liability in SLA
+• Realistic maintenance windows
+• Not be called at 2am for every outage
+• Commercial relationship continuation</span>
+
+<span class="c-comment">── OUR TARGET ───────────────────────────────────────</span>
+<span class="c-key">Best case</span>:  <span class="c-val">99.9% uptime, 200ms, dedicated support line</span>
+<span class="c-key">Acceptable</span>: <span class="c-val">99.5% uptime, 500ms, email support</span>
+<span class="c-key">BATNA</span>:      <span class="c-val">Use fallback to alternative partner or build resilience ourselves</span>
+
+<span class="c-comment">── OBJECTIVE CRITERIA ───────────────────────────────</span>
+<span class="c-val">• Industry standard banking API SLA: 99.5-99.9%
+• Comparable partner agreements we have with others
+• Our contractual obligations to end users</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Negotiating API SLA with Bank Partner</h4></div>
+      <p><strong>Tình huống:</strong> Trước khi go-live Project Alpha với Bank Partner A, cần negotiate SLA agreement. Partner muốn 99% uptime SLA (8.7 hours downtime/month). PM/CTO muốn 99.9% (52 phút/tháng) vì platform lending cần high availability.</p>
+      <p><strong>Principled negotiation approach:</strong></p>
+      <p><strong>Tách người ra khỏi vấn đề:</strong> "Chúng ta đều muốn partnership thành công. Vấn đề là SLA levels — hãy tìm solution thoả mãn cả hai."</p>
+      <p><strong>Focus on interests:</strong> Hỏi partner: "Tại sao 99% là giới hạn?" → Họ lo về maintenance windows và on-call costs. Không phải họ không muốn reliable service — họ sợ commitment quá cao.</p>
+      <p><strong>Options for mutual gain:</strong> Propose tiered SLA: 99.9% for business hours, 99% for off-peak. Agree on maintenance windows (Sundays 2-6am). Auto-notification when downtime planned. Penalty structure đơn giản.</p>
+      <p><strong>Kết quả:</strong> Agreement đạt được: 99.5% overall, 99.9% business hours. Cả hai sides có win. Đây là principled negotiation trong action.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">During contract negotiation with a vendor, both parties are stuck on price. The vendor won't go below $100K, and your budget is $80K. According to principled negotiation, what should you do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Walk away from the negotiation</li>
+        <li>B. Explore each party's interests to understand why these positions exist, and look for creative options</li>
+        <li>C. Split the difference and agree on $90K</li>
+        <li>D. Bring in a mediator to resolve the deadlock</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Principled negotiation says: focus on interests, not positions. Explore WHY the vendor needs $100K (cash flow? cost structure?) and WHY $80K is your limit (budget cap? other constraints?). Creative options might emerge: phased payments, reduced scope for $80K, performance-based bonuses, etc. Splitting the difference (C) is compromise not principled negotiation. Walking away (A) should come after options are exhausted.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">During a negotiation with a vendor, the vendor refuses to budge on price but offers better support terms. According to principled negotiation, what should the PM consider?</div>
+      <ul class="q-opts">
+        <li>A. Walk away since price is fixed</li>
+        <li>B. Explore whether the support terms represent value equivalent to the price gap (focus on interests, not positions)</li>
+        <li>C. Accept the higher price since the vendor is being firm</li>
+        <li>D. Bring in legal to enforce the original price</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Fisher &amp; Ury: focus on interests (value) not positions (price). The vendor's "better support terms" may represent real value — e.g., reduced operational cost, faster issue resolution, or risk reduction — that closes the gap between the $price positions. A PM applying principled negotiation looks beyond the stated position to the underlying interest and evaluates the total value of the package.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">A PM is negotiating resource allocation with a functional manager. The functional manager insists they cannot release their developer for more than 2 days per week. The PM needs 4 days. What is the BEST first step?</div>
+      <ul class="q-opts">
+        <li>A. Escalate to the sponsor to force the manager to comply</li>
+        <li>B. Identify the functional manager's underlying interests (why only 2 days?) and explore options that satisfy both</li>
+        <li>C. Accept 2 days and adjust the project schedule</li>
+        <li>D. Find an external contractor immediately</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Understand interests first before escalating or accepting. The functional manager's "2 days" is a position — their interest may be: protecting a key resource for another critical deliverable, concern about context-switching, or BAU commitments. By exploring the "why," the PM may uncover options: staggered allocation, role split, time-boxing the high-need weeks, or solving the functional manager's other constraint. Escalating immediately (A) damages the relationship and may not be needed.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs prepare negotiation strategies, analyze BATNA positions, draft proposals, and simulate counterpart responses before entering high-stakes conversations.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Negotiation preparation — BATNA analysis</span>
+I'm preparing to negotiate [what — contract / resources / timeline / budget / scope].
+My position: [what I want]
+My BATNA (Best Alternative To Negotiated Agreement): [what I do if negotiation fails]
+Their likely position: [what the other party wants]
+Their likely BATNA: [what they do if this fails — my estimate]
+Zone of Possible Agreement: [where I think overlap exists]
+Constraints I can't move on: [hard limits]
+
+Help me:
+1. Map the negotiation zone (ZOPA analysis)
+2. Identify 3 tradeable variables (things I can give to get what I need most)
+3. Develop my opening position and first concession plan
+4. Anticipate their top 3 objections and prepare responses
+5. Define my walk-away point and how I'll communicate it without burning the relationship
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Vendor/contractor negotiation</span>
+I'm negotiating a contract with [vendor / contractor type].
+Deliverable: [what they'll deliver]
+My budget: [range — don't reveal exact number to them]
+Their quoted price: [their opening offer]
+Market rate (if known): [benchmark]
+Timeline flexibility: [fixed / flexible]
+Quality requirements: [non-negotiables]
+Relationship: [new vendor / existing partner]
+
+Draft a negotiation strategy including:
+1. Counter-offer with justification (market data, scope adjustments)
+2. 3 creative value exchanges (not just price reduction)
+3. Contract terms I should push for (payment milestone, IP, SLA)
+4. Red flags to watch for in their response
+5. Script for the opening 2 minutes of the negotiation call
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Internal resource negotiation</span>
+I need to negotiate for [team members / budget / timeline extension] with [functional manager / sponsor / PMO].
+What I need: [specific resource request]
+Business justification: [why the project needs this]
+Their likely concerns: [budget / other priorities / precedent]
+What I can offer in return: [flexibility, reporting, phasing]
+My leverage: [project priority, sponsor support, risk of not having it]
+
+Help me build a persuasion case with:
+1. Data-driven justification (ROI or risk cost of not approving)
+2. Options I can present (full ask / scaled ask / alternative)
+3. Pre-wiring strategy (who to talk to before the formal ask)
+4. The one-page proposal I'd send ahead of the meeting
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Negotiation Preparation Brief</div>
+<span class="c-comment">── CONFLUENCE: NEGOTIATION PREP BRIEF ───────────────────</span>
+<span class="c-key">Negotiation:</span>   [Topic / deal]
+<span class="c-key">Date:</span>          [YYYY-MM-DD]
+<span class="c-key">Counterpart:</span>   [Name / org] | Relationship: [new / ongoing]
+<span class="c-key">PM Lead:</span>       [Name]
+
+<span class="c-comment">── POSITION MAPPING ──────────────────────────────────────</span>
+<span class="c-key">My ideal outcome:</span>    [best case]
+<span class="c-key">My walk-away point:</span>  [minimum acceptable]
+<span class="c-key">My BATNA:</span>            [what I do if no deal]
+<span class="c-key">Their likely ask:</span>    [estimate their position]
+<span class="c-key">Their likely BATNA:</span>  [estimate their alternative]
+<span class="c-key">ZOPA estimate:</span>       [where deal is possible]
+
+<span class="c-comment">── TRADEABLE VARIABLES ───────────────────────────────────</span>
+<span class="c-key">High value to me / Low cost to give:</span>   [list]
+<span class="c-key">High value to them / Low cost to me:</span>   [list — offer these]
+<span class="c-key">Hard limits (non-negotiable):</span>         [list]
+
+<span class="c-comment">── OUTCOME ───────────────────────────────────────────────</span>
+<span class="c-val">Agreed terms: [summary] | Next steps: [owner + date]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-1-task-07-remove-impediments.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T07: Remove Impediments</span></a>
+    <a href="domain-1-task-09-collaborate.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T09: Collaborate</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

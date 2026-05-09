@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools &amp; Templates | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <span>Tools &amp; Templates</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-eco">Reference</span>
+      <span class="tag tag-new">Complete Collection</span>
+    </div>
+    <h1>PMP Tools, Templates &amp; Quick Reference</h1>
+    <div class="title-vi">Công cụ, Mẫu &amp; Tài liệu Tham khảo Nhanh PMP</div>
+    <p class="description">Trang này tổng hợp tất cả công thức, template, bảng tham khảo quan trọng cho kỳ thi PMP và thực hành hàng ngày. Bookmark lại để dùng trong suốt quá trình ôn thi.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔢</span> EVM Formula Reference Card</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Complete EVM Reference</div>
+<span class="c-comment">── THREE KEY VALUES ─────────────────────────────────────</span>
+<span class="c-key">PV</span> = Planned Value (BCWS) — budgeted cost of work scheduled
+<span class="c-key">EV</span> = Earned Value (BCWP) — budgeted cost of work performed
+<span class="c-key">AC</span> = Actual Cost (ACWP) — actual cost of work performed
+<span class="c-key">BAC</span> = Budget At Completion (total project budget)
+
+<span class="c-comment">── VARIANCES ────────────────────────────────────────────</span>
+<span class="c-key">CV</span>  = EV - AC     (+ve=under budget ✓, -ve=over budget ✗)
+<span class="c-key">SV</span>  = EV - PV     (+ve=ahead ✓, -ve=behind ✗)
+
+<span class="c-comment">── PERFORMANCE INDICES ─────────────────────────────────</span>
+<span class="c-key">CPI</span> = EV / AC    (&gt;1=under budget ✓, &lt;1=over budget ✗)
+<span class="c-key">SPI</span> = EV / PV    (&gt;1=ahead ✓, &lt;1=behind ✗)
+
+<span class="c-comment">── FORECASTS ────────────────────────────────────────────</span>
+<span class="c-key">EAC</span> = BAC / CPI              (typical — past performance continues)
+<span class="c-key">EAC</span> = AC + ETC               (re-estimating remaining work)
+<span class="c-key">EAC</span> = AC + (BAC - EV)        (one-time variance, work at planned rate)
+<span class="c-key">EAC</span> = AC + (BAC-EV)/CPI      (both cost and schedule impact future)
+<span class="c-key">ETC</span> = EAC - AC               (estimate to complete)
+<span class="c-key">VAC</span> = BAC - EAC              (+ve=under, -ve=over)
+<span class="c-key">TCPI</span>= (BAC-EV)/(BAC-AC)      (performance needed to meet BAC; &gt;1=harder)
+
+<span class="c-comment">── COMMUNICATIONS ───────────────────────────────────────</span>
+<span class="c-key">Channels</span> = n(n-1)/2           (n = number of stakeholders)
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">⚔️</span> Conflict Resolution — Thomas-Kilmann</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Mode</th><th>Assertiveness</th><th>Cooperativeness</th><th>When to Use</th><th>PMP Preference</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Collaborate (Problem-Solve)</strong></td><td>High</td><td>High</td><td>Important issues, time available, relationship matters</td><td>⭐ BEST — addresses root cause, win-win</td></tr>
+          <tr><td><strong>Compromise</strong></td><td>Medium</td><td>Medium</td><td>Both parties make concessions, time limited</td><td>Acceptable — partial win for both</td></tr>
+          <tr><td><strong>Accommodate (Smooth)</strong></td><td>Low</td><td>High</td><td>Issue not important to you, relationship matters</td><td>Use carefully — doesn't resolve underlying conflict</td></tr>
+          <tr><td><strong>Force (Direct)</strong></td><td>High</td><td>Low</td><td>Emergency, safety, compliance non-negotiable</td><td>Avoid except for compliance/safety</td></tr>
+          <tr><td><strong>Withdraw (Avoid)</strong></td><td>Low</td><td>Low</td><td>Cooling off, gathering more info needed</td><td>⚠️ WORST — conflict will resurface</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📈</span> Tuckman Team Development Stages</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Stage</th><th>Team Behavior</th><th>PM Leadership Style</th><th>Agile Parallel</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Forming</strong></td><td>Polite, uncertain, dependent on PM</td><td>Directing (S1): clear goals, rules, structure</td><td>Sprint 1 team kickoff</td></tr>
+          <tr><td><strong>Storming</strong></td><td>Conflict, resistance, power struggles</td><td>Coaching (S2): support + direction, facilitate conflict</td><td>Cross-functional friction, prioritization debates</td></tr>
+          <tr><td><strong>Norming</strong></td><td>Cohesion, collaboration, agreed norms</td><td>Supporting (S3): encourage, validate, step back</td><td>Team retrospectives improving the process</td></tr>
+          <tr><td><strong>Performing</strong></td><td>High performance, self-directed, trusting</td><td>Delegating (S4): remove blockers, minimal intervention</td><td>High-velocity sprints, team self-organizes</td></tr>
+          <tr><td><strong>Adjourning</strong></td><td>Closure, recognition, transition</td><td>Celebrating + releasing: recognize, archive, close</td><td>Sprint retrospective at project closure</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🎯</span> Situational Leadership — Hersey-Blanchard</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Development Level</th><th>Competence</th><th>Commitment</th><th>Leadership Style</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>D1 — Enthusiastic Beginner</strong></td><td>Low</td><td>High</td><td>S1 — Directing: Tell them what/how/when</td><td>New graduate hire, Day 1</td></tr>
+          <tr><td><strong>D2 — Disillusioned Learner</strong></td><td>Low-Medium</td><td>Low</td><td>S2 — Coaching: Explain + support, two-way</td><td>Junior after first big failure</td></tr>
+          <tr><td><strong>D3 — Capable but Cautious</strong></td><td>High</td><td>Variable</td><td>S3 — Supporting: Involve, listen, encourage</td><td>Mid-level dev unsure about new tech</td></tr>
+          <tr><td><strong>D4 — Self-Reliant Achiever</strong></td><td>High</td><td>High</td><td>S4 — Delegating: Trust, give autonomy, observe</td><td>Senior engineer, domain expert</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">⚡</span> Risk Response Strategies</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th colspan="3">THREATS (Negative Risks) — ATMES</th></tr>
+        <tr><th>Strategy</th><th>Approach</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Avoid</strong></td><td>Eliminate the risk by changing plan</td><td>Use proven tech instead of experimental</td></tr>
+          <tr><td><strong>Transfer</strong></td><td>Shift risk to third party</td><td>Buy cyber insurance; outsource high-risk module</td></tr>
+          <tr><td><strong>Mitigate</strong></td><td>Reduce probability or impact</td><td>Extra testing, backup resource, mock server</td></tr>
+          <tr><td><strong>Escalate</strong></td><td>Risk outside PM authority</td><td>Regulatory change affecting org strategy</td></tr>
+          <tr><td><strong>Accept</strong></td><td>Acknowledge (passive or active with reserve)</td><td>Set contingency budget; minor bug: accept + fix later</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-wrap" style="margin-top:0.5rem;">
+      <table>
+        <thead><tr><th colspan="3">OPPORTUNITIES (Positive Risks) — ESEA</th></tr>
+        <tr><th>Strategy</th><th>Approach</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Exploit</strong></td><td>Ensure the opportunity happens</td><td>Assign best team to high-value feature</td></tr>
+          <tr><td><strong>Share</strong></td><td>Partner to maximize opportunity</td><td>Joint dev with partner for shared benefit</td></tr>
+          <tr><td><strong>Enhance</strong></td><td>Increase probability or impact</td><td>Add resources to speed up high-value delivery</td></tr>
+          <tr><td><strong>Escalate</strong></td><td>Opportunity beyond PM authority</td><td>Strategic market expansion</td></tr>
+          <tr><td><strong>Accept</strong></td><td>Take it if it comes, no investment</td><td>Market opportunity: if it comes, great</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Contract Types Reference</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Type</th><th>Subtype</th><th>Who Bears Cost Risk</th><th>When to Use</th></tr></thead>
+        <tbody>
+          <tr><td rowspan="3"><strong>Fixed Price</strong></td><td>FFP</td><td>Seller</td><td>Well-defined scope</td></tr>
+          <tr><td>FPIF</td><td>Seller (with incentive)</td><td>Motivate performance above target</td></tr>
+          <tr><td>FP-EPA</td><td>Seller (inflation adjusted)</td><td>Multi-year contracts</td></tr>
+          <tr><td rowspan="3"><strong>Cost Reimbursable</strong></td><td>CPFF</td><td>Buyer</td><td>Uncertain scope, R&D</td></tr>
+          <tr><td>CPIF</td><td>Buyer (shared savings)</td><td>Motivate cost control</td></tr>
+          <tr><td>CPAF</td><td>Buyer (subjective bonus)</td><td>Quality-subjective work</td></tr>
+          <tr><td><strong>Time &amp; Materials</strong></td><td>T&M</td><td>Shared (buyer controls)</td><td>Staff augmentation, uncertain duration</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🧩</span> PMBOK 7 — 12 Principles Quick Reference</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>#</th><th>Principle</th><th>Core Idea</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Stewardship</strong></td><td>Act as a responsible steward — ethical, trustworthy, aligned with org values</td></tr>
+          <tr><td>2</td><td><strong>Team</strong></td><td>Build high-performing team culture. Diversity, collaboration, mutual respect.</td></tr>
+          <tr><td>3</td><td><strong>Stakeholders</strong></td><td>Engage stakeholders proactively. Negative stakeholders too.</td></tr>
+          <tr><td>4</td><td><strong>Value</strong></td><td>Continuously evaluate and align work with business value.</td></tr>
+          <tr><td>5</td><td><strong>Systems Thinking</strong></td><td>Projects are parts of larger systems. Understand context and interdependencies.</td></tr>
+          <tr><td>6</td><td><strong>Leadership</strong></td><td>Demonstrate leadership behaviors. Servant leadership is the default.</td></tr>
+          <tr><td>7</td><td><strong>Tailoring</strong></td><td>Adapt approach to context. No one-size-fits-all.</td></tr>
+          <tr><td>8</td><td><strong>Quality</strong></td><td>Build quality in; prevent rather than inspect.</td></tr>
+          <tr><td>9</td><td><strong>Complexity</strong></td><td>Navigate complexity with systems thinking and adaptive approaches.</td></tr>
+          <tr><td>10</td><td><strong>Risk</strong></td><td>Manage threats and opportunities proactively throughout.</td></tr>
+          <tr><td>11</td><td><strong>Adaptability &amp; Resiliency</strong></td><td>Build the ability to change quickly; recover from setbacks.</td></tr>
+          <tr><td>12</td><td><strong>Change Management</strong></td><td>Enable organizational adoption to realize benefits.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🏃</span> Agile Ceremonies Quick Reference</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Ceremony</th><th>Frequency</th><th>Duration (2-wk sprint)</th><th>Purpose</th><th>Key Output</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Sprint Planning</strong></td><td>Start of sprint</td><td>Up to 4 hours</td><td>Select + plan sprint work</td><td>Sprint Goal + Sprint Backlog</td></tr>
+          <tr><td><strong>Daily Standup</strong></td><td>Daily</td><td>15 minutes</td><td>Sync, identify blockers</td><td>Impediment list, coordination</td></tr>
+          <tr><td><strong>Sprint Review</strong></td><td>End of sprint</td><td>Up to 2 hours</td><td>Demo to stakeholders, get feedback</td><td>Accepted PBIs, updated backlog</td></tr>
+          <tr><td><strong>Sprint Retrospective</strong></td><td>End of sprint</td><td>Up to 1.5 hours</td><td>Process improvement</td><td>Action items for next sprint</td></tr>
+          <tr><td><strong>Backlog Refinement</strong></td><td>Ongoing</td><td>Up to 10% sprint time</td><td>Groom, estimate, prioritize</td><td>Ready backlog items</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🧠</span> Exam Brain Dump Template</h2>
+    <p style="margin-bottom:1rem;color:var(--text-muted);">Write this on your scratch paper at the START of the exam before reading question 1.</p>
+    <div class="tmpl">
+      <div class="tmpl-label">Exam Brain Dump — Write on Scratch Paper First</div>
+<span class="c-comment">── EVM FORMULAS ─────────────────────────────────────────</span>
+CV=EV-AC  SV=EV-PV  CPI=EV/AC  SPI=EV/PV
+EAC=BAC/CPI  ETC=EAC-AC  VAC=BAC-EAC  TCPI=(BAC-EV)/(BAC-AC)
+
+<span class="c-comment">── CHANNELS ─────────────────────────────────────────────</span>
+n(n-1)/2
+
+<span class="c-comment">── CONFLICT MODES (best→worst) ──────────────────────────</span>
+Collaborate &gt; Compromise &gt; Accommodate &gt; Force &gt; Withdraw
+
+<span class="c-comment">── TUCKMAN ──────────────────────────────────────────────</span>
+Forming → Storming → Norming → Performing → Adjourning
+
+<span class="c-comment">── LEADERSHIP STYLES (Hersey-Blanchard) ─────────────────</span>
+D1→S1(Direct)  D2→S2(Coach)  D3→S3(Support)  D4→S4(Delegate)
+
+<span class="c-comment">── RISK: THREATS / OPPORTUNITIES ───────────────────────</span>
+Threats: Avoid, Transfer, Mitigate, Escalate, Accept
+Opport:  Exploit, Share, Enhance, Escalate, Accept
+
+<span class="c-comment">── CONTRACT TYPES ────────────────────────────────────────</span>
+FP: Seller risk | CR: Buyer risk | T&amp;M: Shared risk
+FFP  FPIF  FP-EPA | CPFF  CPIF  CPAF | T&amp;M
+
+<span class="c-comment">── POWER/INTEREST GRID ──────────────────────────────────</span>
+High Power/High Interest → Manage Closely
+High Power/Low Interest  → Keep Satisfied
+Low Power/High Interest  → Keep Informed
+Low Power/Low Interest   → Monitor
+
+<span class="c-comment">── STAKEHOLDER ENGAGEMENT LEVELS ───────────────────────</span>
+Unaware → Resistant → Neutral → Supportive → Leading
+
+<span class="c-comment">── QUALITY ──────────────────────────────────────────────</span>
+QA = process audit (proactive)
+QC = product inspection (reactive)
+Prevention &lt; Appraisal &lt; Internal failure &lt; External failure (cost order)
+
+<span class="c-comment">── ADKAR ────────────────────────────────────────────────</span>
+Awareness → Desire → Knowledge → Ability → Reinforcement
+
+<span class="c-comment">── GOLEMAN EI ───────────────────────────────────────────</span>
+Self-awareness, Self-regulation, Motivation, Empathy, Social skills
+
+<span class="c-comment">── AGILE CEREMONIES ─────────────────────────────────────</span>
+Sprint Planning | Daily Standup | Sprint Review | Retrospective | Refinement
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📚</span> Official Study Resources</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Resource</th><th>Purpose</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><a href="https://www.pmi.org/pmbok-guide-standards/pmbok-guide" target="_blank">PMBOK Guide 7th Edition</a></td><td>Foundation — 12 Principles + 8 Domains</td><td>⭐⭐⭐ Essential</td></tr>
+          <tr><td><a href="https://www.pmi.org/certifications/project-management-pmp/exam-prep" target="_blank">PMP Exam Content Outline (ECO)</a></td><td>Official exam blueprint</td><td>⭐⭐⭐ Essential</td></tr>
+          <tr><td><a href="https://www.agilealliance.org/agile101/the-agile-manifesto/" target="_blank">Agile Manifesto</a></td><td>Agile values and principles</td><td>⭐⭐ Important</td></tr>
+          <tr><td><a href="https://scrumguides.org/scrum-guide.html" target="_blank">Scrum Guide (2020)</a></td><td>Scrum framework reference</td><td>⭐⭐ Important</td></tr>
+          <tr><td><a href="https://www.pmi.org/disciplined-agile" target="_blank">PMI Disciplined Agile</a></td><td>Methodology selection framework</td><td>⭐ Supplementary</td></tr>
+          <tr><td><a href="https://www.pmi.org/about/ethics/code" target="_blank">PMI Code of Ethics</a></td><td>Professional conduct standard</td><td>⭐⭐ Important</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-3-task-04-org-change.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T04: Org Change</span></a>
+    <a href="exam-tips.html" class="nav-btn"><span><span class="nb-dir">Ôn thi →</span>Exam Tips</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

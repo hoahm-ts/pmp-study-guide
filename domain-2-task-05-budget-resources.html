@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T05: Budget & Resources | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T05: Budget & Resources</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 05</span>
+      <span class="tag tag-new">EVM Heavy</span>
+    </div>
+    <h1>Plan and Manage Budget and Resources</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Ngân sách và Nguồn lực</div>
+    <p class="description">EVM (Earned Value Management) là công cụ đo lường hiệu suất chi phí và tiến độ quan trọng nhất trong PMP. Cần thuộc công thức và hiểu ý nghĩa của từng chỉ số.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔢</span> EVM — Earned Value Management</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>EVM integrates scope, schedule, and cost to measure project performance objectively. Three key values:</p>
+        <ul>
+          <li><strong>PV (Planned Value / BCWS)</strong>: Budgeted cost of work scheduled — "What should have been done by now, cost-wise?"</li>
+          <li><strong>EV (Earned Value / BCWP)</strong>: Budgeted cost of work performed — "What did we actually accomplish, in budget terms?"</li>
+          <li><strong>AC (Actual Cost / ACWP)</strong>: Actual cost of work performed — "What did we actually spend?"</li>
+        </ul>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/earned-value-management-work-performance-information-8922" target="_blank">PMI — EVM Fundamentals</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>EVM tích hợp scope, lịch trình và chi phí để đo lường hiệu suất dự án một cách khách quan. Ba giá trị chính:</p>
+        <ul>
+          <li><strong>PV (Planned Value)</strong>: Chi phí ngân sách của công việc được lên kế hoạch — "Đến giờ này đáng lẽ phải làm xong bao nhiêu?"</li>
+          <li><strong>EV (Earned Value)</strong>: Chi phí ngân sách của công việc đã hoàn thành — "Thực sự đã hoàn thành được bao nhiêu?"</li>
+          <li><strong>AC (Actual Cost)</strong>: Chi phí thực tế của công việc đã thực hiện — "Thực tế đã chi bao nhiêu?"</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">EVM Formula Reference Card</div>
+<span class="c-comment">── VARIANCES ───────────────────────────────────────</span>
+<span class="c-key">CV</span>  = EV - AC     <span class="c-comment">Cost Variance    | +ve = UNDER budget ✓ | -ve = OVER budget ✗</span>
+<span class="c-key">SV</span>  = EV - PV     <span class="c-comment">Schedule Variance | +ve = AHEAD ✓         | -ve = BEHIND ✗</span>
+
+<span class="c-comment">── PERFORMANCE INDICES ─────────────────────────────</span>
+<span class="c-key">CPI</span> = EV / AC    <span class="c-comment">Cost Perf. Index  | &gt;1 = under budget ✓    | &lt;1 = over budget ✗</span>
+<span class="c-key">SPI</span> = EV / PV    <span class="c-comment">Sched Perf. Index | &gt;1 = ahead ✓           | &lt;1 = behind ✗</span>
+
+<span class="c-comment">── FORECASTS ───────────────────────────────────────</span>
+<span class="c-key">EAC</span> = BAC / CPI  <span class="c-comment">Estimate at Completion (typical — past performance continues)</span>
+<span class="c-key">EAC</span> = AC + ETC   <span class="c-comment">When re-estimating remaining work</span>
+<span class="c-key">EAC</span> = AC + (BAC-EV) <span class="c-comment">When past variance is atypical (one-time)</span>
+<span class="c-key">ETC</span> = EAC - AC   <span class="c-comment">Estimate to Complete (remaining work)</span>
+<span class="c-key">VAC</span> = BAC - EAC  <span class="c-comment">Variance at Completion (+ve = under, -ve = over)</span>
+
+<span class="c-comment">── TCPI (To-Complete Performance Index) ────────────</span>
+<span class="c-key">TCPI</span> = (BAC - EV) / (BAC - AC)  <span class="c-comment">Performance needed for rest of project to meet BAC</span>
+<span class="c-comment">         If TCPI &gt; 1: harder than historical performance | &lt;1: easier</span>
+
+<span class="c-comment">── EXAMPLE ─────────────────────────────────────────</span>
+<span class="c-key">BAC</span>=$100k | <span class="c-key">PV</span>=$60k | <span class="c-key">EV</span>=$50k | <span class="c-key">AC</span>=$55k
+<span class="c-val">CV = $50k - $55k = -$5k (OVER budget)
+SV = $50k - $60k = -$10k (BEHIND schedule)
+CPI = 50/55 = 0.91 (spending more than planned)
+SPI = 50/60 = 0.83 (progressing slower)
+EAC = $100k / 0.91 = $110k (project will cost $110k total)</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — EVM</div>
+        <ul>
+          <li>CV và SV: <strong>positive = good</strong>. Nhớ: "Cost Variance positive = money left over (good)"</li>
+          <li>CPI và SPI: <strong>&gt;1 = good</strong>. "CPI of 1.2 means you're getting $1.20 of work for every $1.00 spent"</li>
+          <li>Most common EAC formula for exam: <strong>BAC/CPI</strong> (assume past performance continues)</li>
+          <li>Agile: EVM có thể dùng với velocity và burndown charts — không exclusive to predictive</li>
+          <li>Practice EVM calculation questions — 5-8 calculation questions trên đề thi thật</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — EVM in Practice</h4></div>
+      <p><strong>Situation:</strong> Cuối tháng 2 của Project Alpha (10-month project, $500K budget).</p>
+      <p>BAC = $500,000 | Project is 20% complete by plan (PV = $100,000) | Team actually completed 15% of work (EV = $75,000) | Actual spend = $85,000 (AC)</p>
+      <p><strong>EVM Analysis:</strong> CV = $75k - $85k = -$10K (over budget). SV = $75k - $100k = -$25K (behind schedule). CPI = 75/85 = 0.88 (spending $1.14 for every $1.00 earned). SPI = 75/100 = 0.75 (only progressing at 75% of planned pace). EAC = $500k / 0.88 = $568,000 (project will cost ~$568K if trend continues).</p>
+      <p><strong>PM Action:</strong> Report to sponsor with full EVM data. Root cause analysis: two developers were delayed by unrelated production issues (resource conflict). Action: dedicated sprint for Project Alpha (no context switching). Revised EAC and timeline communicated to stakeholders.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">EVM Calculation</div>
+      <div class="q-text">Project: BAC = $200,000. After 3 months: PV = $80,000, EV = $70,000, AC = $65,000. What is the CPI and what does it indicate?</div>
+      <ul class="q-opts">
+        <li>A. CPI = 0.93 — project is slightly over budget</li>
+        <li>B. CPI = 1.08 — project is under budget (getting more value than spent)</li>
+        <li>C. CPI = 0.88 — project is significantly over budget</li>
+        <li>D. CPI = 1.15 — project is well under budget</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B — CPI = 1.08</strong><br>CPI = EV / AC = $70,000 / $65,000 = <strong>1.077 ≈ 1.08</strong><br>CPI &gt; 1 means the project is under budget — for every $1 spent, $1.08 of value is earned. Note: SPI = 70/80 = 0.875 (behind schedule, but under budget).</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">BAC = $500,000. After 6 months: EV = $200,000, AC = $250,000, PV = $280,000. What is the project's forecast at completion (EAC using the typical formula) and what does TCPI tell us?</div>
+      <ul class="q-opts">
+        <li>A. EAC = $625,000; TCPI = 0.75 (remaining work is easier than current performance)</li>
+        <li>B. EAC = $625,000; TCPI = 1.2 (harder — the team must perform better than current efficiency to meet BAC)</li>
+        <li>C. EAC = $550,000; TCPI = 1.0 (remaining work matches current performance)</li>
+        <li>D. EAC = $500,000; TCPI = 1.0 (project is on track)</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong><br>
+        <strong>CPI</strong> = EV / AC = 200,000 / 250,000 = <strong>0.8</strong> (over budget — spending $1.25 for every $1 of value earned)<br>
+        <strong>EAC</strong> = BAC / CPI = 500,000 / 0.8 = <strong>$625,000</strong> (project will overrun by $125K if trend continues)<br>
+        <strong>TCPI</strong> = (BAC − EV) / (BAC − AC) = (500,000 − 200,000) / (500,000 − 250,000) = 300,000 / 250,000 = <strong>1.2</strong><br>
+        TCPI &gt; 1 means the team must be <em>more efficient</em> on remaining work than they have been so far to still meet the original BAC — a challenging target. PM should update sponsor with revised EAC and implement cost controls.</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">CPI = 0.75 on your project. What does this mean and what actions should the PM consider?</div>
+      <ul class="q-opts">
+        <li>A. For every $1 earned in value, $0.75 was spent — the project is under budget</li>
+        <li>B. For every $1 spent, only $0.75 of value is earned — the project is over budget; PM should analyze root cause, implement cost controls, and update EAC for the sponsor</li>
+        <li>C. The schedule is 25% behind plan</li>
+        <li>D. 75% of the project scope has been completed</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — CPI = EV / AC. A CPI of 0.75 means for every $1.00 actually spent (AC), only $0.75 of budgeted work value (EV) was delivered. The project is over budget. The PM should: (1) identify root cause of the cost overrun, (2) implement corrective actions (reduce scope, optimize resources, negotiate), (3) recalculate EAC (= BAC / 0.75) and report to sponsor, (4) update the cost baseline if scope or circumstances have permanently changed.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs interpret EVM metrics, generate variance analysis narratives, build budget forecasts, and communicate financial performance clearly to non-financial stakeholders.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">EVM interpretation and narrative</span>
+Help me interpret my project's Earned Value metrics and write an executive narrative.
+Project data:
+  BAC (Budget at Completion): $[amount]
+  PV (Planned Value) to date: $[amount]
+  EV (Earned Value) to date: $[amount]
+  AC (Actual Cost) to date: $[amount]
+
+Calculate and interpret:
+  CV = EV - AC: (positive = under budget, negative = over budget)
+  SV = EV - PV: (positive = ahead of schedule, negative = behind)
+  CPI = EV/AC: (>1 efficient, <1 inefficient)
+  SPI = EV/PV: (>1 ahead, <1 behind)
+  EAC = BAC/CPI: (estimated final cost)
+  ETC = EAC - AC: (cost to complete)
+  VAC = BAC - EAC: (variance at completion — positive = savings, negative = overrun)
+
+Write:
+1. A 3-sentence executive summary of financial health
+2. Root cause hypotheses for variances (schedule and cost)
+3. Recommended corrective actions if CPI or SPI < 0.9
+4. The one metric the sponsor should focus on and why
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Budget variance explanation</span>
+I need to explain a budget variance to my sponsor/PMO.
+Planned budget to date: $[amount]
+Actual spend to date: $[amount]
+Variance: $[amount] ([%] over/under)
+Root causes: [list what drove the variance]
+Is this variance recoverable? [yes/no — reasoning]
+Impact on final budget: [will we overrun? by how much?]
+
+Draft a variance explanation that:
+1. States the variance factually (no minimizing, no panic)
+2. Explains the root causes in business terms (not accounting jargon)
+3. Distinguishes controllable vs. uncontrollable causes
+4. Presents 3 options: (a) absorb within budget, (b) request additional funds, (c) scope reduction
+5. Makes a clear recommendation with rationale
+Keep it under 1 page.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Budget forecast for phase completion</span>
+I need to forecast the budget required to complete the remaining project work.
+Completed work: [% done]
+Budget consumed to date: $[amount] ([%] of total)
+Known upcoming costs: [list major remaining cost items]
+Forecast risks that could affect budget: [list]
+Current CPI: [value — if known]
+
+Use EAC methods to generate a range forecast:
+1. EAC = BAC/CPI (performance-based — assumes current efficiency continues)
+2. EAC = AC + ETC (bottoms-up — assumes we can re-plan remaining work)
+3. EAC = AC + (BAC-EV) (optimistic — assumes remaining work goes as planned)
+
+Recommend which EAC method is most appropriate for this project's situation and explain why. Draft the budget section of my next steering committee report.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — EVM Dashboard</div>
+<span class="c-comment">── CONFLUENCE: EVM FINANCIAL DASHBOARD ──────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | Reporting date: [YYYY-MM-DD] | Phase: [Sprint 8 of 12]
+
+<span class="c-comment">── EARNED VALUE SNAPSHOT ─────────────────────────────────</span>
+<span class="c-key">BAC:</span>    $[total budget]
+<span class="c-key">PV:</span>     $[planned value to date]   (% planned complete: [%])
+<span class="c-key">EV:</span>     $[earned value to date]    (% actually complete: [%])
+<span class="c-key">AC:</span>     $[actual cost to date]     (% budget consumed: [%])
+
+<span class="c-comment">── VARIANCES ─────────────────────────────────────────────</span>
+<span class="c-key">CV:</span>   $[EV-AC]  → [🟢 Under budget / 🔴 Over budget]
+<span class="c-key">SV:</span>   $[EV-PV]  → [🟢 Ahead / 🔴 Behind schedule]
+<span class="c-key">CPI:</span>  [EV/AC]   → [>1.0 efficient / <1.0 over-spending]
+<span class="c-key">SPI:</span>  [EV/PV]   → [>1.0 ahead / <1.0 behind]
+
+<span class="c-comment">── FORECAST ──────────────────────────────────────────────</span>
+<span class="c-key">EAC:</span>  $[BAC/CPI]  | <span class="c-key">ETC:</span> $[EAC-AC] | <span class="c-key">VAC:</span> $[BAC-EAC]
+<span class="c-val">Forecast: [On track to complete within budget / Expected overrun of $X]</span>
+Top variance driver: [reason in 1 sentence]
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-04-engage-stakeholders.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T04: Engage Stakeholders</span></a>
+    <a href="domain-2-task-06-schedule.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T06: Schedule</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

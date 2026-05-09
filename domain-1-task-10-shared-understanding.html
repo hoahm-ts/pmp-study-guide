@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T10: Shared Understanding | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T10: Shared Understanding</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 10</span>
+    </div>
+    <h1>Build Shared Understanding</h1>
+    <div class="title-vi">Xây dựng Sự hiểu biết chung</div>
+    <p class="description">Đảm bảo tất cả stakeholders — từ developer đến sponsor — hiểu và align về vision, goals, constraints và expectations của dự án. Đây là nền tảng ngăn ngừa rework và miscommunication.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Shared understanding means all parties have the <em>same mental model</em> of what the project is, what success looks like, and how work will be done. Without it, teams waste effort on assumptions, rework accumulates, and stakeholders become disappointed.</p>
+        <p><strong>Tools for shared understanding:</strong></p>
+        <ul>
+          <li><strong>Project Charter:</strong> High-level authorization and shared vision</li>
+          <li><strong>Definition of Done (DoD):</strong> Agile — team's shared quality standard</li>
+          <li><strong>Definition of Ready (DoR):</strong> What "ready to develop" means</li>
+          <li><strong>User Stories:</strong> "As a [user], I want [feature] so that [benefit]"</li>
+          <li><strong>Kickoff meetings:</strong> Formal alignment session at project/sprint start</li>
+        </ul>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/shared-understanding-project-success-4501" target="_blank">PMI — Shared Understanding</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Sự hiểu biết chung nghĩa là tất cả các bên có <em>cùng mô hình tư duy</em> về dự án là gì, thành công trông như thế nào, và công việc sẽ được thực hiện như thế nào. Không có nó, các teams lãng phí effort vào giả định, rework tích lũy và stakeholders thất vọng.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Definition of Done (DoD) Template</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Definition of Done — Project Alpha Backend</div>
+<span class="c-comment">A user story is DONE when ALL of the following are true:</span>
+
+<span class="c-key">Code Quality</span>
+<span class="c-val">  ✓ Code reviewed by ≥2 team members (including Tech Lead for architecture changes)
+  ✓ All automated tests passing (unit + integration)
+  ✓ Test coverage ≥80% for new code
+  ✓ No critical SonarQube violations
+  ✓ Code follows project Go standards (golangci-lint clean)</span>
+
+<span class="c-key">Functionality</span>
+<span class="c-val">  ✓ Acceptance criteria met and verified by QA
+  ✓ Edge cases tested (null inputs, boundary values, error states)
+  ✓ API contract validated against OpenAPI spec
+  ✓ Business logic reviewed with Product Owner</span>
+
+<span class="c-key">Documentation</span>
+<span class="c-val">  ✓ API documentation updated in Swagger/OpenAPI
+  ✓ ADR created for architectural decisions
+  ✓ README updated if new service/module created</span>
+
+<span class="c-key">Deployment</span>
+<span class="c-val">  ✓ Feature deployed to staging environment
+  ✓ Smoke tests passing on staging
+  ✓ No regression in existing features (regression suite green)
+  ✓ Monitoring alerts configured for new endpoints</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Alignment on "Done" across Teams</h4></div>
+      <p><strong>Tình huống:</strong> Project Alpha sprint 2 kết thúc. Dev team nói feature "done". QA team nói chưa done — test environment chưa được deploy. Business stakeholder nói chưa done — acceptance criteria chưa verified với business.</p>
+      <p><strong>Root cause:</strong> Thiếu shared understanding về "What does done mean?"</p>
+      <p><strong>Solution:</strong> PM tổ chức DoD workshop với toàn team (devs, QA, PO, BA). Cùng nhau define và agree trên DoD checklist. Post DoD ở Confluence và reference trong mỗi PR template. Sprint 3 trở đi: không có story nào được marked done nếu chưa qua hết DoD checklist.</p>
+      <p><strong>PMP lesson:</strong> Shared understanding không tự nhiên xuất hiện — PM phải chủ động tạo ra nó thông qua facilitated workshops và documented agreements.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">The development team believes a feature is complete, but the business stakeholder says it doesn't meet expectations. This situation is MOST LIKELY caused by:</div>
+      <ul class="q-opts">
+        <li>A. Poor development quality</li>
+        <li>B. Lack of shared understanding of acceptance criteria at the start of the sprint</li>
+        <li>C. Inadequate testing by the QA team</li>
+        <li>D. Scope creep introduced by the stakeholder</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — This is a classic "definition of done" / shared understanding issue. When development and business have different expectations, it usually points to misaligned requirements or acceptance criteria. The solution is to involve stakeholders in defining acceptance criteria BEFORE work begins, not after. This is also a quality management issue (prevention) — validate requirements upfront.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A team is starting a new project and members have different interpretations of what 'done' means for user stories. What is the BEST tool to address this?</div>
+    <ul class="q-opts">
+      <li>A. A detailed project schedule</li><li>B. A shared Definition of Done agreed by the whole team</li><li>C. Individual task assignments</li><li>D. A risk register</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — A Definition of Done (DoD) creates a single, explicit, shared understanding of what 'complete' means for every user story. Without it, each team member applies their own standard, leading to inconsistent quality and rework. A project schedule (A) manages time, not quality criteria. A risk register (D) tracks uncertainties, not completion standards.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">Mid-sprint, a developer says their task is 'done' but it has no unit tests and hasn't been reviewed. The team's DoD requires both. What should the Scrum Master/PM do?</div>
+    <ul class="q-opts">
+      <li>A. Accept it since the core functionality works</li><li>B. Enforce the DoD — the item is not done until all DoD criteria are met; move it back to in-progress</li><li>C. Remove the test requirement from the DoD to unblock the sprint</li><li>D. Ask the developer to add tests in the next sprint</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — The DoD is a non-negotiable quality standard. 'Done' means ALL criteria are met, not just the functional part. Accepting incomplete work (A, D) accumulates technical debt and erodes the DoD's meaning. Weakening the DoD mid-sprint (C) sends the wrong signal to the team and lowers the quality bar permanently. The item must go back to in-progress.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs draft project charters, create shared glossaries, synthesize diverse stakeholder inputs into a coherent project vision, and write purpose statements that align teams.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Project charter drafting</span>
+Help me draft a Project Charter for approval.
+Project name: [name]
+Problem/opportunity: [what business problem does this solve?]
+Proposed solution: [high-level description of the project deliverable]
+Business case: [why this is worth doing — ROI, risk reduction, strategic fit]
+Scope (in scope): [what the project will deliver]
+Scope (out of scope): [what it explicitly will NOT include]
+Key stakeholders: [sponsor, customers, teams affected]
+High-level timeline: [target start, key milestones, end date]
+Budget estimate: [range]
+Key risks: [top 3]
+Assumptions: [major assumptions the project rests on]
+Constraints: [fixed factors — date, budget, regulatory]
+
+Draft a Project Charter that is concise (1-2 pages), gets sponsor approval, and creates shared understanding across all stakeholders.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Project glossary creation</span>
+My project has specialized terms that mean different things to different stakeholders. Help me build a project glossary.
+Project domain: [fintech / healthcare / logistics / etc.]
+Stakeholder groups: [technical team / business / external partners / regulators]
+Known confusion points: [terms that have caused misunderstandings — list them]
+Key acronyms used: [list]
+
+Create a project glossary with:
+1. Term, definition (plain language), how it's used in our project context
+2. Flag terms that mean different things to different groups (disambiguation entries)
+3. Acronym expansion list
+4. Terms to avoid (jargon that should be replaced with plain language)
+
+Format for Confluence.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Project purpose/vision statement</span>
+My team lacks a clear, memorable purpose statement — people can't explain why we're doing this project.
+Project facts:
+  What we're building: [description]
+  Who benefits: [customers / users / org]
+  What problem we solve: [current pain]
+  What changes after we deliver: [future state]
+  Business goal: [revenue / cost / risk / compliance]
+
+Write 3 versions of a project purpose statement (1-2 sentences each):
+1. Executive version (strategic, outcome-focused)
+2. Team version (motivating, meaningful work)
+3. Customer/user version (benefit-focused)
+
+The best one should pass the "elevator pitch" test: a team member can explain the project to a stranger in 30 seconds.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Project Glossary</div>
+<span class="c-comment">── CONFLUENCE: PROJECT GLOSSARY ─────────────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | Maintained by: [PM] | Last updated: [date]
+<span class="c-key">Purpose:</span>  Single source of truth for project terminology across all teams
+
+<span class="c-comment">── TERMS ─────────────────────────────────────────────────</span>
+<span class="c-key">Loan Application</span>
+  Definition:  A formal request submitted by a borrower to initiate credit evaluation
+  In context:  In Project Alpha, refers to the digital form submitted via mobile app
+  Owned by:    Product team | Approved by: Business Analyst
+
+<span class="c-key">Credit Engine</span>
+  Definition:  The automated system that calculates creditworthiness scores
+  In context:  Refers specifically to the AI/ML scoring module in the backend
+  Note:        ≠ Credit Bureau (external data source)
+
+<span class="c-key">Go-Live</span>
+  Definition:  The moment the system becomes available to end users in production
+  In context:  Project Alpha Go-Live = Branch rollout phase 1 (5 branches)
+  Note:        ≠ UAT completion (internal) ≠ Full launch (all 20 branches)
+
+<span class="c-comment">── ACRONYMS ──────────────────────────────────────────────</span>
+<span class="c-val">PH = Philippines | UAT = User Acceptance Testing | CCB = Change Control Board</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-1-task-09-collaborate.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T09: Collaborate</span></a>
+    <a href="domain-1-task-11-virtual-teams.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T11: Virtual Teams</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

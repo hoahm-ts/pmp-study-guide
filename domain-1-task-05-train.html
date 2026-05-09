@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T05: Train Team | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T05: Train Team</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 05</span>
+    </div>
+    <h1>Ensure Team Members / Stakeholders Are Adequately Trained</h1>
+    <div class="title-vi">Đảm bảo Thành viên nhóm / Stakeholders được Đào tạo đầy đủ</div>
+    <p class="description">Xác định nhu cầu đào tạo, lên kế hoạch phát triển năng lực team và đảm bảo stakeholders có đủ kiến thức để tham gia hiệu quả vào dự án.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Training is a proactive investment, not a reactive fix. PM should assess training needs at project start and continuously throughout the project as new technologies, processes, or requirements emerge.</p>
+        <p><strong>Training sources:</strong> Formal training (courses, certification), on-the-job training, mentoring/coaching, shadowing, workshops, communities of practice.</p>
+        <p><strong>Stakeholder training:</strong> Not just for internal team — stakeholders (especially end users or business partners) also need training on new systems, processes, or tools introduced by the project.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/project-training-development-plan-7001" target="_blank">PMI — Project Training & Development</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Đào tạo là đầu tư chủ động, không phải sửa chữa phản ứng. PM nên đánh giá nhu cầu đào tạo ngay từ đầu dự án và liên tục trong suốt dự án khi công nghệ, quy trình hoặc yêu cầu mới xuất hiện.</p>
+        <p><strong>Nguồn đào tạo:</strong> Đào tạo chính thức (khóa học, chứng chỉ), đào tạo tại chỗ, mentoring/coaching, shadowing, workshop, cộng đồng thực hành.</p>
+        <p><strong>Đào tạo stakeholder:</strong> Không chỉ cho team nội bộ — stakeholders cũng cần đào tạo về hệ thống, quy trình hoặc công cụ mới.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Skill Gap Analysis Template</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Skill Area</th><th>Required Level</th><th>Current Level</th><th>Gap</th><th>Training Plan</th><th>Timeline</th></tr></thead>
+        <tbody>
+          <tr><td>Go microservices</td><td>Advanced</td><td>Intermediate</td><td>Medium</td><td>Internal workshop + code review sessions</td><td>4 weeks</td></tr>
+          <tr><td>Kafka event streaming</td><td>Intermediate</td><td>Beginner</td><td>High</td><td>Online course + hands-on project</td><td>6 weeks</td></tr>
+          <tr><td>Kubernetes deployment</td><td>Basic</td><td>None</td><td>High</td><td>DevOps team knowledge transfer</td><td>3 weeks</td></tr>
+          <tr><td>API contract testing</td><td>Intermediate</td><td>Intermediate</td><td>None</td><td>–</td><td>–</td></tr>
+          <tr><td>PCI-DSS compliance</td><td>Awareness</td><td>None</td><td>Medium</td><td>Compliance team session (2h)</td><td>Week 1</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Onboarding New PH Team</h4></div>
+      <p><strong>Tình huống:</strong> 3 developers mới từ PH join Project Alpha. Họ có Go experience nhưng chưa hiểu fintech domain (loan origination, credit scoring, partner bank APIs) hay hệ thống Temporal workflow hiện tại của công ty.</p>
+      <p><strong>Training Plan được tạo:</strong></p>
+      <p>Week 1: Domain knowledge (loan lifecycle, partner integration flow) với Business Analyst dẫn dắt. Week 2: Codebase walkthrough với Tech Lead, review ADRs và architecture docs. Week 3-4: Pair programming với senior devs trên actual tickets, supervised PRs. Week 5+: Independent work với mentoring support.</p>
+      <p><strong>PMP principle:</strong> Đây là T05 (Train) kết hợp với T13 (Mentor) — đào tạo không chỉ là class room learning mà là structured onboarding experience.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A PM discovers mid-project that team members lack the skills to implement a critical technical component. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Replace team members with people who have the required skills</li>
+        <li>B. Assess the skill gap and develop a training plan, considering impact on schedule</li>
+        <li>C. Outsource the component to an external vendor</li>
+        <li>D. Reduce the scope to eliminate the component</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — FIRST step is to assess the situation before taking action. A training plan addresses the gap and develops the team. Replacement (A), outsourcing (C), and scope reduction (D) are all valid options AFTER assessment shows training isn't feasible given time/cost constraints — but they're not the FIRST step.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">A new team member from a different country joins mid-project. They have strong technical skills but lack knowledge of the organization's processes and tools. What training should be prioritized?</div>
+      <ul class="q-opts">
+        <li>A. Advanced technical certifications</li>
+        <li>B. Onboarding: org processes, tools, team norms, and project context</li>
+        <li>C. Leadership training for future growth</li>
+        <li>D. Training on technologies not currently used in the project</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — When a new member already has technical skills, the priority gap is organizational knowledge: how things work here, what tools are used, team norms, and project context. This is the training that directly unblocks their productivity. Technical certifications (A) address a gap that doesn't exist. Leadership training (C) and unrelated technology (D) are not aligned to immediate project needs.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">What is the PM's BEST approach when a skill gap is identified that affects critical path activities?</div>
+      <ul class="q-opts">
+        <li>A. Accept the gap and reduce scope</li>
+        <li>B. Immediately hire a replacement</li>
+        <li>C. Assess the gap size, create a targeted training plan, and consider temporary support for critical activities while training progresses</li>
+        <li>D. Reassign the person to non-critical tasks permanently</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — A critical path gap requires a dual-track response: train the person (long-term capability) AND protect the schedule (short-term support, e.g., pair with a senior or bring in temporary expertise). Accepting scope reduction (A) is a last resort. Immediate replacement (B) is disruptive and expensive. Permanent reassignment (D) abandons the person's development without exploring solutions.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Sprint Onboarding Plan — New Team Member</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Sprint Onboarding Plan — New Team Member</div>
+<span class="c-comment">── PROJECT ALPHA · FinTech Company X ───────────────────────────────────</span>
+<span class="c-key">New Member</span>: <span class="c-val">[Name]</span>     <span class="c-key">Role</span>: <span class="c-val">[Backend Dev / Frontend Dev / QA]</span>     <span class="c-key">Start Date</span>: <span class="c-val">[Date]</span>
+<span class="c-key">Buddy Assigned</span>: <span class="c-val">[Senior Dev Name]</span>     <span class="c-key">Hiring Manager</span>: <span class="c-val">Engineering Manager</span>
+
+<span class="c-comment">── WEEK 1 · Environment &amp; Orientation ───────────────────────────────────</span>
+<span class="c-val">□ Dev environment setup (local, staging access, VPN, SSH keys)
+□ Codebase overview session with Tech Lead (repo structure, ADRs, key services)
+□ Team introductions — 1:1 with each team member (15 min each)
+□ Read: Team Charter, Working Agreements, Definition of Done
+□ Domain knowledge session: loan origination flow, credit scoring logic (with BA)
+□ Access provisioned: GitHub, Jira, Slack channels, monitoring dashboards</span>
+
+<span class="c-comment">── WEEK 2 · First Contribution ──────────────────────────────────────────</span>
+<span class="c-val">□ Pick first small ticket (1–2 story points, well-defined scope)
+□ Pair programming session with buddy on ticket implementation
+□ Submit first PR — buddy reviews and gives feedback
+□ Attend all sprint ceremonies: standup, grooming, review
+□ Read 2 recent ADRs to understand architecture decisions</span>
+
+<span class="c-comment">── WEEK 3 · Independent Work ────────────────────────────────────────────</span>
+<span class="c-val">□ Take independent ticket (3 story points) with buddy available async
+□ Participate in code review — review a peer's PR with written comments
+□ Learn and follow PR process: branch naming, commit message format, review SLA
+□ Shadow PM / Tech Lead in stakeholder meeting (Bank Partner A sync)</span>
+
+<span class="c-comment">── WEEK 4 · Full Integration ────────────────────────────────────────────</span>
+<span class="c-val">□ Participate in sprint planning — estimate stories independently
+□ Contribute to retrospective: share one "went well" and one "improve" item
+□ Complete onboarding checklist sign-off with EM
+□ Set 30/60/90-day goals in IDP with EM</span>
+
+<span class="c-comment">── SUCCESS CRITERIA ─────────────────────────────────────────────────────</span>
+<span class="c-val">Week 1: Environment working, codebase readable
+Week 2: First PR merged
+Week 3: Independent ticket delivered on time
+Week 4: Full sprint participation, IDP created</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs identify training needs, design onboarding plans, build learning paths, and generate coaching questions tailored to individual growth goals.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Training needs analysis</span>
+I need to assess training needs for my team. Help me run a training needs analysis (TNA).
+Team context:
+  Size: [number of people]
+  Roles: [list of roles]
+  Project upcoming: [what's coming — new tech, new process, go-live]
+  Known skill gaps (from reviews or observation): [list what you know]
+  Learning preferences: [online self-paced / workshops / pair programming / etc.]
+
+Generate:
+1. A skills gap matrix (role x skill, RAG status)
+2. Prioritized top 5 training needs with business justification
+3. Recommended learning format for each (workshop/e-learning/mentoring/on-the-job)
+4. Estimated time investment per person
+5. Success metric for each training item
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">New team member onboarding plan</span>
+I'm onboarding a new team member. Generate a 30-60-90 day plan.
+Role: [title and responsibilities]
+Team: [project team they're joining]
+Their background: [what they know / what's new to them]
+Project phase when they join: [planning / mid-execution / close]
+Key stakeholders they'll interface with: [list]
+Critical skills they need to develop: [list]
+
+Create a 30-60-90 day onboarding plan with:
+- Day 1-5 quick wins (who to meet, what to read, first deliverable)
+- Day 30 milestone: what "productive" looks like
+- Day 60 milestone: what "independent" looks like
+- Day 90 milestone: what "contributing peer" looks like
+- Learning resources for each phase
+- Check-in cadence and success metrics
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Coaching conversation questions</span>
+I'm preparing for a coaching session with [team member / role].
+Their goal: [what they're trying to achieve — skill / career / challenge]
+Background: [what I know about their situation]
+Coaching style I want to use: [directive / non-directive / GROW model]
+
+Generate 10 powerful coaching questions for this session, organized by GROW model:
+- Goal (2 questions): clarify what they want
+- Reality (3 questions): understand current state
+- Options (3 questions): explore possibilities
+- Will/Way Forward (2 questions): commit to action
+
+Also suggest what NOT to ask (questions that would make me a consultant rather than coach).
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Individual Development Plan</div>
+<span class="c-comment">── CONFLUENCE: INDIVIDUAL DEVELOPMENT PLAN (IDP) ────────</span>
+<span class="c-key">Name:</span>         [Team member name]
+<span class="c-key">Role:</span>         [Current title] → [Aspired role in 12-18 months]
+<span class="c-key">PM/Manager:</span>   [Your name]
+<span class="c-key">Period:</span>       [Start] → [End]
+
+<span class="c-comment">── DEVELOPMENT AREAS ─────────────────────────────────────</span>
+<span class="c-key">Area 1:</span>       [Technical skill — e.g., system design]
+  Why:        [business need + personal goal]
+  Action:     [course / project / shadowing]
+  Timeline:   [target date]
+  Success:    [how we measure it]
+
+<span class="c-key">Area 2:</span>       [Soft skill — e.g., stakeholder communication]
+  Why:        [specific gap observed]
+  Action:     [coaching / feedback / stretch assignment]
+  Timeline:   [target date]
+  Success:    [observable behavior change]
+
+<span class="c-comment">── CHECK-IN LOG ──────────────────────────────────────────</span>
+<span class="c-key">[Date]</span>        Progress: [what was accomplished] | Blocker: [if any]
+<span class="c-val">Next review: [YYYY-MM-DD] | Overall: [ ] On track  [ ] Needs adjustment</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-1-task-04-empower.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T04: Empower Team</span></a>
+    <a href="domain-1-task-06-build-team.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T06: Build a Team</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

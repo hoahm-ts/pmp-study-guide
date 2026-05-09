@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T14: Governance | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T14: Governance</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 14</span>
+    </div>
+    <h1>Establish Project Governance Structure</h1>
+    <div class="title-vi">Thiết lập Cấu trúc Quản trị Dự án</div>
+    <p class="description">Governance là framework quyết định ai quyết định cái gì, khi nào, và thông qua quy trình nào. Governance kém = political chaos, missed escalations, và delayed decisions.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Project Governance Framework</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Project governance</strong> defines the decision-making framework, accountability structure, and oversight mechanisms for a project. It answers: who decides, who approves, who oversees, and who escalates to whom.</p>
+        <p><strong>Key governance structures:</strong></p>
+        <ul>
+          <li><strong>Project Sponsor:</strong> Highest authority. Approves charter, major scope changes, final acceptance. Resolves issues beyond PM's authority.</li>
+          <li><strong>Steering Committee:</strong> Senior stakeholders who review project health, approve major decisions, provide strategic guidance. Typically monthly.</li>
+          <li><strong>PMO (Project Management Office):</strong> Provides standards, templates, oversight, and sometimes resources across multiple projects.</li>
+          <li><strong>Change Control Board (CCB):</strong> Reviews and approves/rejects change requests.</li>
+          <li><strong>PM:</strong> Day-to-day decision authority within delegated boundaries. Escalates beyond authority.</li>
+        </ul>
+        <p><strong>Phase gates / Stage gates:</strong> Formal review points between project phases. Go/No-Go decisions. Common in predictive projects.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/project-governance-framework-success-7070" target="_blank">PMI — Project Governance</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Project governance</strong> định nghĩa framework ra quyết định, cấu trúc trách nhiệm, và cơ chế giám sát cho dự án. Trả lời: ai quyết định, ai phê duyệt, ai giám sát, và ai leo thang đến ai.</p>
+        <ul>
+          <li><strong>Project Sponsor:</strong> Quyền hạn cao nhất. Phê duyệt charter, thay đổi scope lớn, chấp thuận cuối cùng.</li>
+          <li><strong>Steering Committee:</strong> Senior stakeholders review project health, phê duyệt quyết định lớn.</li>
+          <li><strong>PMO:</strong> Cung cấp tiêu chuẩn, templates, oversight cho nhiều dự án.</li>
+          <li><strong>CCB:</strong> Review và phê duyệt/từ chối change requests.</li>
+          <li><strong>PM:</strong> Quyền quyết định hàng ngày trong giới hạn được ủy quyền.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🏗️</span> PMO Types</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>PMO Type</th><th>Role</th><th>Authority Level</th><th>When Used</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Supportive PMO</strong></td><td>Provides templates, training, best practices, lessons learned. Consultative role.</td><td>Low — advisory only</td><td>Mature organizations where PMs need support, not control</td></tr>
+          <tr><td><strong>Controlling PMO</strong></td><td>Enforces compliance with PM frameworks, methodologies, and tools. Audits projects.</td><td>Medium — compliance authority</td><td>Organizations that need methodology consistency</td></tr>
+          <tr><td><strong>Directive PMO</strong></td><td>Directly manages projects. PMs report to PMO, not to functional managers.</td><td>High — direct control</td><td>Strategic programs, portfolio management, large organizations</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Decision Rights & Escalation</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Decision Rights Matrix (RACI variant)</div>
+<span class="c-comment">DECISION              | PM   | Sponsor | Steering | CCB  | PMO</span>
+<span class="c-key">Daily task priorities</span> | D    | I       | -        | -    | -
+<span class="c-key">Resource allocation</span>  | D/R  | I       | -        | -    | C
+<span class="c-key">Minor scope clarif.</span>  | D    | I       | -        | -    | -
+<span class="c-key">Change request &lt;$5K</span>  | D    | I       | -        | R    | C
+<span class="c-key">Change request &gt;$5K</span>  | R    | D/A     | C        | R    | C
+<span class="c-key">Budget increase</span>      | R    | D/A     | A        | -    | C
+<span class="c-key">Project termination</span>  | R    | D       | A        | -    | I
+<span class="c-key">Phase gate approval</span>  | R    | D       | A        | -    | I
+<span class="c-key">Contract award</span>       | R    | -       | A        | -    | C
+
+<span class="c-comment">D=Decide  A=Approve  R=Recommend  C=Consult  I=Inform</span>
+
+<span class="c-comment">── ESCALATION PATH ─────────────────────────────────────</span>
+Team member → PM → Project Sponsor → Steering Committee → Org Leadership
+<span class="c-val">Rule: Escalate when decision is outside your authority level or requires organizational trade-offs</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Governance</div>
+        <ul>
+          <li><strong>Sponsor is NOT PM's boss</strong> in terms of day-to-day authority — but is the ultimate project authority</li>
+          <li>PM escalates to sponsor when: issue is beyond PM authority, budget exceeded, scope significantly changed, or when PM needs organizational resources</li>
+          <li><strong>Phase gate = Go/No-Go</strong> decision — project may be stopped, redirected, or continued</li>
+          <li>PMO type on exam: Supportive (low control), Controlling (medium), Directive (high) — know the authority level of each</li>
+          <li>Steering Committee provides strategic oversight — not operational management</li>
+          <li>Good governance: decisions at the <strong>right level</strong>, not always pushed up or always handled at PM level</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Governance in a Critical Decision</h4></div>
+      <p><strong>Situation:</strong> Sprint 10. PM discovers that the go-live date will slip by 3 weeks due to accumulated technical debt that requires an unplanned refactoring sprint. This was not in the original plan. Options: (1) Skip refactoring and go live with risk, (2) Delay 3 weeks, (3) Descope low-priority features to absorb the sprint.</p>
+      <p><strong>PM's authority check:</strong> The 3-week delay affects a contractual commitment with Bank Partner A (penalty clause: $10,000/week delay). This is beyond PM's authority to decide alone.</p>
+      <p><strong>Governance response:</strong></p>
+      <ol>
+        <li>PM documents all 3 options with impact analysis (cost, risk, quality, partner relationship)</li>
+        <li>PM escalates to Project Sponsor with recommendation: Option 3 (descope) — 1 sprint absorbed, 0 delay, minimal risk</li>
+        <li>Emergency CCB called to review scope reduction. Sponsor approves.</li>
+        <li>Partner Bank A informed same day of descoped items (moved to Phase 2) — no delay, contract maintained</li>
+      </ol>
+      <p><strong>PMP lesson:</strong> Good governance means knowing when to escalate vs when to decide. The PM recognized this decision exceeded their authority and processed it appropriately — fast but through the right channels.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A project manager needs resources from another department but the department manager refuses to cooperate. The PM has already tried to resolve the conflict directly. What should the PM do NEXT?</div>
+      <ul class="q-opts">
+        <li>A. Hire contractors to replace the needed resources</li>
+        <li>B. Document the refusal and continue without the resources</li>
+        <li>C. Escalate to the project sponsor for resolution</li>
+        <li>D. Ask the PMO to resolve the conflict</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — When a PM cannot resolve an issue within their authority, the correct escalation path is to the Project Sponsor. The sponsor has organizational authority to resolve cross-department resource conflicts that the PM cannot. Option A is a workaround that bypasses governance and adds cost. Option B accepts failure without escalation. Option D may be valid if the PMO is Directive type, but sponsor escalation is the primary governance path.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A PMO provides standardized templates, training, and best practices but does not have authority to direct project decisions. This PMO type is:</div>
+    <ul class="q-opts">
+      <li>A. Directive PMO</li>
+      <li>B. Controlling PMO</li>
+      <li>C. Supportive PMO</li>
+      <li>D. Oversight PMO</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: C</strong> — A Supportive PMO has low control authority. It provides value through consulting, sharing templates, training, and best practices — but PMs and project teams retain decision-making authority. A Controlling PMO (B) requires compliance with specific frameworks and reviews. A Directive PMO (A) has the highest authority and actually assigns and manages PMs. "Oversight PMO" (D) is not a standard PMI classification.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">A phase gate review finds that a project's current trajectory will exceed budget by 25% with no clear path to recovery. The steering committee's MOST appropriate action is:</div>
+    <ul class="q-opts">
+      <li>A. Approve continuation since the project is already past the midpoint</li>
+      <li>B. Evaluate the options: continue with revised budget, descope, or terminate the project — a phase gate is explicitly a Go/No-Go decision point</li>
+      <li>C. Ask the PM to find a way to recover without additional budget</li>
+      <li>D. Replace the PM</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Phase gates exist precisely to make Go/No-Go decisions based on current project health and business case viability. A 25% budget overrun with no recovery path is a serious governance signal that requires structured evaluation of all options: proceed with revised budget, reduce scope to fit budget, or terminate to stop further investment. The sunk cost of being "past the midpoint" (A) is a cognitive bias — not a governance rationale. Replacing the PM (D) may be warranted eventually but is not the immediate governance response.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs design governance frameworks, create escalation matrices, generate RACI charts, and draft governance documentation for steering committees and PMOs.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Project governance framework design</span>
+Help me design a project governance framework.
+Project: [name, scale, duration]
+Organizational context: [PMO type — Supportive / Controlling / Directive]
+Stakeholder complexity: [single department / cross-functional / external partners]
+Risk profile: [high / medium / low]
+Reporting requirements: [weekly / monthly / milestone-based]
+Decision-making culture: [consensus-driven / top-down / delegated]
+
+Design a governance framework with:
+1. Governance structure (Steering Committee, CCB, PMO touchpoints, team-level decisions)
+2. Decision rights matrix: who decides what at each level
+3. Escalation path and triggers (what gets escalated and to whom)
+4. Meeting cadence: governance meetings, their purpose, attendees, frequency
+5. Reporting structure: what reports, to whom, at what frequency
+6. Performance thresholds that trigger escalation (schedule/budget variance %, quality gates)
+7. Audit and review checkpoints
+
+Make it proportionate to the project size — avoid bureaucracy overload for smaller projects.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">RACI matrix for project governance</span>
+Help me create a RACI matrix for project governance and key decision points.
+Project roles:
+  - Sponsor: [name / authority level]
+  - PMO Director: [name / role]
+  - Project Manager: [me]
+  - Tech Lead: [name]
+  - Product Owner: [name]
+  - Functional Manager: [name]
+  - External Partner/Vendor: [name]
+  - Legal/Compliance: [name]
+
+Key governance activities to assign:
+  1. Project charter approval
+  2. Baseline scope approval
+  3. Budget approval (>$X threshold)
+  4. Change request approval (major vs. minor)
+  5. Risk escalation decisions
+  6. Go/no-go release decision
+  7. Vendor contract approval
+  8. Resource allocation decisions
+  9. Project closure approval
+  10. Lessons learned sign-off
+
+Create the RACI matrix and flag any:
+- Activities with no single Accountable (A) — governance gap
+- Activities with too many Consulted (C) — decision bottleneck
+- Activities where the PM is over-assigned as R (capacity risk)
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">PMO reporting package</span>
+I need to create a monthly PMO reporting package for my project portfolio / single project.
+PMO type: [Supportive / Controlling / Directive]
+Projects to report on: [list 3-5 projects with brief status]
+PMO audience: [C-suite / department heads / portfolio managers]
+Key metrics PMO tracks: [schedule adherence, budget variance, risk count, milestone hit rate]
+Reporting period: [month name]
+
+Generate a PMO monthly report package with:
+1. Portfolio dashboard (RAG status per project in a table)
+2. Executive summary (3 key insights across the portfolio)
+3. At-risk projects deep dive (top 1-2 that need attention)
+4. Resource utilization overview
+5. Key decisions needed from leadership this month
+6. Next month outlook
+
+Format: suitable for a 10-minute leadership review meeting.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Governance Framework</div>
+<span class="c-comment">── CONFLUENCE: PROJECT GOVERNANCE FRAMEWORK ─────────────</span>
+<span class="c-key">Project:</span>   [Project Alpha] | PM: [name] | Approved by: [Sponsor name]
+
+<span class="c-comment">── GOVERNANCE STRUCTURE ──────────────────────────────────</span>
+<span class="c-key">Steering Committee:</span>   [Members] | Meets: Monthly | Purpose: Strategic direction
+<span class="c-key">Change Control Board:</span> [Members] | Meets: Bi-weekly | Purpose: Approve changes
+<span class="c-key">PMO Review:</span>           [PMO contact] | Meets: Monthly | Purpose: Compliance + oversight
+<span class="c-key">Team Level:</span>           Daily standup + sprint ceremonies | Purpose: Execution
+
+<span class="c-comment">── DECISION AUTHORITY ────────────────────────────────────</span>
+Decision                  | Team  | PM    | Steering | Sponsor
+─────────────────────────|──────|──────|────────|─────────
+Sprint scope (within cap) | R/A  |  I   |   —    |   —
+Budget change (&lt;5%)       |  —   | R/A  |   I    |   —
+Budget change (&gt;5%)       |  —   |  R   |   A    |   I
+Scope change (minor)      |  —   | R/A  |   I    |   —
+Scope change (major)      |  —   |  R   |   A    |   A
+Go-live decision          |  R   |  A   |   A    |   A
+
+<span class="c-comment">── ESCALATION TRIGGERS ───────────────────────────────────</span>
+<span class="c-val">SPI or CPI &lt; 0.85 → Immediate sponsor notification + recovery plan</span>
+Critical risk materialized → CCB emergency session within 48h
+Team conflict unresolved in 5 days → PM escalates to functional manager
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-13-methodology.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T13: Methodology</span></a>
+    <a href="domain-2-task-15-issues.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T15: Issues</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

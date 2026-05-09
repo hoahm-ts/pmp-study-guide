@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T10: Manage Changes | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T10: Manage Changes</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 10</span>
+      <span class="tag tag-hybrid">Predictive + Agile</span>
+    </div>
+    <h1>Manage Project Changes</h1>
+    <div class="title-vi">Quản lý Thay đổi Dự án</div>
+    <p class="description">Change là tất yếu trong mọi dự án. PM không ngăn chặn change — PM kiểm soát nó. Integrated Change Control đảm bảo mọi change được evaluate, approved, và implemented đúng cách.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Change Control Process</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Integrated Change Control</strong> is the process of reviewing all change requests, approving or rejecting them, and managing the implementation of approved changes across ALL project baselines.</p>
+        <p><strong>Change Control Board (CCB)</strong>: A formally chartered group that reviews, evaluates, approves, delays, or rejects changes to the project, with all decisions documented.</p>
+        <p><strong>Change Request types:</strong></p>
+        <ul>
+          <li><strong>Corrective action:</strong> Realign project performance to plan (reactive)</li>
+          <li><strong>Preventive action:</strong> Ensure future performance aligns to plan (proactive)</li>
+          <li><strong>Defect repair:</strong> Fix a product/deliverable that doesn't meet requirements</li>
+          <li><strong>Updates:</strong> Changes to formally controlled project documents or baselines</li>
+        </ul>
+        <p><strong>Key rule:</strong> ALL changes must be documented and approved — even if the PM has authority to approve minor changes. No undocumented changes ever.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/integrated-change-control-project-success-7063" target="_blank">PMI — Integrated Change Control</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Integrated Change Control</strong> là quy trình review tất cả change requests, phê duyệt/từ chối, và quản lý việc implement các changes đã được phê duyệt trên TẤT CẢ baselines.</p>
+        <p><strong>CCB (Change Control Board)</strong>: Nhóm được ủy quyền chính thức để review, đánh giá, phê duyệt hoặc từ chối changes, với tất cả quyết định được ghi lại.</p>
+        <p><strong>Quy tắc then chốt:</strong> MỌI changes phải được ghi lại và phê duyệt — ngay cả khi PM có quyền phê duyệt minor changes. Không bao giờ có undocumented changes.</p>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Change Control Process Flow</div>
+<span class="c-comment">── STEP 1: IDENTIFY ─────────────────────────────────────</span>
+Change identified by: team member / stakeholder / PM / external event
+Document as formal Change Request (CR) with: description, reason, requester
+
+<span class="c-comment">── STEP 2: EVALUATE IMPACT ──────────────────────────────</span>
+PM assesses impact on:
+  • Scope (what changes?)
+  • Schedule (how many days?)
+  • Cost (how much money?)
+  • Quality (any quality risk?)
+  • Risk (new risks introduced?)
+  • Resources (who is needed?)
+
+<span class="c-comment">── STEP 3: CCB REVIEW ────────────────────────────────────</span>
+Present CR to CCB with impact analysis
+CCB decision: Approve / Reject / Defer / Approve with conditions
+
+<span class="c-comment">── STEP 4: IMPLEMENT (if approved) ──────────────────────</span>
+Update ALL affected baselines:
+  Scope baseline → Schedule baseline → Cost baseline → Risk register → Docs
+
+<span class="c-comment">── STEP 5: COMMUNICATE ──────────────────────────────────</span>
+Notify affected stakeholders of approved change and updated plans
+
+<span class="c-comment">── STEP 6: CLOSE CR ──────────────────────────────────────</span>
+Update Change Log with final status and lessons learned
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔄</span> Change in Agile vs Predictive</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Aspect</th><th>Predictive (Waterfall)</th><th>Agile (Scrum)</th></tr></thead>
+        <tbody>
+          <tr><td>Change attitude</td><td>Change is managed (controlled, minimized)</td><td>Change is welcomed (embraced as competitive advantage)</td></tr>
+          <tr><td>Change mechanism</td><td>Formal CCB, change request document</td><td>Product Backlog reprioritization by Product Owner</td></tr>
+          <tr><td>Change timing</td><td>Formal change control window (phase gates)</td><td>Any time — but NOT during a sprint in progress</td></tr>
+          <tr><td>Sprint change rule</td><td>N/A</td><td>Sprint commitment is protected — only PO can cancel sprint if goal is invalidated</td></tr>
+          <tr><td>Documentation</td><td>Change log, updated baselines</td><td>Backlog update, sprint velocity adjustment</td></tr>
+          <tr><td>Who approves</td><td>CCB (may include sponsor, PM, stakeholders)</td><td>Product Owner (for backlog changes)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Change Management</div>
+        <ul>
+          <li>EVERY change must go through change control — <strong>no exceptions</strong>, even "small" ones</li>
+          <li>In Agile, the PO <strong>can change backlog</strong> at any time — but <strong>cannot change sprint goals mid-sprint</strong></li>
+          <li>PM should <strong>analyze impact BEFORE presenting to CCB</strong> — never show up without numbers</li>
+          <li><strong>Approved change → update ALL baselines</strong> (scope + schedule + cost), not just one</li>
+          <li>Emergency change: same process, expedited timeline. "Emergency" doesn't mean "skip process."</li>
+          <li>Change log is separate from risk register and issue log — track all three</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — CCB in Action</h4></div>
+      <p><strong>Situation:</strong> Sprint 9. Bank Partner A announces their API will add a mandatory new authentication header (HMAC signature) effective in 3 weeks — a regulatory requirement in their market. This was not in the original integration spec.</p>
+      <p><strong>PM's process:</strong></p>
+      <ol>
+        <li><strong>Raise Change Request CR-047:</strong> "Mandatory API auth header change — Partner Bank A regulatory requirement"</li>
+        <li><strong>Impact analysis:</strong> Dev effort = 5 SP (signature library + tests). QA = 3 SP. Deployment = 1 day. Timeline impact = +1 sprint delay OR can be absorbed by descoping low-priority features (8 SP available in current sprint).</li>
+        <li><strong>CCB decision:</strong> Change approved. Defer two low-priority admin features (8 SP) to Phase 2. No timeline slip. CR-047 APPROVED.</li>
+        <li><strong>Baseline update:</strong> Sprint 9 scope updated. Product backlog updated. Partner notified of schedule for compliance.</li>
+        <li><strong>Retrospective note:</strong> Add "partner regulatory change monitoring" to risk register as ongoing process.</li>
+      </ol>
+      <p><strong>PMP lesson:</strong> External-driven change still goes through change control. The PM's value is in the impact analysis — not just executing the request, but evaluating options and recommending the best path forward.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">During project execution, a team member identifies a better technical solution that would require significant changes to the architecture. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Ask the team member to implement the improvement during spare time</li>
+        <li>B. Reject the idea since the architecture is already approved</li>
+        <li>C. Document it as a change request and perform an impact analysis before escalating to CCB</li>
+        <li>D. Immediately implement the improvement to avoid delays later</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — All changes, including technical improvements, must go through the change control process. The PM first documents the request and performs an impact analysis (scope, schedule, cost, risk) before presenting to CCB. Option A bypasses process. Option B is too rigid — the idea may have merit. Option D creates unauthorized changes to the approved baseline, which is a professional failure.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A change request is submitted to add a feature that will increase project cost by $15,000 but also increase expected revenue by $80,000. The CCB reviews and approves. What must the PM do NEXT?</div>
+    <ul class="q-opts">
+      <li>A. Start implementation immediately</li>
+      <li>B. Update all affected project baselines (scope, schedule, cost) and communicate to stakeholders before implementation</li>
+      <li>C. Wait for the sponsor to formally sign off a second time</li>
+      <li>D. Only update the cost baseline since the financial impact is the key change</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — An approved change requires updating ALL affected baselines, not just one. Scope, schedule, and cost baselines must all reflect the approved change before work begins. Communicating the updates to stakeholders ensures everyone is aligned before implementation starts. Jumping straight to implementation (A) or updating only the cost baseline (D) leaves other baselines out of sync, destroying the integrity of performance measurement.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">During a sprint, a Product Owner tries to add a new user story to the current sprint's committed work without going through any process. The Scrum Master should:</div>
+    <ul class="q-opts">
+      <li>A. Allow it since the PO has authority over the backlog</li>
+      <li>B. Explain that the sprint commitment is protected — new work goes to the product backlog for the next sprint, not into the current sprint</li>
+      <li>C. Escalate to the PM</li>
+      <li>D. Add it but extend the sprint duration</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Sprint commitment is protected in Scrum. While the Product Owner has authority over the product backlog, they cannot interrupt an in-progress sprint by inserting new work. New stories are added to the backlog and prioritized for the next sprint. This protects the team's focus and ensures the sprint goal remains achievable. Extending the sprint (D) breaks Scrum's time-box principle.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs draft change request documentation, generate impact analyses, prepare CCB presentations, and communicate change decisions clearly to all affected stakeholders.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Change request documentation drafting</span>
+Help me write a complete Change Request document for CCB review.
+Change summary: [what is changing]
+Requestor: [name / role]
+Business driver: [why this change is needed — business value, risk reduction, regulatory]
+Change type: [Scope / Schedule / Budget / Technical / Regulatory]
+Urgency: [critical / normal / low]
+
+Draft a Change Request document with:
+1. Executive summary (3 sentences — what, why, when)
+2. Detailed description of the change
+3. Impact analysis:
+   - Scope: what is added/removed/modified
+   - Schedule: days added, milestones affected
+   - Cost: effort + direct costs
+   - Quality: any risks to existing deliverables
+   - Resources: additional people/tools needed
+4. Options analysis:
+   - Option A: Full implementation
+   - Option B: Partial implementation (if applicable)
+   - Option C: Reject and alternatives
+5. Recommendation with rationale
+6. Approval signatories
+
+Format for a 1-page CCB submission.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">CCB meeting preparation</span>
+I'm presenting 3 change requests to the Change Control Board this week. Help me prepare.
+CR-1: [title, type, impact summary]
+CR-2: [title, type, impact summary]
+CR-3: [title, type, impact summary]
+CCB members: [sponsor, PMO director, technical lead, finance]
+Their known concerns: [what each member typically pushes back on]
+My recommendations: [approve/reject/defer for each]
+
+Prepare my CCB presentation:
+1. Meeting agenda (time-boxed — 45 minutes total)
+2. For each CR: 2-minute verbal pitch structure
+3. Decision-making criteria table (how to evaluate approve/reject/defer)
+4. Anticipated questions from each CCB member and my prepared responses
+5. Post-CCB communication plan (how to tell requestors the decision)
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Change impact on project baseline</span>
+A change has been approved by the CCB. Help me update the project baselines.
+Approved change: [CR description and decision]
+Original scope baseline: [key scope elements]
+Original schedule baseline: [key milestones and dates]
+Original cost baseline: [total budget]
+Change impact: [scope additions/removals, schedule delta, cost delta]
+
+Help me:
+1. Update the scope baseline statement (what's in / out now)
+2. Update the schedule — which milestones shift? By how much?
+3. Update the cost baseline — new total, new contingency reserve
+4. Identify any secondary changes triggered by this change (downstream impacts)
+5. Draft the baseline update communication for stakeholders
+6. Log the change in the change register
+
+Note: what does the team need to know, and how should I communicate this to avoid confusion?
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Jira — CCB Change Log</div>
+<span class="c-comment">── JIRA: CHANGE CONTROL REGISTER ────────────────────────</span>
+<span class="c-key">Epic/Label:</span>   change-control | project:[alpha]
+
+<span class="c-comment">── CHANGE RECORD ─────────────────────────────────────────</span>
+<span class="c-key">CR Number:</span>      CR-[###]
+<span class="c-key">Title:</span>          [Short descriptive title]
+<span class="c-key">Requested by:</span>   [Name / Role]
+<span class="c-key">Date submitted:</span> [YYYY-MM-DD]
+<span class="c-key">Category:</span>       [ ] Scope  [ ] Schedule  [ ] Cost  [ ] Technical  [ ] Regulatory
+
+<span class="c-comment">── IMPACT SUMMARY ────────────────────────────────────────</span>
+<span class="c-key">Scope delta:</span>    [+/- description]
+<span class="c-key">Schedule delta:</span> +[X] days | New milestone: [date]
+<span class="c-key">Cost delta:</span>     +$[amount] | New budget: $[total]
+<span class="c-key">Risk introduced:</span> [new/increased risk]
+
+<span class="c-comment">── CCB DECISION ──────────────────────────────────────────</span>
+<span class="c-key">Decision:</span>       [ ] Approved  [ ] Rejected  [ ] Deferred  [ ] Conditional
+<span class="c-key">Decision date:</span>  [YYYY-MM-DD]
+<span class="c-key">Decision by:</span>    [CCB chair / members]
+<span class="c-key">Conditions:</span>    [any approval conditions or constraints]
+<span class="c-key">Baseline updated:</span> [ ] Yes — [date]  [ ] No
+<span class="c-val">Stakeholders notified: [list] | Notification date: [YYYY-MM-DD]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-09-integrate-planning.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T09: Integrate Planning</span></a>
+    <a href="domain-2-task-11-procurement.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T11: Procurement</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

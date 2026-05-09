@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T07: Quality | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T07: Quality</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 07</span>
+      <span class="tag tag-new">High Exam Weight</span>
+    </div>
+    <h1>Plan and Manage Quality of Products and Deliverables</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Chất lượng Sản phẩm và Kết quả bàn giao</div>
+    <p class="description">Quality không phải là "test at the end" — là built-in từ đầu. PM phải phân biệt Quality Planning, Quality Assurance, và Quality Control. "Quality = fit for purpose, not gold-plating."</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Quality Triad: Plan → Assure → Control</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Quality Planning (Plan Quality Management):</strong> Define quality standards, metrics, and how quality will be measured. Output: Quality Management Plan.</p>
+        <p><strong>Quality Assurance (QA):</strong> Audit of quality PROCESSES to ensure they are being followed correctly. Proactive, done during execution. Identifies process improvements.</p>
+        <p><strong>Quality Control (QC):</strong> Inspecting DELIVERABLES to verify they meet quality standards. Reactive, identifies defects. Compare to acceptance criteria.</p>
+        <p><strong>Key distinction:</strong> QA = process audit (are we doing things right?). QC = product inspection (did we do it right?).</p>
+        <p><strong>Gold-plating</strong>: Adding features beyond agreed scope "as a bonus." This is NOT quality improvement — it risks unintended impacts, wastes budget, and should be avoided.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/quality-management-fundamentals-9267" target="_blank">PMI — Quality Management Fundamentals</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Quality Planning:</strong> Xác định tiêu chuẩn chất lượng, metrics và cách đo lường. Output: Quality Management Plan.</p>
+        <p><strong>Quality Assurance (QA):</strong> Kiểm tra QTRÌNH chất lượng để đảm bảo chúng đang được tuân thủ đúng. Proactive, thực hiện trong execution.</p>
+        <p><strong>Quality Control (QC):</strong> Kiểm tra KẾT QUẢ để xác minh chúng đáp ứng tiêu chuẩn. Reactive, xác định defects.</p>
+        <p><strong>Phân biệt quan trọng:</strong> QA = kiểm tra quy trình. QC = kiểm tra sản phẩm.</p>
+        <p><strong>Gold-plating:</strong> Thêm tính năng ngoài phạm vi đã đồng ý "như một bonus" — KHÔNG phải cải thiện chất lượng, cần tránh.</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Aspect</th><th>Quality Assurance (QA)</th><th>Quality Control (QC)</th></tr></thead>
+        <tbody>
+          <tr><td>Focus</td><td>Process (How we work)</td><td>Product/Deliverable (What we produce)</td></tr>
+          <tr><td>Timing</td><td>During execution (ongoing)</td><td>After work is done (inspection)</td></tr>
+          <tr><td>Nature</td><td>Proactive (prevent defects)</td><td>Reactive (find defects)</td></tr>
+          <tr><td>Who</td><td>PM, QA team, process auditors</td><td>QC team, testers, inspectors</td></tr>
+          <tr><td>Output</td><td>Process improvement recommendations</td><td>Verified deliverables, defect reports</td></tr>
+          <tr><td>Example</td><td>Auditing code review process compliance</td><td>Running regression tests on released build</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💰</span> Cost of Quality (CoQ)</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Cost of Quality</strong> is the total cost incurred to prevent poor quality plus the cost when quality fails. Two categories:</p>
+        <p><strong>Cost of Conformance (doing quality right):</strong></p>
+        <ul>
+          <li><strong>Prevention costs:</strong> Training, process design, standards documentation — costs to prevent defects</li>
+          <li><strong>Appraisal costs:</strong> Testing, inspections, audits — costs to find defects before delivery</li>
+        </ul>
+        <p><strong>Cost of Non-Conformance (paying for failures):</strong></p>
+        <ul>
+          <li><strong>Internal failure costs:</strong> Rework, scrap — defects found before delivery</li>
+          <li><strong>External failure costs:</strong> Warranty claims, lost business, reputation damage — defects found after delivery</li>
+        </ul>
+        <p><strong>PMP principle:</strong> Prevention is cheaper than inspection. Inspection is cheaper than failure. "Pay now or pay more later."</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Cost of Quality (CoQ)</strong> là tổng chi phí để ngăn ngừa chất lượng kém + chi phí khi chất lượng thất bại.</p>
+        <p><strong>Cost of Conformance (làm đúng từ đầu):</strong></p>
+        <ul>
+          <li><strong>Prevention costs:</strong> Training, thiết kế quy trình — chi phí ngăn ngừa lỗi</li>
+          <li><strong>Appraisal costs:</strong> Testing, kiểm tra — chi phí tìm lỗi trước khi giao</li>
+        </ul>
+        <p><strong>Cost of Non-Conformance (trả giá cho thất bại):</strong></p>
+        <ul>
+          <li><strong>Internal failure:</strong> Làm lại, hủy — lỗi tìm thấy trước khi giao</li>
+          <li><strong>External failure:</strong> Claim bảo hành, mất kinh doanh — lỗi tìm thấy sau khi giao</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Cost of Quality Analysis</div>
+<span class="c-comment">── COST OF CONFORMANCE ──────────────────────────────────</span>
+<span class="c-key">Prevention Costs</span>
+  • Developer training on secure coding          $5,000
+  • Code review process documentation            $1,000
+  • Automated testing infrastructure setup       $8,000
+  Total Prevention:                             <span class="c-val">$14,000</span>
+
+<span class="c-key">Appraisal Costs</span>
+  • QA team testing (3 sprints × 2 weeks)       $12,000
+  • Security audit (external)                   $10,000
+  • UAT coordination                             $3,000
+  Total Appraisal:                              <span class="c-val">$25,000</span>
+
+<span class="c-comment">── COST OF NON-CONFORMANCE ──────────────────────────────</span>
+<span class="c-key">Internal Failure</span>
+  • Bug rework time (est. 15% of dev time)      $18,000
+  Total Internal Failure:                       <span class="c-val">$18,000</span>
+
+<span class="c-key">External Failure</span>
+  • If data breach occurs: regulatory fines     $200,000+
+  • Customer churn (est. 5% if bugs at launch)  $50,000
+  Total External Failure (risk-adjusted):       <span class="c-val">$30,000</span>
+
+<span class="c-comment">── TOTAL CoQ ─────────────────────────────────────────────</span>
+<span class="c-val">Invest $39K in conformance to avoid $48K+ in failures = WORTH IT</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Quality Management</div>
+        <ul>
+          <li><strong>QA = process, QC = product</strong> — this distinction is always tested</li>
+          <li><strong>Gold-plating is WRONG</strong> — even if well-intentioned, it's scope creep disguised as quality</li>
+          <li><strong>Prevention &gt; Inspection &gt; Internal failure &gt; External failure</strong> (cost order, cheapest to most expensive)</li>
+          <li>In Agile: quality is built in via <strong>Definition of Done</strong>, automated testing, and continuous integration</li>
+          <li><strong>Fitness for use</strong> = meeting customer needs. <strong>Conformance to requirements</strong> = meeting specifications. Quality = both.</li>
+          <li>Deming's Plan-Do-Check-Act (PDCA) cycle underlies quality management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Quality Tools</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tool</th><th>Purpose</th><th>When to Use</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cause-and-Effect (Fishbone/Ishikawa)</strong></td><td>Root cause analysis</td><td>When a quality defect is found</td><td>API timeout root cause: 6M framework (Machine, Method, Material, Man, Measurement, Environment)</td></tr>
+          <tr><td><strong>Pareto Chart</strong></td><td>80/20 rule — identify top causes</td><td>Prioritizing defect resolution</td><td>80% of bugs come from 20% of modules → focus there</td></tr>
+          <tr><td><strong>Control Chart</strong></td><td>Monitor process stability over time</td><td>Ongoing process monitoring</td><td>API response time tracked; alert when outside upper/lower control limits</td></tr>
+          <tr><td><strong>Histogram</strong></td><td>Distribution of defects by category</td><td>Understanding defect patterns</td><td>Bugs by sprint, by component, by severity</td></tr>
+          <tr><td><strong>Scatter Diagram</strong></td><td>Correlation between two variables</td><td>Testing cause-effect relationship</td><td>Team size vs defect rate correlation</td></tr>
+          <tr><td><strong>Checksheet</strong></td><td>Structured data collection</td><td>Manual inspection, audit</td><td>Deployment checklist, code review checklist</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Quality Incident & Root Cause</h4></div>
+      <p><strong>Situation:</strong> Sprint 7 production deploy của Project Alpha. Critical defect: loan application data from Partner Bank A showing incorrect interest rates due to a rounding error in the credit engine. 3 customer applications affected before caught.</p>
+      <p><strong>QC finding:</strong> Unit tests for the calculation module did not cover edge cases for rates above 18%. Integration tests didn't include real bank rate schedules.</p>
+      <p><strong>QA process audit (Fishbone analysis):</strong></p>
+      <ul>
+        <li><strong>Method:</strong> Definition of Done did not require interest rate edge case coverage</li>
+        <li><strong>Man:</strong> Developer who built module was new PH team member, unfamiliar with local rate regulations</li>
+        <li><strong>Measurement:</strong> No acceptance criteria for rate calculation accuracy in stories</li>
+      </ul>
+      <p><strong>Cost of Non-Conformance:</strong> $15,000 in rework + remediation. $5,000 regulatory notification cost. No external failure — caught before broader impact.</p>
+      <p><strong>Corrective actions (QA improvements):</strong> DoD updated to require rate edge case coverage. Acceptance criteria template updated with mandatory precision requirements. Partner bank rate schedule added to test fixtures.</p>
+      <p><strong>PMP lesson:</strong> Quality management is a system — one defect reveals a process gap. Fix the process, not just the bug.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A developer adds extra security features to an application module because they believe it will make the product better, even though these features were not in the requirements. This is an example of:</div>
+      <ul class="q-opts">
+        <li>A. Quality assurance in action</li>
+        <li>B. Gold-plating, which should be avoided</li>
+        <li>C. Scope management best practice</li>
+        <li>D. Proactive risk mitigation</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B — Gold-plating</strong>. Adding unrequested features, even beneficial ones, is gold-plating. It consumes budget/time not in the plan, may create unintended side effects, and wasn't validated by the customer. PM should ensure work aligns to approved scope through change control — even "improvements" need approval.</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">The project team is reviewing their code review and testing processes to ensure they are being followed consistently by all developers. This is an example of:</div>
+      <ul class="q-opts">
+        <li>A. Quality Control</li>
+        <li>B. Quality Assurance</li>
+        <li>C. Quality Planning</li>
+        <li>D. Cost of Conformance</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B — Quality Assurance</strong>. Auditing/reviewing PROCESSES (code review process, testing process) to ensure compliance = QA. Quality Control (A) would be inspecting the actual code/output. Quality Planning (C) was done earlier to define the process. Cost of Conformance (D) is a financial concept, not an activity.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">A Pareto analysis of defects shows that 78% of all bugs came from 3 modules out of 20 total modules. What is the BEST PM action?</div>
+    <ul class="q-opts">
+      <li>A. Fix all 20 modules equally since all bugs matter</li><li>B. Focus quality improvement efforts on those 3 modules first — Pareto principle (80/20 rule) means maximum impact from targeted effort</li><li>C. Remove the 3 problematic modules from scope</li><li>D. Assign more testers to the other 17 modules</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — The Pareto principle (80/20 rule) states that roughly 80% of effects come from 20% of causes. Here, 3 out of 20 modules (15%) are responsible for 78% of defects. Focusing improvement effort on these vital few modules delivers maximum quality gain for minimum effort. Spreading effort equally (A) is inefficient. Removing modules (C) changes scope without solving root causes. Adding testers elsewhere (D) targets the wrong modules.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs generate QA checklists, analyze defect patterns using Pareto logic, draft root cause analyses, and create quality reports that connect technical metrics to business impact.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Definition of Done quality checklist generation</span>
+Generate a Definition of Done (DoD) checklist for our development team.
+Project type: [web app / mobile / API / data pipeline]
+Team practices: [code review / automated testing / CI/CD pipeline]
+Quality standards we must meet: [security / performance / accessibility / regulatory]
+Stakeholder acceptance criteria requirements: [what customer expects before accepting a story]
+
+Create a DoD checklist with criteria across these dimensions:
+1. Code quality (review, standards, coverage)
+2. Testing (unit / integration / regression / performance thresholds)
+3. Security (OWASP checks, secrets scanning, dependency vulnerabilities)
+4. Documentation (inline code docs, API docs, runbook)
+5. Deployment readiness (feature flags, rollback plan, monitoring)
+6. Product acceptance (AC met, PO demo, no P1/P2 open)
+
+Flag which items are "must pass" vs. "best effort" and suggest automation checkpoints.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Defect root cause analysis</span>
+I have a production defect or quality incident. Help me run a root cause analysis.
+Defect description: [what failed, observable symptoms]
+Affected area: [module / feature / integration]
+Discovery method: [found in QA / UAT / production / customer report]
+Severity: [P0/P1/P2/P3]
+User/business impact: [what happened to users or business]
+Timeline: [when introduced vs. when found]
+Initial hypothesis: [what we think caused it]
+
+Run a structured RCA using the Fishbone (Ishikawa) 6M framework:
+- Machine (systems, tools, infrastructure)
+- Method (process, procedures, frameworks)
+- Material (data, inputs, dependencies)
+- Man (human error, training gaps, communication)
+- Measurement (testing coverage, monitoring, alerting)
+- Environment (deployment, config, external factors)
+
+Output:
+1. Most likely root cause with evidence
+2. Contributing factors
+3. Why wasn't this caught earlier? (QA process gap)
+4. Corrective actions (fix the defect) vs. preventive actions (fix the process)
+5. Lessons learned entry
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Quality metrics dashboard narrative</span>
+I need to write a quality section for my sprint / project report.
+Quality data:
+  Test coverage: [%]
+  Defects found this sprint: [count] — severity breakdown: P0:[n] P1:[n] P2:[n]
+  Defects resolved: [count]
+  Open defects: [count] — aging: [average days open]
+  Escaped defects (found in prod): [count]
+  Test pass rate: [%]
+  Performance: [API p95 latency, error rate, uptime]
+
+Write a quality narrative that:
+1. Gives a RAG status with 1-sentence justification
+2. Highlights the most important quality signal (positive or negative)
+3. Explains any defect trends (improving / stable / worsening) and root cause
+4. States what the QA team will focus on next sprint
+5. Connects quality to business impact (avoid pure technical metrics)
+
+Keep it under 200 words, suitable for a steering committee report.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Sprint Quality Report</div>
+<span class="c-comment">── CONFLUENCE: SPRINT QUALITY REPORT ────────────────────</span>
+<span class="c-key">Sprint:</span>    [Sprint #] | Date: [YYYY-MM-DD] | QA Lead: [name]
+<span class="c-key">Status:</span>    🟢 Green / 🟡 Amber / 🔴 Red
+
+<span class="c-comment">── DEFECT SUMMARY ────────────────────────────────────────</span>
+<span class="c-key">New defects:</span>    [count] | P0:[n] P1:[n] P2:[n] P3:[n]
+<span class="c-key">Resolved:</span>       [count] | Net delta: [+/-]
+<span class="c-key">Open total:</span>     [count] | Avg age: [days]
+<span class="c-key">Escaped to prod:</span> [count] | Severity: [highest]
+
+<span class="c-comment">── TEST COVERAGE ─────────────────────────────────────────</span>
+<span class="c-key">Unit test coverage:</span>        [%] (target: >80%)
+<span class="c-key">Integration test pass rate:</span> [%]
+<span class="c-key">Regression suite:</span>          [pass/fail] | Duration: [minutes]
+<span class="c-key">Performance (p95):</span>         [ms] (SLA: &lt;500ms)
+
+<span class="c-comment">── ROOT CAUSE — TOP DEFECT ───────────────────────────────</span>
+<span class="c-key">Defect:</span>     [Description of top defect this sprint]
+<span class="c-key">Root cause:</span> [Brief RCA finding]
+<span class="c-key">Prevention:</span> [Process change to prevent recurrence]
+
+<span class="c-comment">── NEXT SPRINT FOCUS ─────────────────────────────────────</span>
+<span class="c-val">Priority: [what QA will focus on] | DoD update: [any DoD changes]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-06-schedule.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T06: Schedule</span></a>
+    <a href="domain-2-task-08-scope.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T08: Scope</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

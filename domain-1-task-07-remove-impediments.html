@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T07: Remove Impediments | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T07: Remove Impediments</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 07</span>
+      <span class="tag tag-agile">Agile Focus</span>
+    </div>
+    <h1>Address and Remove Impediments, Obstacles, and Blockers</h1>
+    <div class="title-vi">Xử lý và Loại bỏ Trở ngại, Rào cản</div>
+    <p class="description">Một trong những trách nhiệm cốt lõi nhất của Scrum Master / PM Agile: bảo vệ team khỏi mọi rào cản bên ngoài và tạo điều kiện tối ưu để team flow.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>In Agile (Scrum), the <strong>Scrum Master</strong> is explicitly responsible for removing impediments. This is one of the three Scrum Master accountabilities (Serving the Development Team, Serving the Product Owner, Serving the Organization).</p>
+        <p><strong>Impediment types:</strong></p>
+        <ul>
+          <li><strong>Internal:</strong> Team member sick, technical debt, unclear requirements, skill gap</li>
+          <li><strong>External:</strong> Infrastructure not ready, dependency on another team, waiting for vendor, security approval</li>
+          <li><strong>Organizational:</strong> Bureaucracy, conflicting priorities, resource constraints, approval bottlenecks</li>
+        </ul>
+        <p>PM/SM role: identify impediments early (daily standup), categorize by resolution path (self-resolve vs PM escalation), and track resolution.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Trong Agile (Scrum), <strong>Scrum Master</strong> chịu trách nhiệm rõ ràng về việc loại bỏ impediments. Đây là một trong ba trách nhiệm của Scrum Master.</p>
+        <p><strong>Loại impediment:</strong></p>
+        <ul>
+          <li><strong>Nội bộ:</strong> Thành viên bệnh, technical debt, yêu cầu không rõ ràng, skill gap</li>
+          <li><strong>Bên ngoài:</strong> Hạ tầng chưa sẵn sàng, phụ thuộc team khác, chờ vendor, phê duyệt security</li>
+          <li><strong>Tổ chức:</strong> Quan liêu, ưu tiên xung đột, hạn chế nguồn lực, bottleneck phê duyệt</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Impediment Log Template</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Date</th><th>Description</th><th>Type</th><th>Impact</th><th>Owner</th><th>Action</th><th>Due</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>IMP-001</td><td>05/01</td><td>AWS staging env down for 3 days</td><td>External</td><td>Team can't test integration</td><td>PM/DevOps</td><td>Escalate to CTO, use local docker instead</td><td>05/03</td><td>✅ Resolved</td></tr>
+          <tr><td>IMP-002</td><td>05/05</td><td>Bank Partner A API docs not provided</td><td>External</td><td>Sprint 4 stories blocked</td><td>PM</td><td>Escalate to Partner Manager, daily follow-up</td><td>05/08</td><td>🔄 In Progress</td></tr>
+          <tr><td>IMP-003</td><td>05/06</td><td>PR reviews taking 3+ days</td><td>Internal</td><td>Sprint velocity impacted</td><td>Tech Lead</td><td>Team agreement: 24h PR SLA</td><td>05/07</td><td>✅ Resolved</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Remove Impediments</div>
+        <ul>
+          <li>Impediment removal = <strong>primary responsibility của Scrum Master</strong> trong Scrum</li>
+          <li>PM không nên để team "tự giải quyết" blockers bên ngoài — PM chủ động escalate và follow up</li>
+          <li>Daily standup question: "What impediments do you have?" — PM tracks và acts on these</li>
+          <li>Khi impediment không thể resolved bởi PM → escalate to sponsor/management với clear ask</li>
+          <li>Track impediments trong impediment log, không chỉ nhớ miệng</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Partner API Integration Blocker</h4></div>
+      <p><strong>Tình huống:</strong> Team Project Alpha bị block vì Bank Partner A chưa cung cấp sandbox API access. Sprint 4 có 8 story points phụ thuộc vào partner API. Đã chờ 5 ngày, partner không phản hồi email.</p>
+      <p><strong>PM actions (Impediment Removal):</strong></p>
+      <p>1. <strong>Identify:</strong> Log impediment ngay trong daily standup khi dev raise issue lần đầu.</p>
+      <p>2. <strong>Escalate appropriately:</strong> PM liên hệ trực tiếp với Partner Manager (không chờ dev tự làm), leo thang lên Account Manager level nếu PM không nhận được response trong 24h.</p>
+      <p>3. <strong>Parallel path:</strong> Trong khi chờ API, team develop với mock/stub server — không để team idle. Điều chỉnh sprint to pull in other ready stories.</p>
+      <p>4. <strong>Escalate to sponsor:</strong> Nếu vẫn không có API access sau 3 ngày, PM báo cáo sponsor với risk: "Sprint 4 velocity sẽ giảm X% nếu partner API không available by Day 7."</p>
+      <p>5. <strong>Document:</strong> Log tất cả communication attempts trong issue log.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">During a daily standup, a developer mentions they are blocked waiting for access to a third-party API that requires approval from another department. What should the PM/Scrum Master do?</div>
+      <ul class="q-opts">
+        <li>A. Tell the developer to send a follow-up email and wait</li>
+        <li>B. Remove the story from the sprint and move to the next sprint</li>
+        <li>C. Actively work to remove the impediment by contacting the other department and escalating if necessary, while enabling the developer to work on other items</li>
+        <li>D. Assign the task of getting the access to the developer as it's their responsibility</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — The SM/PM's primary job is to remove impediments. They should proactively contact the blocking department, escalate if needed, and simultaneously redirect the developer to other work. Option A is passive. B removes value without trying. D puts an organizational impediment on a developer — that's the PM's job, not the developer's.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">The Scrum Master notices that the same impediment (slow CI/CD pipeline) has been listed in three consecutive sprint retrospectives without resolution. What should they do?</div>
+      <ul class="q-opts">
+        <li>A. Remove it from the impediment list since it's a chronic issue</li>
+        <li>B. Escalate to organizational management with data on its impact (delay per sprint), build a business case for fixing it</li>
+        <li>C. Ask developers to work around it</li>
+        <li>D. Accept it as a permanent constraint</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — A recurring impediment that persists across three sprints means the SM/PM lacks the authority to resolve it alone — it requires organizational-level action. The correct escalation approach is to quantify the impact (e.g., "adds 2 hours per sprint = 6 engineer-hours lost per sprint = $X/month"), build a business case, and bring it to management. Removing it from the list (A) makes the problem invisible. Workarounds (C) and acceptance (D) normalize the dysfunction.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">An impediment is blocking two developers but the PM cannot resolve it without executive approval. What is the BEST immediate action?</div>
+      <ul class="q-opts">
+        <li>A. Wait for the approval before taking any other action</li>
+        <li>B. Reassign blocked developers to other work while escalating the impediment in parallel</li>
+        <li>C. Remove the blocked feature from scope</li>
+        <li>D. Ask developers to work on the blocker themselves</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — The PM must pursue two tracks simultaneously: (1) protect sprint value by keeping the blocked developers productive on other work, and (2) escalate the impediment to those with authority to resolve it. Waiting (A) wastes capacity. Scope removal (C) is a last resort after exhausting escalation paths. Having developers work on organizational blockers (D) misuses developer time and puts them in an awkward position with other teams.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Impediment Log — Enhanced</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Impediment Log</div>
+<span class="c-comment">── PROJECT ALPHA · FinTech Company X ───────────────────────────────────</span>
+<span class="c-key">ID</span>     | <span class="c-key">Description</span>                          | <span class="c-key">Category</span>    | <span class="c-key">Impact</span>                       | <span class="c-key">Sprint</span>   | <span class="c-key">Owner</span>    | <span class="c-key">Escalation</span>    | <span class="c-key">Status</span>       | <span class="c-key">Resolved</span>   | <span class="c-key">Resolution</span>
+<span class="c-comment">─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────</span>
+<span class="c-val">IMP-001</span> | <span class="c-val">Bank Partner A sandbox API unavailable — no response to 3 email requests over 5 days</span> | <span class="c-val">External</span>     | <span class="c-val">8 story pts blocked in Sprint 4; partner demo at risk</span>      | <span class="c-val">Sprint 4</span> | <span class="c-val">PM</span>       | <span class="c-val">PM → Account Mgr → Sponsor</span> | <span class="c-val">🔴 Escalated</span>  | <span class="c-val">—</span>          | <span class="c-val">Team using mock server; PM escalated to Sponsor with risk note on 05/08</span>
+<span class="c-val">IMP-002</span> | <span class="c-val">CI/CD pipeline build time &gt;25 min; 3 builds/day per dev = 1.25h wasted/dev/day</span>   | <span class="c-val">Org</span>          | <span class="c-val">~10 eng-hrs/sprint lost; developer frustration increasing</span> | <span class="c-val">Sprint 2</span> | <span class="c-val">SM + DevOps</span> | <span class="c-val">SM → Engineering VP</span>      | <span class="c-val">🟡 In Progress</span> | <span class="c-val">—</span>          | <span class="c-val">Business case submitted to VP Eng on 05/06; awaiting infra budget approval</span>
+<span class="c-val">IMP-003</span> | <span class="c-val">PCI-DSS compliance training not completed — devs cannot access production-like data</span> | <span class="c-val">Internal</span>     | <span class="c-val">2 devs cannot test end-to-end flows; Sprint 5 stories at risk</span> | <span class="c-val">Sprint 5</span> | <span class="c-val">EM</span>       | <span class="c-val">Team level</span>               | <span class="c-val">✅ Resolved</span>   | <span class="c-val">2026-05-07</span> | <span class="c-val">Compliance team ran 2h session on 05/07; both devs now certified</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs analyze impediment root causes, draft escalation messages, generate unblocking strategies, and identify systemic patterns across multiple impediments.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Impediment root cause analysis (5 Whys)</span>
+Help me run a 5 Whys analysis on a project impediment.
+Impediment: [describe the blocker — specific, observable problem]
+Impact: [what it's blocking — sprint goal, milestone, team velocity]
+Duration: [how long this has been a blocker]
+Who's affected: [roles / teams impacted]
+What's been tried: [any attempted fixes]
+
+Run the 5 Whys analysis and:
+1. Identify the root cause (not the symptom)
+2. Classify the root cause type: Process / People / Technology / External / Organizational
+3. Suggest the right intervention level: team-level fix / PM action / escalation needed
+4. Draft an action plan with owner and timeline
+5. Identify if this is a systemic issue likely to recur
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Escalation message drafting</span>
+I need to escalate an impediment to [sponsor / PMO / department head].
+Impediment: [what is blocked]
+Business impact: [cost of delay — in time, money, or risk]
+Duration unresolved: [how long]
+What I've already tried: [steps taken at my level]
+What I need from them: [specific decision or action needed]
+Urgency: [timeline — decision needed by when]
+
+Draft an escalation email that:
+1. Opens with the business impact (not the technical detail)
+2. Gives just enough context (3 sentences max)
+3. States clearly what decision/action I need
+4. Provides a recommended option with brief rationale
+5. Closes with a specific deadline for response
+Keep it under 150 words.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Impediment pattern analysis</span>
+I have a list of impediments from the past [N] sprints. Help me find patterns.
+Impediment log:
+  [Sprint 1]: [impediment description] — resolved in [X days]
+  [Sprint 2]: [impediment description] — [status]
+  [Sprint 3]: [impediment description] — [status]
+  [add more...]
+
+Analyze this list and:
+1. Identify recurring themes or root cause categories
+2. Calculate average resolution time by category
+3. Identify the top 2-3 systemic issues that should be addressed at org level (not sprint level)
+4. Suggest a process improvement or structural change for each systemic issue
+5. Draft a recommendation slide for my PMO/leadership
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Jira — Impediment Issue Type</div>
+<span class="c-comment">── JIRA: IMPEDIMENT ISSUE TEMPLATE ──────────────────────</span>
+<span class="c-key">Issue Type:</span>   Impediment (custom type or use Task with label)
+<span class="c-key">Summary:</span>      [BLOCKED] [Sprint/Team] — [short description]
+<span class="c-key">Priority:</span>     Critical / High / Medium
+<span class="c-key">Reporter:</span>     [PM name]
+<span class="c-key">Assignee:</span>     [Person who will resolve it]
+
+<span class="c-comment">── DESCRIPTION ───────────────────────────────────────────</span>
+<span class="c-key">What is blocked:</span>    [Sprint goal / user story / milestone]
+<span class="c-key">Blocked since:</span>      [YYYY-MM-DD]
+<span class="c-key">Business impact:</span>    [delay in days / cost estimate / risk]
+<span class="c-key">Root cause:</span>         [initial assessment]
+<span class="c-key">Already tried:</span>      [what has been attempted]
+<span class="c-key">Needs from:</span>         [who needs to act — escalation target]
+<span class="c-key">Resolution needed by:</span> [date — to not miss milestone]
+
+<span class="c-comment">── LABELS ────────────────────────────────────────────────</span>
+<span class="c-val">impediment | sprint-[N] | category:[process/people/tech/external]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-1-task-06-build-team.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T06: Build a Team</span></a>
+    <a href="domain-1-task-08-negotiate.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T08: Negotiate</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

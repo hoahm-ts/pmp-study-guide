@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T12: Artifacts | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T12: Artifacts</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 12</span>
+    </div>
+    <h1>Manage Project Artifacts</h1>
+    <div class="title-vi">Quản lý Các tài liệu và Hiện vật Dự án</div>
+    <p class="description">Artifacts là mọi tài liệu, template, baseline, log, report được tạo ra trong suốt dự án. PM phải đảm bảo chúng được tạo đúng, maintained đúng, và accessible đúng người.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> PMBOK 7 Artifact Categories</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>PMBOK 7th Edition organizes project artifacts into categories rather than prescribing specific documents. The key types:</p>
+        <ul>
+          <li><strong>Strategy artifacts:</strong> Business case, project charter, roadmap, vision statement</li>
+          <li><strong>Logs and registers:</strong> Risk register, issue log, change log, stakeholder register, assumption log</li>
+          <li><strong>Plans:</strong> Project Management Plan + all subsidiary plans</li>
+          <li><strong>Hierarchy charts:</strong> WBS, OBS (Org Breakdown Structure), RBS (Risk Breakdown Structure)</li>
+          <li><strong>Baselines:</strong> Scope baseline, schedule baseline, cost baseline (together = performance measurement baseline)</li>
+          <li><strong>Visual data &amp; information:</strong> Burndown charts, dashboards, Gantt charts, EVM reports</li>
+          <li><strong>Reports:</strong> Status reports, progress reports, forecast reports</li>
+          <li><strong>Agreements &amp; contracts:</strong> MOUs, SLAs, contracts, SOW</li>
+        </ul>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/pmbok-guide-standards/pmbok-guide" target="_blank">PMBOK Guide 7th Edition</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>PMBOK 7th Edition tổ chức project artifacts thành các danh mục thay vì quy định tài liệu cụ thể:</p>
+        <ul>
+          <li><strong>Strategy artifacts:</strong> Business case, project charter, roadmap</li>
+          <li><strong>Logs and registers:</strong> Risk register, issue log, change log, stakeholder register</li>
+          <li><strong>Plans:</strong> Project Management Plan + các subsidiary plans</li>
+          <li><strong>Baselines:</strong> Scope + Schedule + Cost (= Performance Measurement Baseline)</li>
+          <li><strong>Visual data:</strong> Burndown charts, dashboards, Gantt charts, EVM reports</li>
+          <li><strong>Reports:</strong> Status reports, progress reports, forecast reports</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Key Artifacts Reference</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Artifact</th><th>Purpose</th><th>Owner</th><th>Updated When</th><th>Agile Equivalent</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Project Charter</strong></td><td>Authorize project, name PM</td><td>Sponsor</td><td>Major scope changes only</td><td>Project brief / vision statement</td></tr>
+          <tr><td><strong>Project Management Plan</strong></td><td>How to execute, monitor, control</td><td>PM</td><td>Via change control</td><td>Team agreements + sprint schedule</td></tr>
+          <tr><td><strong>Scope Statement</strong></td><td>Define project + product scope</td><td>PM</td><td>Approved changes</td><td>Product vision + roadmap</td></tr>
+          <tr><td><strong>WBS</strong></td><td>Break down all work</td><td>PM + Team</td><td>Approved scope changes</td><td>Product Backlog</td></tr>
+          <tr><td><strong>Risk Register</strong></td><td>Track risks, responses, owners</td><td>PM</td><td>Continuously (every sprint/review)</td><td>Risk log (same concept)</td></tr>
+          <tr><td><strong>Issue Log</strong></td><td>Track active issues and resolution</td><td>PM</td><td>As issues arise/resolve</td><td>Impediment log</td></tr>
+          <tr><td><strong>Change Log</strong></td><td>Track all change requests and decisions</td><td>PM</td><td>Every change request</td><td>Backlog change history</td></tr>
+          <tr><td><strong>Stakeholder Register</strong></td><td>Track stakeholder info, interest, engagement</td><td>PM</td><td>When stakeholders change</td><td>Same concept</td></tr>
+          <tr><td><strong>RACI Matrix</strong></td><td>Clarify roles for activities/decisions</td><td>PM</td><td>Org/resource changes</td><td>Team agreements, sprint roles</td></tr>
+          <tr><td><strong>Lessons Learned Register</strong></td><td>Capture knowledge for future use</td><td>PM + Team</td><td>Throughout + at closure</td><td>Retrospective outputs</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📊</span> Status Reporting</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Status reports communicate project health to stakeholders. They should be: accurate, timely, actionable, and audience-appropriate.</p>
+        <p><strong>RAG status</strong> (Red/Amber/Green): Quick visual indicator of project health. Red = problem requiring action. Amber = at risk, monitoring. Green = on track.</p>
+        <p><strong>Dashboard vs detailed report:</strong> Executives need dashboards (1-page summary, RAG, key metrics). Working teams need detailed status (tasks, blockers, next steps).</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Status reports truyền đạt tình trạng dự án cho stakeholders. Cần: chính xác, kịp thời, có thể hành động, phù hợp với đối tượng.</p>
+        <p><strong>RAG status</strong>: Chỉ báo nhanh về sức khỏe dự án. Đỏ = cần hành động. Vàng = đang theo dõi rủi ro. Xanh = đúng tiến độ.</p>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Weekly Status Report Template</div>
+<span class="c-key">Project</span>: Project Alpha  |  <span class="c-key">Period</span>: 2024-W23  |  <span class="c-key">PM</span>: [Name]
+
+<span class="c-comment">── OVERALL STATUS ────────────────────────────────────────</span>
+<span class="c-val">Schedule: 🟡 AMBER</span>  (SPI = 0.92, 3 days behind, recovery plan in place)
+<span class="c-val">Budget:   🟢 GREEN</span>  (CPI = 1.05, $8K under budget)
+<span class="c-val">Scope:    🟢 GREEN</span>  (Scope baseline intact, 1 CR pending CCB)
+<span class="c-val">Quality:  🟢 GREEN</span>  (0 critical bugs in current sprint)
+
+<span class="c-comment">── THIS WEEK COMPLETED ──────────────────────────────────</span>
+✅ Auth service unit tests (100% coverage)
+✅ Partner Bank A sandbox integration (basic flow working)
+✅ Sprint 8 review with stakeholders — all demos accepted
+
+<span class="c-comment">── NEXT WEEK PLANNED ─────────────────────────────────────</span>
+→ Complete Partner Bank A error handling (8 SP)
+→ Performance testing baseline run
+→ CCB review for CR-047 (API auth header change)
+
+<span class="c-comment">── RISKS & ISSUES ────────────────────────────────────────</span>
+⚠️ R-001: Partner API sandbox stability — monitoring, mock server ready
+🔴 I-003: Performance test environment not provisioned — escalated to IT
+
+<span class="c-comment">── DECISIONS NEEDED ─────────────────────────────────────</span>
+❓ Approve CR-047 scope trade-off? → CCB meeting Thursday 2pm
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Artifacts Management</div>
+        <ul>
+          <li>Artifacts are <strong>living documents</strong> — not create-and-forget. Keep them updated.</li>
+          <li>Baselines (scope/schedule/cost) can only be changed via <strong>formal change control</strong></li>
+          <li>Risk register, issue log, change log = <strong>separate documents</strong> that work together</li>
+          <li>In Agile: information radiators (burndown, kanban boards) replace many formal status reports</li>
+          <li>Lessons learned: captured <strong>throughout the project</strong>, not only at the end</li>
+          <li>Project charter cannot be changed by the PM alone — requires sponsor approval</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Artifact Management System</h4></div>
+      <p><strong>Context:</strong> Project Alpha có 15 team members, 3 external stakeholders, and 2 partner organizations. PM needs a clear artifact management approach.</p>
+      <p><strong>Artifact system setup:</strong></p>
+      <ul>
+        <li><strong>Confluence:</strong> Project Charter (read-only after approval), PM Plan, meeting notes, all technical specs, lessons learned</li>
+        <li><strong>Jira:</strong> Product backlog, sprint boards, issue log (linked to Jira tickets), change log</li>
+        <li><strong>Spreadsheet (shared):</strong> Risk register, stakeholder register, RACI matrix</li>
+        <li><strong>Weekly Slack post:</strong> RAG status report to project channel</li>
+        <li><strong>Monthly email:</strong> Formal status report to sponsor and partner PMs</li>
+      </ul>
+      <p><strong>Access control:</strong> External partners have read access to partner-relevant Confluence pages only. Internal team has full Jira access. Sponsor receives monthly email + can view executive dashboard.</p>
+      <p><strong>PMP lesson:</strong> Artifact management isn't just about what documents exist — it's about who can access, update, and rely on them. Consistency and accessibility are as important as completeness.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A PM discovers that team members are making updates to the project schedule directly without going through change control. The schedule is a project baseline. What should the PM do?</div>
+      <ul class="q-opts">
+        <li>A. Allow it since the team has the best information about schedule needs</li>
+        <li>B. Immediately reinforce that baselines can only be changed via approved change requests, and restore the original baseline</li>
+        <li>C. Accept the changes and create a new baseline</li>
+        <li>D. Report the team members to senior management for policy violation</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Baselines (scope, schedule, cost) are formally approved and can only be changed through the change control process. Unauthorized changes to baselines undermine the ability to measure project performance (EVM requires a stable baseline). The PM must restore integrity by reinstating the approved baseline and processing any needed changes formally. Option D is an overreaction; this is a training issue, not misconduct.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A project manager joins a project midway and discovers the project schedule has been updated three times in the past month without any approved change requests. What is the MOST significant problem?</div>
+    <ul class="q-opts">
+      <li>A. The schedule is inaccurate</li>
+      <li>B. Project performance cannot be measured because the baseline keeps moving without authorization — EVM and variance analysis become meaningless</li>
+      <li>C. The team is working too hard</li>
+      <li>D. The sponsor was not informed</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Unauthorized baseline changes destroy the ability to measure performance. Earned Value Management (EVM) requires a stable, approved baseline to calculate SV, CV, SPI, and CPI. When the baseline moves without authorization, there is no reliable reference point — you cannot tell if the project is ahead or behind. While the sponsor not being informed (D) is also a problem, the loss of performance measurement integrity is the most significant consequence.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">Which artifact would a PM use to track who needs to approve a database architecture change versus who just needs to be informed?</div>
+    <ul class="q-opts">
+      <li>A. Risk Register</li>
+      <li>B. RACI Matrix</li>
+      <li>C. Issue Log</li>
+      <li>D. Communication Management Plan</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — The RACI Matrix (Responsible / Accountable / Consulted / Informed) is the artifact specifically designed to clarify decision rights and communication expectations for each role on each activity or deliverable. It directly answers "who approves vs. who is notified." The Communication Management Plan (D) describes how information is distributed but doesn't assign roles to specific decisions the way RACI does.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs generate project artifacts quickly, review existing artifacts for completeness, create artifact templates tailored to methodology, and build a project document index.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Artifact generation for new project</span>
+I'm starting a new project and need to quickly build core project artifacts. Help me generate templates.
+Project: [name and brief description]
+Methodology: [Predictive / Agile / Hybrid]
+Team size: [number]
+Duration: [months]
+Key deliverables: [list main outputs]
+Stakeholder complexity: [simple / multi-stakeholder / external partners]
+
+Generate templates (with pre-filled sections where possible) for:
+1. Project Charter (key sections: purpose, objectives, scope, stakeholders, authority)
+2. Stakeholder Register (columns: name, role, interest, influence, current stance, engagement strategy)
+3. Risk Register (columns: ID, description, category, probability, impact, score, response, owner, status)
+4. Assumptions Log (columns: ID, assumption, owner, validation method, status, impact if wrong)
+5. Change Log (columns: CR#, description, requestor, date, impact summary, decision, date decided)
+6. Issue Log (columns: issue ID, description, impact, owner, due date, status, resolution)
+7. Lessons Learned Register (columns: ID, category, description, impact, recommendation, applied to)
+
+For Agile projects, also include:
+8. Product Backlog structure (Epic → Feature → Story hierarchy with fields)
+9. Sprint velocity tracker
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Artifact quality review</span>
+Review this project artifact for completeness, clarity, and PMP best practice alignment.
+Artifact type: [risk register / project charter / comms plan / etc.]
+[Paste the artifact content here]
+
+Review against:
+1. Completeness: Are all required fields populated? What's missing?
+2. Clarity: Are entries specific and actionable, or vague? (e.g., "risk: something might go wrong" = not useful)
+3. Accuracy: Are assumptions well-supported? Are estimates reasonable?
+4. Consistency: Do entries reference the same project context consistently?
+5. PMP alignment: Does this match PMBOK 7 best practices for this artifact type?
+6. Actionability: Can someone use this artifact to make decisions?
+
+Output: Scored review (1-5 per dimension) with specific improvement recommendations and rewritten examples for weak entries.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Methodology-appropriate artifact selection</span>
+I'm setting up a new project and need to decide which artifacts to create and maintain.
+Project characteristics:
+  Methodology: [Predictive / Agile / Hybrid]
+  Duration: [months]
+  Team size: [number]
+  Organizational requirements: [PMO-required docs / regulatory documentation]
+  Stakeholder formality needs: [formal sign-offs required / informal agile style]
+  Risk level: [high / medium / low]
+
+Help me:
+1. Recommend the minimum viable artifact set for this project (what's essential vs. nice-to-have)
+2. Identify which artifacts are required for compliance vs. optional for project management
+3. Design the artifact lifecycle (when each is created, updated, and closed)
+4. Suggest where to store each artifact (Confluence / Jira / shared drive)
+5. Create a Document Management Plan table
+
+Avoid over-documentation — recommend a lean artifact set that provides value, not just compliance.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Project Artifact Index</div>
+<span class="c-comment">── CONFLUENCE: PROJECT ARTIFACT INDEX ───────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | PM: [name] | Updated: [YYYY-MM-DD]
+<span class="c-key">Purpose:</span>  Single source of truth — all project documents linked here
+
+<span class="c-comment">── FOUNDATION DOCUMENTS ──────────────────────────────────</span>
+<span class="c-key">Project Charter:</span>          [Confluence link] | Approved: [date] | Version: 1.0
+<span class="c-key">Project Management Plan:</span>  [Confluence link] | Baseline: [date]
+<span class="c-key">Stakeholder Register:</span>     [Confluence link] | Last updated: [date]
+<span class="c-key">Project Glossary:</span>         [Confluence link] | Last updated: [date]
+
+<span class="c-comment">── PLANNING ARTIFACTS ────────────────────────────────────</span>
+<span class="c-key">WBS / Product Backlog:</span>    [link] | Baseline: [date]
+<span class="c-key">Schedule / Roadmap:</span>       [link] | Last updated: [date]
+<span class="c-key">Budget Tracker:</span>           [link] | Last updated: [date]
+<span class="c-key">Risk Register:</span>            [Jira filter link] | Open risks: [count]
+<span class="c-key">Assumptions Log:</span>          [link] | Open items: [count]
+
+<span class="c-comment">── EXECUTION ARTIFACTS ───────────────────────────────────</span>
+<span class="c-key">Change Log:</span>               [Jira filter link] | Open CRs: [count]
+<span class="c-key">Issue Log:</span>                [Jira filter link] | Open issues: [count]
+<span class="c-key">Status Reports:</span>           [Confluence folder link]
+<span class="c-key">Decision Log:</span>             [link] | Last decision: [date]
+
+<span class="c-comment">── CLOSURE ARTIFACTS ─────────────────────────────────────</span>
+<span class="c-val">Lessons Learned: [link] | Final Report: [link] | Archive: [link]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-11-procurement.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T11: Procurement</span></a>
+    <a href="domain-2-task-13-methodology.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T13: Methodology</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

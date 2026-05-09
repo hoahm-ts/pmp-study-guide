@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T11: Procurement | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T11: Procurement</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 11</span>
+      <span class="tag tag-new">Contract Types Heavy</span>
+    </div>
+    <h1>Plan and Manage Procurement</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Mua sắm</div>
+    <p class="description">Procurement management là việc lấy hàng hóa, dịch vụ hoặc kết quả từ bên ngoài tổ chức. Hiểu loại hợp đồng là cực kỳ quan trọng trong kỳ thi PMP — sai contract type = wrong risk allocation.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Contract Types — The Most-Tested Topic</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>The choice of contract type determines who bears the cost risk: the buyer (your organization) or the seller (vendor).</p>
+        <p><strong>Three contract families:</strong></p>
+        <ul>
+          <li><strong>Fixed Price (FP)</strong>: Total price is set. Seller bears cost risk. Best when scope is well-defined.</li>
+          <li><strong>Cost Reimbursable (CR)</strong>: Buyer pays actual costs + fee. Buyer bears cost risk. Best when scope is uncertain.</li>
+          <li><strong>Time and Materials (T&M)</strong>: Pay for time + materials. Risk shared. Best for staff augmentation or uncertain scope/duration.</li>
+        </ul>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/procurement-management-contracts-3721" target="_blank">PMI — Procurement Management</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Loại hợp đồng xác định ai chịu rủi ro chi phí: buyer (tổ chức của bạn) hay seller (vendor).</p>
+        <ul>
+          <li><strong>Fixed Price (FP)</strong>: Giá cố định. Seller chịu rủi ro. Tốt nhất khi scope rõ ràng.</li>
+          <li><strong>Cost Reimbursable (CR)</strong>: Buyer trả chi phí thực tế + phí. Buyer chịu rủi ro. Tốt nhất khi scope không chắc chắn.</li>
+          <li><strong>Time &amp; Materials (T&amp;M)</strong>: Trả theo thời gian + vật liệu. Rủi ro chia sẻ. Tốt nhất cho staff augmentation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Contract Type</th><th>Subtypes</th><th>Risk Allocation</th><th>When to Use</th><th>Example (FinTech)</th></tr></thead>
+        <tbody>
+          <tr>
+            <td rowspan="3"><strong>Fixed Price (FP)</strong></td>
+            <td>FFP (Firm Fixed Price)</td>
+            <td>Seller bears all risk</td>
+            <td>Well-defined scope, stable requirements</td>
+            <td>Security audit: $50K fixed, audit firm delivers report</td>
+          </tr>
+          <tr>
+            <td>FP-EPA (Economic Price Adjustment)</td>
+            <td>Seller bears risk, with inflation adjustment</td>
+            <td>Multi-year contracts with cost uncertainty</td>
+            <td>3-year SaaS license with CPI adjustment clause</td>
+          </tr>
+          <tr>
+            <td>FPIF (Fixed Price Incentive Fee)</td>
+            <td>Seller bears risk, but can earn bonus</td>
+            <td>Motivate performance above minimum</td>
+            <td>$200K fixed + $20K bonus if delivered 2 weeks early</td>
+          </tr>
+          <tr>
+            <td rowspan="3"><strong>Cost Reimbursable (CR)</strong></td>
+            <td>CPFF (Cost Plus Fixed Fee)</td>
+            <td>Buyer bears risk</td>
+            <td>R&D, uncertain scope</td>
+            <td>Research vendor: pay all costs + $10K fixed fee regardless of outcome</td>
+          </tr>
+          <tr>
+            <td>CPIF (Cost Plus Incentive Fee)</td>
+            <td>Buyer bears risk, shared savings</td>
+            <td>Motivate cost control</td>
+            <td>Infrastructure project: if vendor comes under budget, share 50% of savings</td>
+          </tr>
+          <tr>
+            <td>CPAF (Cost Plus Award Fee)</td>
+            <td>Buyer bears risk, subjective bonus</td>
+            <td>When performance quality is subjective</td>
+            <td>UX design: pay costs + bonus based on stakeholder satisfaction rating</td>
+          </tr>
+          <tr>
+            <td><strong>Time &amp; Materials</strong></td>
+            <td>T&M (no subtypes)</td>
+            <td>Shared risk (buyer on cost, seller on time)</td>
+            <td>Staff augmentation, short-term, unclear duration</td>
+            <td>Contract developer: $80/hr + expenses, for up to 3 months</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Contract Types</div>
+        <ul>
+          <li><strong>Who bears cost risk?</strong> FP = Seller. CR = Buyer. T&M = Shared (but buyer has cost risk if duration unclear)</li>
+          <li>T&M is highest risk for buyer if no <strong>Not-to-Exceed (NTE)</strong> cap — add one always</li>
+          <li>Incentive fee contracts: seller gets <strong>extra if they perform BETTER</strong> than target</li>
+          <li>Award fee: <strong>subjective</strong> (PM judges). Incentive fee: <strong>objective</strong> (formula-based)</li>
+          <li>SOW (Statement of Work): describes what the seller must do. Used in FP contracts.</li>
+          <li>Make-or-Buy analysis: always consider in-house capability, cost, risk, and strategic importance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Procurement Process</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Procurement Lifecycle</div>
+<span class="c-comment">── PLAN PROCUREMENT ─────────────────────────────────────</span>
+• Make-or-Buy analysis (internal vs vendor)
+• Select contract type (FP / CR / T&amp;M)
+• Define SOW (Statement of Work) or requirements
+• Identify potential sellers
+
+<span class="c-comment">── CONDUCT PROCUREMENT ──────────────────────────────────</span>
+• Issue RFP/RFQ/IFB (solicitation documents)
+  - RFP (Request for Proposal): complex, evaluates capability + price
+  - RFQ (Request for Quotation): price-focused, commodity items
+  - IFB (Invitation for Bid): sealed bids, lowest price wins
+• Evaluate proposals → Source Selection
+• Negotiate contract → Award contract
+
+<span class="c-comment">── CONTROL PROCUREMENT ──────────────────────────────────</span>
+• Monitor vendor performance against contract
+• Manage invoices and payments
+• Manage changes to contract (via change control)
+• Inspect and accept deliverables
+
+<span class="c-comment">── CLOSE PROCUREMENT ────────────────────────────────────</span>
+• Formal acceptance of all deliverables
+• Final payment
+• Lessons learned documented
+• Contract closed/archived
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Vendor Selection for External Security Audit</h4></div>
+      <p><strong>Situation:</strong> Project Alpha pre-launch requires a security penetration test by an external cybersecurity firm. PM must select vendor and contract type.</p>
+      <p><strong>Make-or-Buy analysis:</strong> Internal team lacks specialized pen-test expertise. External vendor with certified skills required. Decision: Buy.</p>
+      <p><strong>Contract type selection:</strong> Scope is well-defined (test all API endpoints, web application, infrastructure, produce report with CVSS scores). Timeline: 2 weeks. → <strong>FFP (Firm Fixed Price)</strong> appropriate. Vendor bears delivery risk.</p>
+      <p><strong>RFP issued to 3 vendors:</strong> Evaluation criteria: (1) OSCP/CEH certifications (30%), (2) Fintech/banking experience (25%), (3) Price (20%), (4) Timeline fit (15%), (5) Report quality sample (10%).</p>
+      <p><strong>Winner selected:</strong> Vendor B — higher price but fintech experience critical for regulatory compliance testing. FFP contract $45,000. Clear deliverables: test report, executive summary, remediation guidance within 14 calendar days.</p>
+      <p><strong>PMP lesson:</strong> Lowest price ≠ best value. Score all criteria. The contract type matched the scope clarity — FFP gave FinTech Company X budget certainty while vendor managed execution risk.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A project requires hiring an external firm to build a data migration tool with highly uncertain requirements. Which contract type protects the seller while keeping the buyer in control?</div>
+      <ul class="q-opts">
+        <li>A. Firm Fixed Price (FFP)</li>
+        <li>B. Cost Plus Fixed Fee (CPFF)</li>
+        <li>C. Fixed Price Incentive Fee (FPIF)</li>
+        <li>D. Fixed Price with Economic Price Adjustment</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B — CPFF (Cost Plus Fixed Fee)</strong>. When scope is uncertain, a Fixed Price contract unfairly burdens the seller (they can't accurately price unknown work). CPFF allows the buyer to pay actual costs + a fixed fee, meaning the seller is compensated for all work regardless of scope uncertainty. The buyer bears cost risk, which is appropriate here since they're the source of the uncertainty.</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">A seller's contract has a target cost of $100K, target fee of $10K, and a 60/40 share ratio (buyer/seller). If the actual cost is $80K, what is the seller's total payment?</div>
+      <ul class="q-opts">
+        <li>A. $90,000</li>
+        <li>B. $80,000</li>
+        <li>C. $98,000</li>
+        <li>D. $88,000</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C — $98,000</strong><br>
+      Cost underrun = $100K - $80K = $20K saved<br>
+      Seller's share of savings (40%) = $20K × 0.40 = $8K<br>
+      Seller's adjusted fee = $10K + $8K = $18K<br>
+      Total payment = Actual Cost + Adjusted Fee = $80K + $18K = <strong>$98K</strong><br>
+      This is a CPIF (Cost Plus Incentive Fee) calculation — seller is rewarded for cost efficiency.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">A project manager needs to hire a contractor for 3 months to help with peak workload, but the exact number of hours per week is uncertain. Which contract type is MOST appropriate?</div>
+    <ul class="q-opts">
+      <li>A. FFP — fixed total cost</li>
+      <li>B. CPFF — cost plus fixed fee</li>
+      <li>C. T&amp;M with a not-to-exceed cap — flexible hours with cost protection</li>
+      <li>D. FPIF — fixed price with incentive</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: C</strong> — T&amp;M (Time &amp; Materials) is ideal when the scope or duration is uncertain — you pay for actual hours worked at agreed rates. Adding a not-to-exceed (NTE) cap protects the buyer from runaway costs while maintaining flexibility. FFP (A) requires a well-defined scope, which doesn't exist here. CPFF (B) is typically for larger, more complex engagements where costs are difficult to estimate. FPIF (D) is used to incentivize sellers to control costs on fixed-scope work.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs draft RFPs, analyze vendor proposals, compare contract types, generate vendor evaluation scorecards, and create negotiation strategies for procurement decisions.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">RFP / vendor brief drafting</span>
+Help me draft a Request for Proposal (RFP) for a vendor engagement.
+What I need: [describe the service or product — e.g., cloud infrastructure, QA services, UI/UX design]
+Project context: [what this vendor will support]
+Budget range (don't disclose to vendor): [$range]
+Timeline: [when vendor needs to start and deliver]
+Technical requirements: [key specs, integrations, security requirements]
+Evaluation criteria (my internal priorities): [price / quality / experience / fit / timeline]
+
+Draft an RFP that includes:
+1. Background and project overview (1 paragraph)
+2. Scope of work — clear deliverables and success criteria
+3. Technical requirements
+4. Vendor qualification requirements (experience, references, certifications)
+5. Submission requirements (what we want in their response)
+6. Evaluation process and timeline
+7. Contract type (FFP / T&amp;M / CPFF — which fits this engagement?)
+8. Terms and conditions summary
+
+Keep it professional, specific, and unambiguous. Under 4 pages.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Vendor proposal evaluation scoring</span>
+I have received proposals from [N] vendors and need to evaluate them objectively.
+Vendors: [Vendor A, Vendor B, Vendor C]
+My evaluation criteria and weights:
+  Technical capability: [%]
+  Price/cost: [%]
+  Project approach/methodology: [%]
+  Team experience/qualifications: [%]
+  References/past performance: [%]
+  Implementation timeline: [%]
+
+For each vendor, I rate them [1-5] on each criterion:
+Vendor A: [scores]
+Vendor B: [scores]
+Vendor C: [scores]
+
+Calculate weighted scores and:
+1. Rank the vendors
+2. Identify the gaps between #1 and #2 — are they significant?
+3. Flag any non-negotiables (if any vendor fails a must-have, they're disqualified)
+4. Generate negotiation leverage points for the preferred vendor
+5. Draft a vendor selection justification memo for sponsor approval
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Contract type selection advisory</span>
+I'm deciding what type of contract to use for this engagement.
+Engagement description: [what the vendor will do]
+Scope clarity: [fully defined / partially defined / very unclear]
+Duration: [short-term / medium / long-term]
+Budget certainty: [fixed / flexible]
+Risk profile: [high / medium / low technical risk]
+Vendor relationship: [new / established partner]
+My risk tolerance: [prefer fixed price / okay with variable cost / depends]
+
+Evaluate these contract types for this engagement:
+- FFP (Firm Fixed Price): best when [scope is clear, vendor bears cost risk]
+- FPIF (Fixed Price Incentive Fee): best when [scope is clear but want to incentivize performance]
+- T&amp;M (Time &amp; Material): best when [scope is unclear, need flexibility]
+- CPFF (Cost Plus Fixed Fee): best when [highly uncertain, vendor expertise needed]
+
+Recommend the best contract type for this engagement with:
+1. Rationale based on scope certainty and risk allocation
+2. Key contract terms I should negotiate
+3. Red flags to watch for in the vendor's proposal
+4. How to structure the payment milestone schedule
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Vendor Evaluation Matrix</div>
+<span class="c-comment">── CONFLUENCE: VENDOR EVALUATION MATRIX ─────────────────</span>
+<span class="c-key">RFP:</span>       [Description of service being procured]
+<span class="c-key">PM:</span>        [Name] | Date: [YYYY-MM-DD] | Contract type: [FFP/T&amp;M/CPFF]
+
+<span class="c-comment">── SCORING MATRIX ────────────────────────────────────────</span>
+Criterion              | Weight | Vendor A | Vendor B | Vendor C
+───────────────────────|────────|──────────|──────────|─────────
+Technical capability   |  30%   |  [1-5]   |  [1-5]   |  [1-5]
+Price / cost           |  25%   |  [1-5]   |  [1-5]   |  [1-5]
+Project approach       |  20%   |  [1-5]   |  [1-5]   |  [1-5]
+Team experience        |  15%   |  [1-5]   |  [1-5]   |  [1-5]
+Timeline               |  10%   |  [1-5]   |  [1-5]   |  [1-5]
+───────────────────────|────────|──────────|──────────|─────────
+<span class="c-key">WEIGHTED TOTAL</span>         |  100%  | <span class="c-val">[score]</span>  | <span class="c-val">[score]</span>  | <span class="c-val">[score]</span>
+
+<span class="c-comment">── RECOMMENDATION ────────────────────────────────────────</span>
+<span class="c-key">Preferred vendor:</span>   [Vendor] | Score: [X.X/5.0]
+<span class="c-key">Justification:</span>     [2 sentences — why this vendor]
+<span class="c-key">Negotiation focus:</span> [price / timeline / SLA terms / payment schedule]
+<span class="c-val">Sponsor approval needed: Yes | Submitted: [date] | Approved: [date]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-10-manage-changes.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T10: Manage Changes</span></a>
+    <a href="domain-2-task-12-artifacts.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T12: Artifacts</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

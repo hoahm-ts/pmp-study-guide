@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T09: Collaborate | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T09: Collaborate</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 09</span>
+    </div>
+    <h1>Collaborate with Stakeholders</h1>
+    <div class="title-vi">Hợp tác với Các bên liên quan</div>
+    <p class="description">Xây dựng văn hóa hợp tác giữa các bên trong và ngoài dự án. Hợp tác không phải là "làm việc cùng nhau" một cách thụ động — đó là chủ động tạo ra sự đồng thuận và shared ownership.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Collaboration</strong> means working jointly toward shared goals. It's different from <em>coordination</em> (ensuring activities don't conflict) and <em>cooperation</em> (agreeing to help when asked). Collaboration is proactive, synergistic, and creates outcomes greater than what individuals could achieve alone.</p>
+        <p>PM collaborates with: internal team, product owners, business stakeholders, partner organizations, vendors, functional managers, PMO, executive sponsors.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/collaboration-skills-project-managers-7931" target="_blank">PMI — Collaboration Skills for PMs</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Hợp tác</strong> có nghĩa là cùng nhau làm việc hướng tới mục tiêu chung. Khác với <em>coordination</em> (đảm bảo hoạt động không xung đột) và <em>cooperation</em> (đồng ý giúp khi được hỏi). Hợp tác là chủ động, cộng hưởng và tạo ra kết quả vượt trội hơn những gì cá nhân có thể đạt được.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Team Collaboration Agreement</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Team Collaboration Agreement</div>
+<span class="c-comment">── COMMUNICATION CHANNELS ──────────────────────────</span>
+<span class="c-key">Async</span>:    <span class="c-val">Slack for day-to-day async communication</span>
+<span class="c-key">Sync</span>:     <span class="c-val">Zoom for discussions requiring real-time decision-making</span>
+<span class="c-key">External</span>: <span class="c-val">Email for communication with Bank Partner A and external stakeholders</span>
+
+<span class="c-comment">── RESPONSE TIME EXPECTATIONS ──────────────────────</span>
+<span class="c-key">Slack</span>:  <span class="c-val">4 hours during work hours (9am–6pm local time)</span>
+<span class="c-key">Email</span>:  <span class="c-val">24 hours on working days</span>
+<span class="c-key">Urgent</span>: <span class="c-val">Tag @here in #project-alpha-urgent or call directly</span>
+
+<span class="c-comment">── MEETING NORMS ────────────────────────────────────</span>
+<span class="c-val">• Agenda required at least 2 hours before meeting
+• Decisions documented in Confluence within 24 hours
+• No phones / no multitasking during calls
+• Meeting owner responsible for sending notes</span>
+
+<span class="c-comment">── CODE COLLABORATION ───────────────────────────────</span>
+<span class="c-val">• PR review within 24 hours of submission
+• Pair programming for complex or high-risk features
+• Definition of Done agreed before sprint start
+• No merging without at least one approval</span>
+
+<span class="c-comment">── CROSS-TEAM COORDINATION ─────────────────────────</span>
+<span class="c-val">• Designated liaison per team for inter-team topics
+• Weekly cross-team sync (30 min) every Monday
+• Escalation path: Team Lead → PM → Sponsor</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Collaboration Tools &amp; Techniques</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Tool/Technique</th><th>Purpose</th><th>When to Use</th></tr></thead>
+        <tbody>
+          <tr><td><strong>RACI Matrix</strong></td><td>Clarify who is Responsible, Accountable, Consulted, Informed</td><td>Project kickoff; when role confusion exists</td></tr>
+          <tr><td><strong>Decision Matrix</strong></td><td>Objective evaluation of options with team</td><td>Complex decisions with multiple stakeholders</td></tr>
+          <tr><td><strong>Workshop Facilitation</strong></td><td>Structured sessions to gather input and align</td><td>Requirements gathering, retrospectives, planning</td></tr>
+          <tr><td><strong>Shared workspace (Confluence, Notion)</strong></td><td>Single source of truth for all project artifacts</td><td>Always — especially for distributed teams</td></tr>
+          <tr><td><strong>Regular cadence</strong></td><td>Sprint reviews, demos, stakeholder updates</td><td>Agile ceremonies; monthly stakeholder reviews</td></tr>
+          <tr><td><strong>Cross-functional pairing</strong></td><td>Developers &amp; QA working together on stories</td><td>Complex features needing multiple perspectives</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Cross-team API Collaboration</h4></div>
+      <p><strong>Tình huống:</strong> Project Alpha cần integrate với Legacy EVO system (owned bởi team khác). Hai teams có priorities khác nhau, EVO team không có bandwidth trong Q2.</p>
+      <p><strong>Collaboration approach:</strong> PM tổ chức joint planning session với cả hai PMs. Thay vì "fight for bandwidth", identify shared goals: cả hai muốn platform được modernize. Agree on minimal viable integration API mà EVO team có thể deliver in 2 weeks. Alpha team build facade layer để decouple từ EVO internals. Mutual agreement: EVO team có autonomy over timeline, Alpha team adapt. Document integration contract (API spec) jointly.</p>
+      <p><strong>PMP Principle:</strong> Collaboration tạo ra better solution (facade pattern) mà không force hoặc frustrate either team. Đây là collaborative problem solving across organizational boundaries.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">The PM's project requires a critical integration with a system owned by another department. The other department's manager says they're too busy to help. What is the BEST approach?</div>
+      <ul class="q-opts">
+        <li>A. Escalate to executive management to force the department to cooperate</li>
+        <li>B. Find a workaround that avoids the integration altogether</li>
+        <li>C. Schedule a collaborative meeting to understand the department's constraints, identify shared interests, and explore mutually beneficial options</li>
+        <li>D. Hire an external consultant to handle the integration</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — The PMI way is to collaborate first — understand the other party's constraints, find common ground, and create options that work for both. Escalating immediately (A) damages relationships. Workarounds (B) create technical debt. External hire (D) is costly and skips collaboration. If C fails after genuine effort, then escalation may be appropriate.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">A project requires two teams from different departments to co-develop an API. One team writes the backend, another the frontend. How should the PM facilitate collaboration?</div>
+      <ul class="q-opts">
+        <li>A. Have teams work independently and integrate at the end</li>
+        <li>B. Create shared definition of done, regular joint ceremonies, and clear API contracts agreed upfront</li>
+        <li>C. Assign one team to manage the other</li>
+        <li>D. Have the PM act as the single communication point between teams</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Effective cross-team collaboration requires: a shared understanding of what "done" looks like, regular touchpoints (joint sprint reviews, API design sessions), and upfront contracts (API spec) so both teams can work in parallel without hidden misalignments. Integrating at the end (A) creates big-bang integration risk. One team managing the other (C) creates hierarchy friction. Funneling all communication through the PM (D) creates a bottleneck and prevents team ownership.</div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">During a cross-team collaboration, Team A and Team B have conflicting priorities — both need the shared infrastructure resource. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Escalate to senior management immediately</li>
+        <li>B. Facilitate a joint prioritization meeting with both teams to understand the impact of each team's needs and find a schedule that serves both</li>
+        <li>C. Assign the resource to whichever team asked first</li>
+        <li>D. Hire a dedicated resource for each team</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Collaboration first: bring both teams together to surface the real priorities, understand the business impact of each claim, and negotiate a shared schedule or sequenced access. This is the PMI collaborative conflict resolution approach. Escalating immediately (A) bypasses the teams' ability to self-resolve and damages relationships. First-come-first-served (C) ignores relative business value. Hiring duplicates (D) is wasteful and may not be feasible.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs draft stakeholder collaboration plans, synthesize diverse inputs, create decision logs, and facilitate structured workshops with large groups.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Stakeholder workshop facilitation plan</span>
+I'm facilitating a [requirements workshop / planning session / alignment meeting] with [N] stakeholders.
+Goal: [what decisions or outputs need to come out of this]
+Stakeholder mix: [executive / technical / business / external]
+Duration: [2 hours / half day / full day]
+Known tensions: [any conflicts of interest or competing priorities]
+Remote / in-person: [format]
+
+Design the workshop:
+1. Pre-work (what to send in advance, 1 page max)
+2. Opening (10 min) — align on purpose and ground rules
+3. Structured activities with timing (use specific techniques: dot voting, affinity mapping, silent brainstorm, etc.)
+4. Decision-making method for contentious items (consensus / consult-decide / sponsor decides)
+5. Close (10 min) — capture decisions, actions, open items
+6. Follow-up email template (send within 24h)
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Decision log synthesis</span>
+We just completed a [meeting / workshop / review]. Help me capture the decisions.
+Meeting summary: [paste notes or describe what was discussed]
+Attendees: [list of roles]
+Decisions made: [rough list]
+Open items: [unresolved questions]
+Actions assigned: [rough list]
+
+Create a clean Decision Log with:
+1. Each decision: what was decided, who decided, date, rationale (1 sentence), alternatives considered
+2. Open items: question, owner, due date
+3. Action items: action, owner, due date, dependencies
+4. Parking lot: items deferred to future session
+
+Format for Confluence page.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Cross-functional alignment email</span>
+I need to align multiple stakeholders on [decision / direction / change].
+Context: [what happened, what needs to be aligned on]
+Stakeholders: [list roles and their positions/concerns]
+My recommended direction: [what I believe we should do]
+Risks if not aligned: [what happens if people stay misaligned]
+
+Draft an alignment communication that:
+1. Acknowledges each group's perspective (don't steamroll)
+2. Clearly states the direction and the rationale
+3. Explains what's fixed vs. what's still open for input
+4. Specifies the deadline for any remaining feedback
+5. Has a clear call to action
+
+Tone: collaborative, not directive. Under 250 words.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Decision Log</div>
+<span class="c-comment">── CONFLUENCE: PROJECT DECISION LOG ─────────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | Owner: [PM] | Last updated: [YYYY-MM-DD]
+
+<span class="c-comment">── DECISION RECORD ───────────────────────────────────────</span>
+<span class="c-key">ID:</span>          DEC-[001]
+<span class="c-key">Date:</span>        [YYYY-MM-DD]
+<span class="c-key">Decision:</span>   [Clear statement of what was decided]
+<span class="c-key">Made by:</span>    [Role / name who has authority]
+<span class="c-key">Rationale:</span>  [Why this option was chosen — 1-2 sentences]
+<span class="c-key">Alternatives:</span>
+  Option A: [what was considered] — reason not chosen
+  Option B: [what was considered] — reason not chosen
+<span class="c-key">Impact:</span>     [scope / schedule / cost / team]
+<span class="c-key">Reversible?</span> [Yes — how / No — why it's locked]
+<span class="c-key">Review date:</span> [when to revisit if assumptions change]
+
+<span class="c-comment">── OPEN QUESTIONS ────────────────────────────────────────</span>
+<span class="c-key">Q:</span>   [Unresolved question]
+<span class="c-val">Owner: [name] | Due: [date] | Status: [ ] Open  [ ] Resolved</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-1-task-08-negotiate.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T08: Negotiate</span></a>
+    <a href="domain-1-task-10-shared-understanding.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T10: Shared Understanding</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

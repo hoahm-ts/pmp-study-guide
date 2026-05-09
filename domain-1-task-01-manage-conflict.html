@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T01: Manage Conflict | Domain 1 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-1-overview.html">Domain 1: People</a><span class="sep">›</span>
+    <span>T01: Manage Conflict</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d1">Domain 1 · People</span>
+      <span class="tag tag-eco">Task 01</span>
+      <span class="tag tag-hybrid">Predictive + Agile</span>
+    </div>
+    <h1>Manage Conflict</h1>
+    <div class="title-vi">Quản lý Xung đột</div>
+    <p class="description">Phân biệt các loại xung đột, áp dụng đúng chiến lược giải quyết, và tạo ra môi trường nơi xung đột lành mạnh được khuyến khích trong khi xung đột phá hoại được ngăn chặn sớm.</p>
+  </div>
+
+  <!-- THEORY -->
+  <div class="section">
+    <h2><span class="ico">📖</span> Lý thuyết / Theory</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Conflict is <strong>inevitable</strong> in projects. The PMP exam recognizes that some conflict can be healthy (constructive conflict drives innovation and better solutions), while unmanaged conflict is destructive.</p>
+        <p><strong>Sources of conflict in projects:</strong> Schedules, priorities, resources, technical approaches, administration, personality, cost. (<em>PMI research: schedule conflict is #1</em>)</p>
+        <p>The PM's role is not to eliminate all conflict, but to manage it effectively — channeling healthy conflict and resolving destructive conflict.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/conflict-management-skills-project-manager-7471" target="_blank">PMI — Conflict Management Skills for PM</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Xung đột là <strong>không thể tránh khỏi</strong> trong dự án. Kỳ thi PMP nhận ra rằng một số xung đột có thể lành mạnh (xung đột mang tính xây dựng thúc đẩy đổi mới), trong khi xung đột không được quản lý là phá hoại.</p>
+        <p><strong>Nguyên nhân xung đột trong dự án:</strong> Lịch trình, ưu tiên, nguồn lực, phương pháp kỹ thuật, hành chính, tính cách, chi phí. (<em>Nghiên cứu PMI: xung đột về lịch trình là #1</em>)</p>
+        <p>Vai trò của PM không phải là loại bỏ mọi xung đột, mà là quản lý nó hiệu quả.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- THOMAS-KILMANN -->
+  <div class="section">
+    <h2><span class="ico">⚖️</span> Thomas-Kilmann Conflict Model</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Five conflict handling modes, plotted on two axes: <strong>Assertiveness</strong> (concern for self) vs <strong>Cooperativeness</strong> (concern for others).</p>
+        <p><a href="https://kilmanndiagnostics.com/overview-thomas-kilmann-conflict-mode-instrument-tki/" target="_blank">Thomas-Kilmann official resource →</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Năm chế độ xử lý xung đột, trên hai trục: <strong>Tính quyết đoán</strong> (quan tâm bản thân) vs <strong>Tính hợp tác</strong> (quan tâm người khác).</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Mode</th><th>VI</th><th>Assertive</th><th>Cooperative</th><th>When to Use</th><th>PMP View</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Withdraw/Avoid</strong></td>
+            <td>Né tránh</td>
+            <td>Low</td><td>Low</td>
+            <td>Trivial issue; cool down; not your battle</td>
+            <td>⚠️ Least effective — postpones, doesn't resolve</td>
+          </tr>
+          <tr>
+            <td><strong>Smooth/Accommodate</strong></td>
+            <td>Nhường nhịn</td>
+            <td>Low</td><td>High</td>
+            <td>Preserve relationship; goodwill needed</td>
+            <td>⚠️ Temporary solution; may build resentment</td>
+          </tr>
+          <tr>
+            <td><strong>Compromise</strong></td>
+            <td>Thỏa hiệp</td>
+            <td>Medium</td><td>Medium</td>
+            <td>Equal power; time-constrained; acceptable loss</td>
+            <td>✅ Acceptable — "lose-lose" but balanced</td>
+          </tr>
+          <tr>
+            <td><strong>Force/Direct</strong></td>
+            <td>Cưỡng ép</td>
+            <td>High</td><td>Low</td>
+            <td>Safety issue; emergency; clear right/wrong</td>
+            <td>⚠️ Win-lose — damages relationships; last resort</td>
+          </tr>
+          <tr>
+            <td><strong>Collaborate/Problem Solve</strong></td>
+            <td>Cộng tác giải quyết</td>
+            <td>High</td><td>High</td>
+            <td>Important issue; time available; trust exists</td>
+            <td>⭐ PMI PREFERRED — win-win, addresses root cause</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Conflict</div>
+        <ul>
+          <li>Đáp án đúng trong hầu hết câu hỏi về conflict = <strong>Collaborate/Problem Solve</strong></li>
+          <li>Khi đề nói "FIRST" → thường là: lắng nghe, hiểu cả hai phía, tổ chức meeting</li>
+          <li>Avoid/Withdraw = đáp án sai trong hầu hết tình huống</li>
+          <li>Force/Direct chỉ đúng khi có safety concern hoặc deadline khẩn cấp không thể trì hoãn</li>
+          <li>Trong Agile: conflict trong retrospective là <em>healthy</em> — không nên suppress</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLS -->
+  <div class="section">
+    <h2><span class="ico">🔧</span> Công cụ & Template / Tools & Templates</h2>
+
+    <h3>Conflict Resolution Process (Quy trình giải quyết xung đột)</h3>
+    <div class="tmpl">
+      <div class="tmpl-label">Conflict Resolution Steps</div>
+<span class="c-comment">── STEP 1: IDENTIFY ────────────────────────────────</span>
+<span class="c-key">Who</span>:    <span class="c-val">Identify parties involved</span>
+<span class="c-key">What</span>:   <span class="c-val">Nature of conflict (technical, resource, personality, schedule)</span>
+<span class="c-key">When</span>:   <span class="c-val">When did it start, when escalated</span>
+<span class="c-key">Impact</span>: <span class="c-val">Effect on team, project, delivery</span>
+
+<span class="c-comment">── STEP 2: PREPARE ─────────────────────────────────</span>
+<span class="c-key">Meet separately</span> with each party first
+<span class="c-key">Listen without judgement</span>
+<span class="c-key">Understand</span> each person's perspective and interests (not just positions)
+
+<span class="c-comment">── STEP 3: FACILITATE ──────────────────────────────</span>
+<span class="c-key">Joint meeting</span> in neutral setting
+<span class="c-key">Ground rules</span>: respectful communication, no interrupting
+<span class="c-key">Focus on interests</span>, not positions
+<span class="c-key">Brainstorm</span> options together
+<span class="c-key">Agree</span> on resolution and next steps
+
+<span class="c-comment">── STEP 4: DOCUMENT ────────────────────────────────</span>
+<span class="c-key">Record</span> agreed resolution in issue log
+<span class="c-key">Follow up</span> to ensure resolution holds
+<span class="c-key">Update</span> team norms if needed
+    </div>
+
+    <h3>Conflict Log Template</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Date</th><th>Parties</th><th>Type</th><th>Description</th><th>Resolution Mode</th><th>Action Taken</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>CON-001</td><td>2026-05-01</td><td>Dev A, Dev B</td><td>Technical</td><td>Disagreement on API design pattern</td><td>Collaborate</td><td>Architecture review meeting held; ADR documented</td><td>Resolved</td></tr>
+          <tr><td>CON-002</td><td>2026-05-05</td><td>BE Team, QA Team</td><td>Priority</td><td>QA blocking BE tickets due to priority mismatch</td><td>Compromise</td><td>Sprint priority re-ordered with PO input</td><td>Monitoring</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SCENARIO -->
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Real-World Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr">
+        <span class="s-icon">🏢</span>
+        <h4>FinTech Company X — Project Alpha (Lending Platform)</h4>
+      </div>
+      <h5>Tình huống:</h5>
+      <p>Trong sprint 4 của Project Alpha, hai senior backend developers có xung đột nghiêm trọng về kiến trúc hệ thống. Developer A muốn dùng event-driven architecture với Kafka cho toàn bộ service communication. Developer B cho rằng synchronous REST APIs đơn giản hơn và đủ dùng cho giai đoạn đầu. Cả hai đều có lý lẽ kỹ thuật vững chắc, nhưng cuộc tranh luận kéo dài 3 ngày đang block sprint progress và ảnh hưởng đến tinh thần team.</p>
+
+      <h5>Cách áp dụng Conflict Management:</h5>
+      <p><strong>1. Identify (Xác định):</strong> Đây là <em>technical conflict</em>, không phải personality conflict — đây là dấu hiệu tốt. Cả hai parties đều engaged và muốn dự án thành công.</p>
+      <p><strong>2. Separate meetings (Gặp riêng):</strong> Gặp từng developer để hiểu: họ lo ngại gì? Cả hai đều lo về maintainability và scalability — đây là <em>interests</em> chung, dù <em>positions</em> khác nhau.</p>
+      <p><strong>3. Facilitate (Tổ chức):</strong> Tổ chức Architecture Review Meeting với cả team (không chỉ 2 người). Đặt ra tiêu chí đánh giá: performance, maintainability, team skill level, time to implement. Invite tech lead như người có thẩm quyền kỹ thuật.</p>
+      <p><strong>4. Outcome (Kết quả):</strong> Team quyết định hybrid approach: event-driven cho async flows (notifications, audit logs), REST cho sync operations. Cả hai developers đều contribute vào ADR (Architecture Decision Record). Conflict được chuyển thành better decision.</p>
+
+      <h5>Bài học PMP:</h5>
+      <p>Đây là ví dụ điển hình của <strong>Collaborate/Problem Solve</strong>. Key: PM không quyết định thay team về kỹ thuật. PM <em>facilitate</em> để team tự ra quyết định tốt hơn. Healthy technical conflict → Better architecture.</p>
+    </div>
+  </div>
+
+  <!-- PRACTICE QUESTIONS -->
+  <div class="section">
+    <h2><span class="ico">✏️</span> Câu hỏi luyện tập / Practice Questions</h2>
+
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A project team member tells the PM that there is an interpersonal conflict between two team members that is affecting their work. The PM should FIRST:</div>
+      <ul class="q-opts">
+        <li>A. Separate the team members and assign them to different tasks</li>
+        <li>B. Meet with both team members together immediately to resolve the conflict</li>
+        <li>C. Meet with each team member separately to understand their perspective</li>
+        <li>D. Document the conflict in the project management plan and monitor</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer / Xem đáp án</button>
+      <div class="ans-reveal">
+        <strong>✅ Answer: C</strong> — Meeting separately FIRST to understand each perspective before bringing parties together is the collaborative approach. Meeting both together immediately (B) without preparation can escalate, not resolve. Separating them (A) avoids the issue. Just documenting (D) is passive.
+      </div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">During a retrospective, two team members begin arguing loudly about the development process. As the Scrum Master/PM, what should you do?</div>
+      <ul class="q-opts">
+        <li>A. Stop the retrospective and reschedule when people are calmer</li>
+        <li>B. Side with the team member who makes the stronger technical argument</li>
+        <li>C. Acknowledge the disagreement, establish ground rules, and guide the discussion toward finding a solution</li>
+        <li>D. Tell both team members their behavior is unacceptable and document it in their performance records</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer / Xem đáp án</button>
+      <div class="ans-reveal">
+        <strong>✅ Answer: C</strong> — In agile, retrospectives are specifically designed for open discussion and improvement. The Scrum Master/PM should facilitate, acknowledge emotions, set ground rules, and guide toward resolution. Stopping (A) wastes the opportunity. Taking sides (B) creates bias. Threatening documentation (D) creates fear, not psychological safety.
+      </div>
+    </div>
+
+    <div class="quiz">
+      <div class="q-num">Question 3</div>
+      <div class="q-text">The project is behind schedule, and the PM needs to make a quick decision about resource allocation despite two team leads disagreeing. Safety requirements are not at stake, but the deadline is tomorrow. Which conflict resolution mode should the PM use?</div>
+      <ul class="q-opts">
+        <li>A. Collaborate — schedule a workshop to find a win-win solution</li>
+        <li>B. Smooth/Accommodate — let the more senior team lead decide</li>
+        <li>C. Force/Direct — make the decision using PM authority</li>
+        <li>D. Compromise — split the resources equally between both options</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer / Xem đáp án</button>
+      <div class="ans-reveal">
+        <strong>✅ Answer: C</strong> — When there's a real time constraint (deadline tomorrow) and the PM has authority, using Force/Direct is acceptable. Collaborate (A) takes too much time. This is one of the rare cases where Force is the right answer — note the time pressure context. D (compromise) could be viable but Force is more decisive given the deadline.
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs prepare for difficult conversations, draft neutral communications, and analyze conflict patterns across stakeholder groups.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Conflict root cause analysis</span>
+You are a senior PM and organizational psychologist. I have a conflict between [Person A / Role] and [Person B / Role] on my project.
+
+Situation: [describe the conflict — what happened, when, what each party said/did]
+Project context: [team size, project phase, relationship history]
+Stakes: [what happens if this isn't resolved]
+
+Please help me:
+1. Identify the likely root cause (Thomas-Kilmann lens: competing/avoiding/compromising/accommodating/collaborating?)
+2. Assess whose interests are legitimate and where they clash
+3. Suggest a structured 3-step resolution approach
+4. Draft a neutral message I can send to bring both parties to a conversation
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Difficult conversation prep</span>
+I need to have a difficult conversation with [team member / stakeholder].
+Issue: [what needs to be addressed — performance, behavior, missed commitment]
+My goal: [what outcome I want from the conversation]
+Risk: [what I'm worried about — defensiveness, escalation, relationship damage]
+Their likely reaction: [how I expect them to respond]
+
+Help me:
+1. Structure the conversation using SBI (Situation-Behavior-Impact) framework
+2. Anticipate their objections and prepare my responses
+3. Draft an opening statement that is direct but not accusatory
+4. Define what success looks like at the end of the conversation
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Stakeholder conflict escalation decision</span>
+I'm a PM deciding whether to escalate a conflict. Here's the situation:
+- Parties involved: [describe]
+- Duration of conflict: [how long]
+- Impact on project: [scope/schedule/team morale impact]
+- Steps already taken: [what I've tried]
+- Sponsor/leadership awareness: [do they know?]
+
+Analyze whether I should: (a) continue to mediate directly, (b) escalate to sponsor/PMO, or (c) involve HR.
+Provide a decision framework and draft an escalation message if needed.
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Conflict Resolution Record</div>
+<span class="c-comment">── CONFLUENCE: CONFLICT RESOLUTION RECORD ───────────────</span>
+<span class="c-key">Date:</span>              [YYYY-MM-DD]
+<span class="c-key">Parties Involved:</span>  [Name/Role] vs [Name/Role]
+<span class="c-key">Raised By:</span>         [PM / Stakeholder / Team Member]
+<span class="c-key">Conflict Type:</span>     [ ] Task  [ ] Process  [ ] Relationship  [ ] Values
+
+<span class="c-comment">── SITUATION ─────────────────────────────────────────────</span>
+<span class="c-key">Root Cause:</span>        [Summary of what triggered the conflict]
+<span class="c-key">Positions:</span>
+  Party A wants:   [their stated position]
+  Party B wants:   [their stated position]
+<span class="c-key">Underlying Needs:</span>  [what each party actually needs]
+<span class="c-key">Project Impact:</span>    [ ] Low  [ ] Medium  [ ] High
+
+<span class="c-comment">── RESOLUTION ACTIONS ────────────────────────────────────</span>
+<span class="c-key">Approach Used:</span>     [Collaborating / Compromising / Smoothing / etc.]
+<span class="c-key">Actions Agreed:</span>
+  1. [Action — Owner — Due date]
+  2. [Action — Owner — Due date]
+<span class="c-key">Follow-up Date:</span>    [YYYY-MM-DD]
+<span class="c-key">Status:</span>            [ ] Open  [ ] Resolved  [ ] Escalated
+    </div>
+  </div>
+
+  <!-- NAV FOOTER -->
+  <div class="nav-footer">
+    <a href="domain-1-overview.html" class="nav-btn">← <span><span class="nb-dir">Domain 1</span>Overview</span></a>
+    <a href="domain-1-task-02-lead-team.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T02: Lead a Team</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

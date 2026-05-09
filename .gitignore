@@ -1,0 +1,12 @@
+# Exclude copyrighted reference materials
+*.pdf
+Tài liệu luyện thi Full/
+
+# Claude Code local settings
+.claude/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T15: Issues | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T15: Issues</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 15</span>
+    </div>
+    <h1>Manage Project Issues</h1>
+    <div class="title-vi">Quản lý Các vấn đề Dự án</div>
+    <p class="description">Issues là những gì đang xảy ra ngay bây giờ (không phải rủi ro tiềm năng). PM phải nhận biết, log, phân tích nguyên nhân gốc, và resolve issues nhanh chóng. Unresolved issues = compounding problems.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Risk vs Issue — Critical Distinction</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Risk</strong>: An uncertain event or condition that <em>may</em> occur in the future. Managed proactively. Lives in the Risk Register.</p>
+        <p><strong>Issue</strong>: A problem or obstacle that is <em>currently affecting</em> the project. Requires immediate action. Lives in the Issue Log.</p>
+        <p><strong>Relationship:</strong> When a risk occurs, it becomes an issue. When an issue is resolved, its resolution may create new risks. PM manages both simultaneously.</p>
+        <p><strong>Root Cause Analysis (RCA):</strong> Identifying the fundamental cause of an issue, not just the symptom. Tools: 5 Whys, Fishbone diagram. Fix root cause to prevent recurrence.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/issue-management-project-performance-9547" target="_blank">PMI — Issue Management</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Rủi ro (Risk)</strong>: Sự kiện không chắc chắn <em>có thể</em> xảy ra trong tương lai. Quản lý proactively. Ghi trong Risk Register.</p>
+        <p><strong>Vấn đề (Issue)</strong>: Sự cố hoặc trở ngại <em>đang ảnh hưởng</em> đến dự án ngay bây giờ. Cần hành động ngay. Ghi trong Issue Log.</p>
+        <p><strong>Mối quan hệ:</strong> Khi rủi ro xảy ra, nó trở thành vấn đề. PM quản lý cả hai đồng thời.</p>
+        <p><strong>Root Cause Analysis (RCA):</strong> Xác định nguyên nhân gốc của vấn đề, không chỉ triệu chứng. Công cụ: 5 Whys, Fishbone diagram.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Issue Management Process</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Issue Log & Management</div>
+<span class="c-comment">ID   | Description                 | Impact | Priority | Owner  | Due    | Status   | Resolution</span>
+<span class="c-key">I-01</span> | Partner Bank A sandbox down   | HIGH   | P1       | PM     | D+2    | ACTIVE   | Mock server built; partner escalated
+<span class="c-key">I-02</span> | Dev environment network issue | MED    | P2       | Tech   | D+1    | RESOLVED | IT fixed firewall rule; post-mortem done
+<span class="c-key">I-03</span> | PH team member visa delay     | MED    | P2       | PM     | D+5    | ACTIVE   | Reassigning tasks; remote onboarding
+<span class="c-key">I-04</span> | Budget overrun in Sprint 8    | HIGH   | P1       | PM     | D+3    | ESCALATED| Escalated to sponsor; analysis in progress
+
+<span class="c-comment">── PRIORITY LEVELS ─────────────────────────────────────</span>
+P1 (Critical): Blocks delivery, immediate action, escalate if not resolved in 24h
+P2 (High):     Impacts quality/schedule, resolve within 3 days
+P3 (Medium):   Workaround available, resolve within sprint
+P4 (Low):      Minor impact, resolve at next opportunity
+
+<span class="c-comment">── 5 WHYS EXAMPLE (Issue I-04: Budget overrun) ──────────</span>
+Why #1: Sprint 8 cost 20% over budget
+Why #2: Team spent more hours than estimated
+Why #3: API integration testing took 3x longer than planned
+Why #4: Partner sandbox had intermittent failures requiring repeated testing
+Why #5: No SLA for sandbox uptime was included in partner agreement
+→ <span class="c-val">Root Cause: Inadequate SLA definition for partner sandbox environment
+  Fix: Negotiate sandbox SLA; add uptime clause to all future partner contracts</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">⚡</span> Issue Resolution Strategies</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Strategy</th><th>When to Use</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Resolve directly</strong></td><td>PM has authority and resources to fix</td><td>Team member conflict resolved through mediation</td></tr>
+          <tr><td><strong>Implement workaround</strong></td><td>Can't fix root cause now, need to continue</td><td>Partner API down → build mock server to unblock dev</td></tr>
+          <tr><td><strong>Escalate</strong></td><td>Beyond PM authority, needs organizational decision</td><td>Budget overrun → escalate to sponsor for approval</td></tr>
+          <tr><td><strong>Accept impact</strong></td><td>Issue cannot be resolved, adjust baselines</td><td>Key developer sick for 2 weeks → revise schedule baseline</td></tr>
+          <tr><td><strong>Root cause elimination</strong></td><td>Prevent recurrence</td><td>Fix the process that allowed the issue to arise</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Issue Management</div>
+        <ul>
+          <li><strong>Risk ≠ Issue</strong>: Risk = future, uncertain. Issue = present, happening now. This distinction is always tested.</li>
+          <li>When a risk becomes an issue: move from risk register → issue log, close risk entry, open issue entry</li>
+          <li><strong>Always log issues</strong> — even minor ones. The log provides traceability for lessons learned and audits.</li>
+          <li>Root cause analysis: fix the CAUSE, not just the symptom. 5 Whys is the simplest exam-acceptable method.</li>
+          <li>Unresolved issues should be <strong>escalated</strong>, not ignored. Escalation is a professional responsibility.</li>
+          <li>In Agile: issues = impediments. Scrum Master's primary responsibility is removing impediments.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Issue Resolution Under Pressure</h4></div>
+      <p><strong>Situation:</strong> Two days before Sprint 10 review with Bank Partner A. A critical bug is discovered: loan applications submitted between 11pm-12am are failing silently (no error shown to user, no application saved). Estimated 47 affected applications over 5 days.</p>
+      <p><strong>Immediate response (Issue I-07, P1):</strong></p>
+      <ol>
+        <li><strong>Log:</strong> I-07 created in Jira with severity Critical, P1. Owner: Tech Lead + PM.</li>
+        <li><strong>Workaround:</strong> Temporarily disable 11pm-12am submission window (maintenance page). This stops new occurrences within 30 minutes of discovery.</li>
+        <li><strong>Communication:</strong> PM notifies partner PM and sponsor within 1 hour with: what happened, what data is affected, immediate action taken, resolution timeline.</li>
+        <li><strong>Root cause (5 Whys):</strong> Timezone handling bug — server uses UTC, application form uses local time. Midnight crossover creates invalid timestamp that fails DB constraint silently. Root cause: no timezone normalization test in the test suite.</li>
+        <li><strong>Fix:</strong> Timezone normalization fix deployed in 4 hours. Affected applications manually recovered. Automated timezone test added to test suite (prevents recurrence).</li>
+        <li><strong>Post-mortem:</strong> RCA documented. Lessons learned: all time-sensitive operations need timezone test coverage.</li>
+      </ol>
+      <p><strong>PMP lesson:</strong> Issue response is measured in hours, not days for P1. Workaround first (stop the bleeding), then fix root cause, then prevent recurrence. Transparency with stakeholders is non-negotiable.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A project team member reports that a key vendor is two weeks late delivering a component. The PM had identified this as a risk earlier. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Create a new risk entry in the risk register</li>
+        <li>B. Close the risk entry and open a new issue in the issue log, then implement the risk response plan</li>
+        <li>C. Escalate directly to the sponsor since the vendor is late</li>
+        <li>D. Wait another week to see if the vendor catches up before taking action</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — When a risk event occurs, the risk becomes an issue. The PM should: (1) close or update the risk register entry to show it has occurred, (2) open an issue in the issue log, and (3) implement the previously prepared risk response plan. Option A is wrong (it was already a risk). Option C is premature — implement the response plan first. Option D delays resolution unnecessarily when a planned response already exists.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">Three bugs have been found in production after launch: Bug A (critical, crashes for 5% of users), Bug B (high, wrong calculation in reports), Bug C (low, UI alignment issue). How should the PM prioritize resolution?</div>
+    <ul class="q-opts">
+      <li>A. Resolve in order they were found (A, B, C)</li>
+      <li>B. Bug A first (critical user impact), then B (business accuracy), then C (cosmetic)</li>
+      <li>C. Resolve all simultaneously with the full team</li>
+      <li>D. Resolve C first since it's quickest and clears the list</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Issues should be prioritized by business impact and severity, not discovery order or effort level. Bug A is critical because it causes crashes for real users — immediate business harm. Bug B affects data accuracy in reports — financial and compliance risk. Bug C is cosmetic — low business impact. Resolving the easiest item first (D) is a common trap: "quick wins" that ignore urgency create the illusion of progress while critical issues fester. At FinTech Company X, a wrong calculation in reports (Bug B) could also carry regulatory risk, so context matters.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">The PM's root cause analysis reveals that multiple issues this sprint were caused by insufficient code review — developers were skipping reviews to meet sprint commitments. This is BEST addressed by:</div>
+    <ul class="q-opts">
+      <li>A. Removing the code review requirement to reduce pressure</li>
+      <li>B. Addressing the underlying process problem: update Definition of Done to require code review, and have a team discussion about quality vs. speed trade-offs</li>
+      <li>C. Reporting the developers to HR</li>
+      <li>D. Adding more testers to catch errors downstream</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Root cause analysis points to a process gap (code review not enforced) and a team norm problem (quality vs. speed trade-off). The fix is to address the root cause: reinforce the Definition of Done to explicitly require code review, and facilitate a team retrospective to align on quality standards and realistic sprint commitments. Removing the requirement (A) accepts technical debt. Adding testers (D) is a downstream band-aid that doesn't prevent defects from being written. HR escalation (C) is disproportionate for a process/norms issue.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs analyze issue root causes, generate structured resolution plans, draft escalation communications, and identify recurring issue patterns across sprints.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Issue resolution plan generation</span>
+I have a project issue that needs a structured resolution plan.
+Issue: [describe the problem — specific, observable]
+Severity: [Critical / High / Medium / Low]
+Impact: [what is blocked or degraded]
+Discovery: [how and when it was found]
+Duration: [how long it has existed]
+Stakeholders affected: [who is impacted]
+What's been tried: [attempts to resolve]
+Root cause hypothesis: [what I think caused it]
+
+Generate a structured Issue Resolution Plan:
+1. Root cause confirmation approach (how to validate the hypothesis)
+2. Immediate containment actions (stop the bleeding now)
+3. Short-term corrective action (fix the issue within [X] days)
+4. Long-term preventive action (prevent recurrence)
+5. Owner assignments for each action
+6. Communication plan: who needs to know, how, by when
+7. Resolution verification criteria (how do we know it's actually fixed?)
+8. Issue closure checklist
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Sprint issue pattern analysis</span>
+I want to analyze recurring issues across my last [N] sprints to find systemic problems.
+Issue data:
+  Sprint 1 issues: [list or describe]
+  Sprint 2 issues: [list or describe]
+  Sprint 3 issues: [list or describe]
+  [continue]
+Issue types (if categorized): [technical debt / dependency / process / communication / quality / resource]
+Average resolution time: [days]
+Escaped to production: [count]
+
+Analyze and:
+1. Identify the top 3 recurring issue themes
+2. Categorize issues by root cause type (people / process / technology / external)
+3. Calculate the "issue cost" (sprint capacity consumed by issue resolution)
+4. Identify which issues signal systemic risk (not just one-offs)
+5. Recommend process changes to reduce issue frequency by category
+6. Suggest 2 items to add to the Definition of Done to catch issues earlier
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Escalation decision and message</span>
+I have an issue that may need to be escalated. Help me decide and prepare.
+Issue: [description]
+My attempts to resolve: [what I've tried]
+Blockers to resolution at my level: [what I can't fix myself]
+Time sensitivity: [how urgent is this]
+Business impact if unresolved: [cost in time, money, or risk]
+Who I'm considering escalating to: [role/name]
+My concern about escalating: [worried about looking incompetent? political risk? don't want to alarm stakeholders?]
+
+Help me:
+1. Decide: is escalation necessary? (criteria: impact, time, authority needed)
+2. What level to escalate to
+3. When to escalate (now vs. give it 24-48h more)
+4. Draft the escalation message (email or Slack) — professional, concise, solution-oriented
+5. What NOT to do (common escalation mistakes that damage credibility)
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Jira — Issue Log</div>
+<span class="c-comment">── JIRA: ISSUE LOG TEMPLATE ──────────────────────────────</span>
+<span class="c-key">Issue Type:</span>   Issue (distinct from Bug — project-level problem)
+<span class="c-key">Summary:</span>      [ISSUE-###] [Category] — [Short description]
+<span class="c-key">Priority:</span>     Critical / High / Medium / Low
+<span class="c-key">Labels:</span>       issue | category:[dependency/process/resource/technical/external]
+
+<span class="c-comment">── ISSUE DESCRIPTION ─────────────────────────────────────</span>
+<span class="c-key">What happened:</span>    [Observable problem statement — specific]
+<span class="c-key">Impact:</span>           [What is blocked or degraded — business terms]
+<span class="c-key">Severity:</span>         [ ] Critical — stops work  [ ] High — major impact
+                  [ ] Medium — workaround available  [ ] Low — minor
+<span class="c-key">First identified:</span> [YYYY-MM-DD] by [name/role]
+<span class="c-key">Duration:</span>         [How long has this existed]
+
+<span class="c-comment">── ROOT CAUSE ────────────────────────────────────────────</span>
+<span class="c-key">Root cause:</span>     [5 Whys result or initial hypothesis]
+<span class="c-key">Category:</span>       [ ] Process  [ ] People  [ ] Technology  [ ] External
+
+<span class="c-comment">── RESOLUTION ────────────────────────────────────────────</span>
+<span class="c-key">Owner:</span>          [Name / role]
+<span class="c-key">Target date:</span>    [YYYY-MM-DD]
+<span class="c-key">Actions:</span>
+  1. [Immediate action — owner — due]
+  2. [Long-term fix — owner — due]
+<span class="c-val">Status: [ ] Open  [ ] In Progress  [ ] Escalated  [ ] Resolved</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-14-governance.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T14: Governance</span></a>
+    <a href="domain-2-task-16-knowledge-transfer.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T16: Knowledge Transfer</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T06: Schedule | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T06: Schedule</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 06</span>
+      <span class="tag tag-hybrid">Predictive + Agile</span>
+    </div>
+    <h1>Plan and Manage Schedule</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Tiến độ</div>
+    <p class="description">Schedule management là kỹ năng cốt lõi — cân bằng giữa Critical Path (predictive) và Velocity/Burndown (agile). PM không thể để schedule slip mà không có action.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Schedule Development — Core Concepts</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Schedule development process:</strong> Define Activities → Sequence Activities → Estimate Durations → Develop Schedule → Control Schedule</p>
+        <p><strong>Critical Path Method (CPM):</strong> The longest sequence of dependent activities determining the earliest project completion. Any delay on the critical path = project delay.</p>
+        <ul>
+          <li><strong>Float/Slack</strong>: Time an activity can be delayed without delaying the project. Critical path activities have <em>zero float</em>.</li>
+          <li><strong>Total Float</strong>: Delay without affecting project end date</li>
+          <li><strong>Free Float</strong>: Delay without affecting successor activity</li>
+          <li><strong>Early Start (ES) / Early Finish (EF)</strong>: Forward pass</li>
+          <li><strong>Late Start (LS) / Late Finish (LF)</strong>: Backward pass</li>
+        </ul>
+        <p><strong>Schedule compression techniques:</strong></p>
+        <ul>
+          <li><strong>Fast-tracking</strong>: Overlap activities originally planned sequentially. Increases risk.</li>
+          <li><strong>Crashing</strong>: Add resources to critical path activities to shorten duration. Increases cost.</li>
+        </ul>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/schedule-management-plan-9498" target="_blank">PMI — Schedule Management</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Critical Path Method (CPM):</strong> Chuỗi dài nhất các hoạt động phụ thuộc nhau, xác định ngày hoàn thành sớm nhất của dự án. Bất kỳ trì hoãn nào trên critical path = dự án bị trì hoãn.</p>
+        <ul>
+          <li><strong>Float/Slack</strong>: Thời gian hoạt động có thể trì hoãn mà không ảnh hưởng đến dự án. Critical path activities có <em>float = 0</em>.</li>
+        </ul>
+        <p><strong>Kỹ thuật nén lịch:</strong></p>
+        <ul>
+          <li><strong>Fast-tracking</strong>: Chạy song song các hoạt động vốn được lên kế hoạch tuần tự. Tăng rủi ro.</li>
+          <li><strong>Crashing</strong>: Thêm nguồn lực vào critical path để rút ngắn thời gian. Tăng chi phí.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Critical Path — Float Calculation</div>
+<span class="c-comment">── FORWARD PASS (ES/EF) ──────────────────────────────────</span>
+<span class="c-key">ES</span> = Latest EF of all predecessors (or 0 for first activity)
+<span class="c-key">EF</span> = ES + Duration - 1
+
+<span class="c-comment">── BACKWARD PASS (LS/LF) ────────────────────────────────</span>
+<span class="c-key">LF</span> = Earliest LS of all successors (or project end for last activity)
+<span class="c-key">LS</span> = LF - Duration + 1
+
+<span class="c-comment">── FLOAT ─────────────────────────────────────────────────</span>
+<span class="c-key">Float</span> = LS - ES  (or LF - EF)
+<span class="c-val">Float = 0 → Critical Path activity (no slack allowed)</span>
+
+<span class="c-comment">── EXAMPLE PROJECT ──────────────────────────────────────</span>
+A(3d) → B(5d) → D(4d)
+A(3d) → C(2d) → D(4d)
+
+Path A→B→D: 3+5+4 = <span class="c-val">12 days ← Critical Path</span>
+Path A→C→D: 3+2+4 = 9 days
+Float on C: 12 - 9 = <span class="c-val">3 days</span>
+
+<span class="c-comment">── COMPRESSION DECISION ──────────────────────────────────</span>
+<span class="c-key">Fast-tracking</span>: Overlap B and C (design + build simultaneously) → Risk ↑, Cost same
+<span class="c-key">Crashing</span>: Add developer to B → Duration 5d → 3d, Cost ↑ $2,000/day
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Critical Path & Compression</div>
+        <ul>
+          <li>Critical path = <strong>longest path</strong> (not shortest). Determines project duration.</li>
+          <li>Activities ON critical path have <strong>zero float</strong> — any delay = project delay</li>
+          <li>Fast-tracking: increases <strong>risk</strong>. Crashing: increases <strong>cost</strong>.</li>
+          <li>When asked about schedule compression, exam prefers <strong>fast-tracking first</strong> (no extra cost) but with understanding of added risk</li>
+          <li>Float = LS - ES = LF - EF (both give same result)</li>
+          <li>There can be <strong>multiple critical paths</strong> in a network diagram</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔄</span> Agile Schedule Management</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>In Agile, schedule is managed through <strong>velocity</strong> and <strong>iteration planning</strong> rather than Gantt charts and CPM.</p>
+        <ul>
+          <li><strong>Velocity</strong>: Average story points completed per sprint. Used to forecast completion date.</li>
+          <li><strong>Burndown chart</strong>: Shows remaining work vs time. Ideal line vs actual.</li>
+          <li><strong>Burnup chart</strong>: Shows work completed vs total scope. Better for scope change visibility.</li>
+          <li><strong>Release planning</strong>: How many sprints needed? Remaining backlog / velocity = sprints remaining.</li>
+        </ul>
+        <p><strong>Sprint Goal</strong>: The commitment for the sprint — what the team will deliver, not just what they'll do.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Trong Agile, lịch trình được quản lý thông qua <strong>velocity</strong> và <strong>iteration planning</strong>.</p>
+        <ul>
+          <li><strong>Velocity</strong>: Story points trung bình hoàn thành mỗi sprint. Dùng để dự báo ngày hoàn thành.</li>
+          <li><strong>Burndown chart</strong>: Hiển thị công việc còn lại theo thời gian.</li>
+          <li><strong>Release planning</strong>: Backlog còn lại / velocity = số sprint cần thiết.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Agile Release Forecast</div>
+<span class="c-comment">── VELOCITY-BASED FORECASTING ────────────────────────────</span>
+<span class="c-key">Remaining Backlog</span> = 180 story points
+<span class="c-key">Team Velocity</span>    = 25 SP/sprint (average last 3 sprints)
+<span class="c-key">Sprints Remaining</span> = 180 / 25 = <span class="c-val">7.2 → 8 sprints</span>
+<span class="c-key">Sprint Duration</span>   = 2 weeks
+<span class="c-key">Release Date</span>      = Today + (8 × 2 weeks) = <span class="c-val">16 weeks from now</span>
+
+<span class="c-comment">── WHEN BEHIND SCHEDULE ─────────────────────────────────</span>
+Options (in order of preference):
+1. Reduce scope (cut low-value backlog items)
+2. Add team member (increases velocity in 2-3 sprints)
+3. Increase sprint length (exceptional, use sparingly)
+4. Negotiate timeline with stakeholders
+
+<span class="c-comment">── BURNDOWN HEALTH CHECK ─────────────────────────────────</span>
+Ideal burndown: straight line from total → 0
+Flat line = team not completing work (blocked?)
+Line going UP = scope is being added (scope creep!)
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> WBS — Work Breakdown Structure</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>WBS decomposes the total scope of work into manageable components. The <strong>Work Package</strong> is the lowest level of WBS — where estimates, schedules, and cost accounts are assigned.</p>
+        <p><strong>100% Rule</strong>: WBS captures 100% of work defined in project scope. Nothing more, nothing less.</p>
+        <p><strong>Rolling Wave Planning</strong>: Near-term work is detailed; future work is high-level. Progressive elaboration as the project proceeds.</p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>WBS phân rã tổng phạm vi công việc thành các thành phần quản lý được. <strong>Work Package</strong> là cấp thấp nhất của WBS — nơi gán ước tính, lịch trình và chi phí.</p>
+        <p><strong>Quy tắc 100%</strong>: WBS nắm bắt 100% công việc được xác định trong phạm vi dự án.</p>
+        <p><strong>Rolling Wave Planning</strong>: Công việc gần đây được chi tiết hóa; công việc tương lai ở mức cao. Elaboration dần dần khi dự án tiến triển.</p>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>WBS Level</th><th>Description</th><th>Example (Project Alpha)</th></tr></thead>
+        <tbody>
+          <tr><td>Level 1</td><td>Project</td><td>1.0 Project Alpha</td></tr>
+          <tr><td>Level 2</td><td>Deliverable/Phase</td><td>1.1 Backend API | 1.2 Frontend | 1.3 Integration | 1.4 QA</td></tr>
+          <tr><td>Level 3</td><td>Work Package</td><td>1.1.1 Auth Service | 1.1.2 Credit Engine | 1.3.1 Partner API Integration</td></tr>
+          <tr><td>Level 4</td><td>Activity (for detailed scheduling)</td><td>1.3.1.1 Design API contract | 1.3.1.2 Build mock server | 1.3.1.3 Integration testing</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Schedule Recovery Plan</h4></div>
+      <p><strong>Situation:</strong> Sprint 6 review của Project Alpha. SPI = 0.83 (từ EVM calculation). Release date là 8 tuần nữa. Remaining backlog = 80 SP. Team velocity = 22 SP/sprint (dipping from normal 25 due to production incidents). Sponsor yêu cầu release date không thể slip.</p>
+      <p><strong>Analysis:</strong> At 22 SP/sprint × 4 sprints = 88 SP available. But 80 SP remaining + buffer = tight. Risk: another production incident would break the schedule.</p>
+      <p><strong>Options evaluated:</strong></p>
+      <ul>
+        <li><strong>Fast-track</strong>: Run QA testing in parallel with development (currently sequential). Risk: bugs found late, rework cost. Decision: Accept for low-risk modules only.</li>
+        <li><strong>Crash</strong>: Hire 1 contractor developer. Cost: +$8,000. Velocity increase: +5 SP/sprint in sprint 7 onward. Decision: Approved by sponsor given release criticality.</li>
+        <li><strong>Scope reduction</strong>: Move Admin reporting dashboard (15 SP, low business value) to Phase 2. Decision: Accepted. Now remaining = 65 SP, comfortably achievable.</li>
+      </ul>
+      <p><strong>PMP lesson:</strong> Schedule recovery is a combination of compression, scope management, and stakeholder communication — không phải chỉ "work harder". Communicate options and tradeoffs clearly; let sponsor decide.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A project has three paths: Path A = 15 days, Path B = 12 days, Path C = 15 days. A new dependency is added making Path B now 16 days. What happened?</div>
+      <ul class="q-opts">
+        <li>A. The project duration decreased because more paths are near-critical</li>
+        <li>B. Path B is now the critical path and the project duration increased to 16 days</li>
+        <li>C. Paths A and C remain critical; Path B has positive float</li>
+        <li>D. The project still completes in 15 days as Paths A and C are unchanged</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Path B at 16 days is now the longest path, making it the new critical path. The project duration is now 16 days — it increased. Paths A and C now have float (1 day). This demonstrates why the critical path must be monitored throughout the project — it can shift as conditions change.</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">The project is 3 weeks behind schedule. The sponsor insists the original end date must be maintained. The PM's BEST option to compress the schedule without significant cost increase is:</div>
+      <ul class="q-opts">
+        <li>A. Crash the schedule by hiring additional contractors</li>
+        <li>B. Fast-track activities on the critical path by overlapping them</li>
+        <li>C. Add overtime to the current team</li>
+        <li>D. Remove scope items to reduce the workload</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Fast-tracking overlaps activities originally planned sequentially, recovering schedule <em>without adding cost</em>. Crashing (A) recovers schedule but adds cost. Adding overtime (C) also increases cost and risks burnout. Removing scope (D) may be valid but changes project deliverables — fast-tracking is the compression technique that addresses time without direct cost impact (though it increases risk of rework).</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">An agile project has completed 6 sprints. Velocity data: Sprint 1=18, Sprint 2=22, Sprint 3=24, Sprint 4=21, Sprint 5=23, Sprint 6=20. Remaining backlog = 96 story points. How many sprints are needed to complete?</div>
+    <ul class="q-opts">
+      <li>A. 4 sprints</li><li>B. 5 sprints</li><li>C. 6 sprints</li><li>D. 3 sprints</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Use the last 3 sprints for the most accurate forecast (recent data reflects current team performance): (21 + 23 + 20) / 3 = 21.3 SP/sprint. Remaining: 96 / 21.3 ≈ 4.5 sprints → round up to 5 sprints. Using the all-time average (21.3 also here by coincidence) gives the same answer, but the principle is: always prefer recent velocity over historical average when performance has stabilised or changed.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs analyze schedule risks, generate delay impact assessments, interpret velocity trends, draft schedule recovery plans, and communicate timeline changes to stakeholders.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Schedule delay impact analysis</span>
+My project is experiencing a schedule delay. Help me analyze the impact and options.
+Project: [name] | Current milestone: [what we're working toward]
+Original planned completion: [date]
+Current forecast: [revised date]
+Delay: [X days/weeks — how long]
+Cause of delay: [what happened]
+Remaining work: [% complete]
+Critical path activities still remaining: [list]
+Budget status: [on track / over / under]
+
+Analyze:
+1. Is this delay on the critical path? (will it delay the final deadline?)
+2. What is the total float consumed?
+3. What compression options are available? (Fast-track: which activities can run in parallel? Crash: where would additional resources reduce duration?)
+4. What is the cost of crashing? What is the cost of accepting the delay?
+5. Recommendation: which option, and why?
+6. Draft the schedule change communication for the sponsor.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Agile velocity trend analysis</span>
+I want to analyze my team's velocity trend. Here's the data:
+Sprint 1: Planned [SP] / Actual [SP]
+Sprint 2: Planned [SP] / Actual [SP]
+Sprint 3: Planned [SP] / Actual [SP]
+Sprint 4: Planned [SP] / Actual [SP]
+Sprint 5: Planned [SP] / Actual [SP]
+
+Context: [any events that affected velocity — new team member, refactoring sprint, incidents]
+
+Analyze:
+1. Average velocity and variability
+2. Trend direction (improving / stable / declining)
+3. Reliability rate (how often does the team hit their commitment?)
+4. Forecast: at this velocity, when will the remaining [X story points] be complete?
+5. If there's a velocity decline — diagnose the most likely root causes
+6. Recommended sprint capacity for the next planning session
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Schedule compression decision</span>
+My sponsor is pushing to deliver [milestone] 3 weeks earlier than planned. Help me evaluate the options.
+Current plan end date: [date]
+Target date requested: [date]
+Compression needed: [X weeks]
+
+Available activities to fast-track (run in parallel):
+  Activity A (currently after B): [description, duration, dependency reason]
+  Activity B: [description, duration]
+  [list more]
+
+Crash options (add resources to shorten duration):
+  Activity C: Normal duration [X], crashed duration [Y], additional cost [$Z]
+  [list more]
+
+Evaluate:
+1. Which compression approach achieves the target with least risk?
+2. Total additional cost for crashing options
+3. Quality/risk implications of fast-tracking
+4. My recommendation: what to tell the sponsor
+5. What to ask for in return (trade-offs — scope or quality concessions)
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Schedule Recovery Plan</div>
+<span class="c-comment">── CONFLUENCE: SCHEDULE RECOVERY PLAN ───────────────────</span>
+<span class="c-key">Project:</span>   [Project Alpha] | Date: [YYYY-MM-DD] | Triggered by: [event]
+<span class="c-key">Original end date:</span>   [YYYY-MM-DD]
+<span class="c-key">Current forecast:</span>    [YYYY-MM-DD] — delay of [X] days
+<span class="c-key">Target recovery to:</span>  [YYYY-MM-DD]
+
+<span class="c-comment">── DELAY ROOT CAUSE ──────────────────────────────────────</span>
+<span class="c-key">Primary cause:</span>   [What happened]
+<span class="c-key">Contributing:</span>   [Secondary factors]
+<span class="c-key">On critical path?</span> Yes → affects final delivery | No → float available
+
+<span class="c-comment">── RECOVERY OPTIONS ──────────────────────────────────────</span>
+<span class="c-key">Option A — Fast-track:</span>
+  Activities: [which activities to overlap]
+  Risk: [quality / dependency risk]
+  Recovery: [X days] | Additional cost: $[amount]
+
+<span class="c-key">Option B — Crash:</span>
+  Activities: [where to add resources]
+  Resource needed: [type, quantity]
+  Recovery: [X days] | Additional cost: $[amount]
+
+<span class="c-key">Option C — Scope reduction:</span>
+  Features to defer: [list]
+  Recovery: [X days] | Cost impact: $[savings]
+
+<span class="c-comment">── RECOMMENDATION ────────────────────────────────────────</span>
+<span class="c-val">Recommended: Option [A/B/C] — [1-sentence rationale] | CCB approval: [pending/approved]</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-05-budget-resources.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T05: Budget & Resources</span></a>
+    <a href="domain-2-task-07-quality.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T07: Quality</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

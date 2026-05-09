@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T08: Scope | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T08: Scope</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 08</span>
+      <span class="tag tag-hybrid">Predictive + Agile</span>
+    </div>
+    <h1>Plan and Manage Scope</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Phạm vi</div>
+    <p class="description">Scope creep là kẻ thù số một của project delivery. PM phải kiểm soát phạm vi chặt chẽ nhưng vẫn linh hoạt đủ để accommodate legitimate change. "Change is inevitable — uncontrolled change is fatal."</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Scope Management Core Concepts</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Product Scope</strong>: The features and functions that characterize a product or service.<br>
+        <strong>Project Scope</strong>: The work performed to deliver the product, service, or result.</p>
+        <p><strong>Scope baseline</strong>: Approved scope statement + WBS + WBS dictionary. Any changes must go through change control.</p>
+        <p><strong>Scope creep</strong>: Uncontrolled expansion of project scope without corresponding adjustment to time, cost, or resources. Common causes: unclear requirements, informal change requests, weak change control.</p>
+        <p><strong>Scope validation</strong>: Formal acceptance of completed deliverables by customer/sponsor. Different from Quality Control (QC = correct, Validate Scope = accepted).</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/scope-management-project-success-8426" target="_blank">PMI — Scope Management</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Product Scope</strong>: Các tính năng và chức năng đặc trưng cho sản phẩm.<br>
+        <strong>Project Scope</strong>: Công việc được thực hiện để deliver sản phẩm.</p>
+        <p><strong>Scope baseline</strong>: Scope statement + WBS + WBS dictionary đã được phê duyệt. Bất kỳ thay đổi nào phải qua change control.</p>
+        <p><strong>Scope creep</strong>: Mở rộng phạm vi dự án không kiểm soát mà không điều chỉnh tương ứng về thời gian, chi phí hoặc nguồn lực.</p>
+        <p><strong>Scope validation</strong>: Chấp thuận chính thức các deliverables đã hoàn thành bởi khách hàng/sponsor.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Scope in Predictive vs Agile</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Aspect</th><th>Predictive</th><th>Agile</th><th>Hybrid</th></tr></thead>
+        <tbody>
+          <tr><td>Scope definition</td><td>Fully defined upfront in scope statement + WBS</td><td>High-level epics/features; detailed just-in-time</td><td>Core features defined; enhancements flexible</td></tr>
+          <tr><td>Change process</td><td>Formal CCB (Change Control Board)</td><td>Product Backlog reprioritization by Product Owner</td><td>CCB for major changes; PO for sprint-level</td></tr>
+          <tr><td>Scope validation</td><td>End of phase/project formal sign-off</td><td>Sprint Review every sprint</td><td>Phase gates + sprint reviews</td></tr>
+          <tr><td>Scope document</td><td>Project Scope Statement, WBS</td><td>Product Backlog, User Stories</td><td>Requirements traceability + backlog</td></tr>
+          <tr><td>Scope creep defense</td><td>Baseline + change control</td><td>Backlog grooming + velocity transparency</td><td>Both mechanisms applied contextually</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Requirements Management</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Requirements Traceability Matrix (RTM)</strong>: Links requirements from origin to deliverables. Ensures every requirement is addressed and no unauthorized work is done.</p>
+        <p><strong>Requirement types:</strong></p>
+        <ul>
+          <li><strong>Business requirements</strong>: Higher-level needs of the organization (what and why)</li>
+          <li><strong>Stakeholder requirements</strong>: Needs of a specific stakeholder group</li>
+          <li><strong>Solution requirements</strong>: Functional (what system does) + Non-functional (how well it does it)</li>
+          <li><strong>Transition requirements</strong>: Temporary capabilities needed to move from current to future state</li>
+          <li><strong>Compliance/quality requirements</strong>: Conditions the project must meet</li>
+        </ul>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Requirements Traceability Matrix (RTM)</strong>: Liên kết requirements từ nguồn gốc đến deliverables. Đảm bảo mọi requirement đều được đáp ứng.</p>
+        <p><strong>Loại requirements:</strong></p>
+        <ul>
+          <li><strong>Business requirements</strong>: Nhu cầu cấp cao của tổ chức</li>
+          <li><strong>Stakeholder requirements</strong>: Nhu cầu của nhóm stakeholder cụ thể</li>
+          <li><strong>Solution requirements</strong>: Functional + Non-functional</li>
+          <li><strong>Transition requirements</strong>: Khả năng tạm thời để chuyển đổi</li>
+          <li><strong>Compliance/quality requirements</strong>: Điều kiện bắt buộc phải đáp ứng</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Requirements Traceability Matrix (RTM) — Simplified</div>
+<span class="c-comment">ID    | Business Need        | Requirement            | Story | Status  | Test Case</span>
+<span class="c-key">BR-01</span> | Loan processing      | Credit score API call  | US-12 | Done    | TC-045
+<span class="c-key">BR-02</span> | Regulatory compliance| PII encryption at rest | US-18 | In Dev  | TC-067, TC-068
+<span class="c-key">BR-03</span> | Partner integration  | Bank A API OAuth 2.0   | US-21 | Testing | TC-082
+<span class="c-key">BR-04</span> | Performance          | API &lt;500ms p95        | US-25 | Open    | TC-090
+<span class="c-key">BR-05</span> | Audit trail          | All decisions logged   | US-30 | Open    | TBD
+
+<span class="c-comment">── RTM PURPOSE ───────────────────────────────────────────</span>
+• Ensures no requirement is missed (100% coverage)
+• Provides traceability from business need → story → test
+• Helps PM defend against scope creep (if it's not in RTM, it's a change request)
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Scope Management</div>
+        <ul>
+          <li><strong>Validate Scope = customer acceptance</strong>. Quality Control = product correctness. Both can happen, scope validation is LAST.</li>
+          <li>Scope creep = uncontrolled change. Gold-plating = PM/team adds features. Both are wrong.</li>
+          <li>In Agile, scope is flexible but <strong>sprint commitment is fixed</strong> — new work goes to backlog, not current sprint</li>
+          <li>If customer requests change during predictive project → <strong>go through change control</strong>, never just add it</li>
+          <li>WBS 100% rule: WBS must include 100% of project scope — if it's not in WBS, it's out of scope</li>
+          <li>RTM is the key tool for requirements management and scope validation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Scope Creep Under Pressure</h4></div>
+      <p><strong>Situation:</strong> Sprint 8 của Project Alpha. Bank Partner A's Product Manager calls PM directly and requests adding a "real-time SMS notification" feature. "Just a small addition, shouldn't take long." The PM checks: this feature is NOT in the approved scope or backlog.</p>
+      <p><strong>PM's response:</strong> "I understand this is important for your team. Let me document this as a formal change request so we can assess the impact on scope, budget, and timeline. I'll get back to you with an impact analysis within 48 hours."</p>
+      <p><strong>Impact analysis:</strong> SMS feature requires: 3rd party SMS provider integration (8 SP), message templates (3 SP), compliance review for PII in SMS (2 SP), testing (3 SP). Total = 16 SP = ~1 sprint. Timeline impact: +2 weeks if absorbed, or scope trade-off needed.</p>
+      <p><strong>Change Control Board decision:</strong> Feature is approved but deferred to Phase 2 (after go-live). Phase 1 stays on schedule. Partner PM accepts — they understand the business priority.</p>
+      <p><strong>PMP lesson:</strong> Saying "no" to scope creep is easier when you say "not now, through change control." The PM protected the project while respecting the partner. Change control isn't bureaucracy — it's professional integrity.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">A stakeholder requests a small additional feature "that won't take more than a day." The feature is not in the approved scope. What should the PM do FIRST?</div>
+      <ul class="q-opts">
+        <li>A. Add it to the current sprint since it's so small</li>
+        <li>B. Refuse the request because it's not in scope</li>
+        <li>C. Submit it as a formal change request and perform impact analysis</li>
+        <li>D. Ask the developer to build it in their spare time</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — Any work not in the approved scope, regardless of size, must go through the change control process. "Small" changes are the most common way scope creep enters a project. The PM must assess the real impact (it's never "just a day") and get proper authorization. Options A and D bypass process. Option B is too rigid — the request may be valid, it just needs proper evaluation.</div>
+    </div>
+    <div class="quiz">
+      <div class="q-num">Question 2</div>
+      <div class="q-text">The customer has signed off on the final deliverable, confirming it meets their needs. Which process has just been completed?</div>
+      <ul class="q-opts">
+        <li>A. Quality Control</li>
+        <li>B. Quality Assurance</li>
+        <li>C. Validate Scope</li>
+        <li>D. Control Scope</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C — Validate Scope</strong> is the process of obtaining formal customer acceptance of completed deliverables. Quality Control (A) verifies the work meets quality standards (done before validate scope). Quality Assurance (B) audits processes. Control Scope (D) monitors scope performance and manages changes. The sequence is: QC (internal check) → Validate Scope (customer acceptance).</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">A development team adds a 'helpful' error logging feature that wasn't in the approved scope because they thought it would be useful. The PM discovers this during a code review. This is:</div>
+    <ul class="q-opts">
+      <li>A. Good initiative that should be praised</li><li>B. Gold-plating — unauthorized scope addition that should go through change control even if beneficial</li><li>C. A quality improvement that is always acceptable</li><li>D. Acceptable since it's a technical implementation detail</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Gold-plating is adding features or enhancements beyond the approved scope, even if well-intentioned. It consumes unplanned resources, may introduce unintended side effects, and bypasses the change control process that exists to evaluate impact and obtain authorization. All scope changes — beneficial or not — must go through change control. The feature may ultimately be approved, but the team should not self-authorize scope additions.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs analyze scope change requests, generate impact assessments, create Requirements Traceability Matrices, and draft change control documentation efficiently.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Change request impact analysis</span>
+I received a scope change request. Help me do a full impact analysis.
+Change request: [description of what is being requested]
+Requestor: [who asked — stakeholder role]
+Justification given: [their reason for the change]
+Project context:
+  Current phase: [planning / sprint X / UAT / near go-live]
+  Budget status: [on track / tight / buffer available]
+  Schedule status: [on track / ahead / behind]
+  Team capacity: [available / fully loaded / overloaded]
+
+Analyze the impact across:
+1. Scope: What changes? What's added/removed? Any dependencies affected?
+2. Schedule: How many days/sprints does this add? Which milestone is affected?
+3. Cost: Estimated effort in person-days × rate. Any vendor/tool costs?
+4. Quality: Does this introduce any risk to existing deliverables?
+5. Risk: New risks introduced by this change?
+6. Stakeholder: Who benefits? Who is negatively impacted?
+
+Output: Impact Analysis Report for CCB submission (1 page).
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Requirements Traceability Matrix (RTM) creation</span>
+Help me build a Requirements Traceability Matrix for my project.
+Business requirements (list):
+  BR-01: [requirement description]
+  BR-02: [requirement description]
+  [add more]
+Solution requirements / user stories (list):
+  US-01: [story title]
+  US-02: [story title]
+  [add more]
+Test cases (list):
+  TC-01: [test description]
+  [add more]
+
+Create an RTM that maps: Business Requirement → User Story → Test Case → Status
+
+Also:
+1. Identify any business requirements without a corresponding story (coverage gap)
+2. Identify any stories not linked to a business requirement (potential gold-plating)
+3. Identify any test cases not linked to a story (orphaned tests)
+4. Generate a coverage summary: % of BRs covered by stories, % with test cases
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Scope creep detection and response</span>
+I'm concerned my project is experiencing scope creep. Help me diagnose and respond.
+Signs I'm observing: [list — e.g., sprint velocity declining, more than X stories added mid-sprint, informal verbal requests from stakeholders, team working late]
+Project type: [Agile / Waterfall / Hybrid]
+Key stakeholders involved: [who is making informal requests]
+What's been approved in the scope baseline: [summary]
+What seems to be happening outside that: [what I think is creep]
+
+Help me:
+1. Classify each item: is it genuine scope creep / legitimate change request / gold-plating / in-scope clarification?
+2. Calculate the impact of all uncontrolled additions (if I can estimate it)
+3. Draft a conversation with the stakeholder requesting the changes
+4. Strengthen my scope control approach (process steps to prevent recurrence)
+5. Draft a scope status update for my sponsor
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Jira — Change Request Issue</div>
+<span class="c-comment">── JIRA: CHANGE REQUEST TEMPLATE ────────────────────────</span>
+<span class="c-key">Issue Type:</span>   Change Request
+<span class="c-key">Summary:</span>      [CR-###] [Feature/Module] — [short description]
+<span class="c-key">Priority:</span>     [Critical / High / Medium / Low]
+<span class="c-key">Labels:</span>       change-request | cr-status:[pending/approved/rejected/deferred]
+
+<span class="c-comment">── CHANGE DESCRIPTION ────────────────────────────────────</span>
+<span class="c-key">Requested by:</span>     [Name / Role / Date]
+<span class="c-key">Change description:</span> [What is being requested — clear, specific]
+<span class="c-key">Business justification:</span> [Why this change is needed — business value or risk]
+<span class="c-key">Change type:</span>      [ ] Scope  [ ] Schedule  [ ] Budget  [ ] Quality  [ ] Regulatory
+
+<span class="c-comment">── IMPACT ANALYSIS ───────────────────────────────────────</span>
+<span class="c-key">Scope impact:</span>    [Adds/removes/modifies what]
+<span class="c-key">Schedule impact:</span> +[X] days | Affects milestone: [name]
+<span class="c-key">Cost impact:</span>     +$[amount] | Effort: [person-days]
+<span class="c-key">Risk introduced:</span> [new risks]
+<span class="c-key">Dependencies:</span>   [other work items affected]
+
+<span class="c-comment">── CCB DECISION ──────────────────────────────────────────</span>
+<span class="c-val">Decision: [ ] Approved  [ ] Rejected  [ ] Deferred  [ ] More info needed</span>
+CCB date: [YYYY-MM-DD] | Decision maker: [name/role]
+Conditions: [any approval conditions]
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-07-quality.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T07: Quality</span></a>
+    <a href="domain-2-task-09-integrate-planning.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T09: Integrate Planning</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

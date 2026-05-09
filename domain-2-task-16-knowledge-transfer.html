@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T16: Knowledge Transfer | Domain 2 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-2-overview.html">Domain 2: Process</a><span class="sep">›</span>
+    <span>T16: Knowledge Transfer</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d2">Domain 2 · Process</span>
+      <span class="tag tag-eco">Task 16</span>
+    </div>
+    <h1>Ensure Knowledge Transfer for Project Continuity</h1>
+    <div class="title-vi">Đảm bảo Chuyển giao Kiến thức để Liên tục Dự án</div>
+    <p class="description">Knowledge là tài sản dự án quan trọng nhất — dễ mất nhất. Lessons learned, process documentation, và systematic knowledge sharing đảm bảo organizational learning và protect future projects.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Knowledge Management in Projects</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p><strong>Knowledge types:</strong></p>
+        <ul>
+          <li><strong>Explicit knowledge:</strong> Documented, transferable information (written processes, guides, ADRs)</li>
+          <li><strong>Tacit knowledge:</strong> Personal knowledge, experience, expertise — harder to transfer. Requires mentoring, shadowing, working sessions.</li>
+        </ul>
+        <p><strong>Organizational Process Assets (OPA):</strong> Organization-wide policies, processes, templates, and historical information that can be leveraged by projects. Your lessons learned become OPAs for future projects.</p>
+        <p><strong>Lessons Learned Register:</strong> Documents what worked, what didn't, and recommendations. Must be captured <em>throughout</em> the project, not only at closure. Updated at every phase gate, sprint retrospective, and major event.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/learning/library/lessons-learned-process-7683" target="_blank">PMI — Lessons Learned</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p><strong>Loại kiến thức:</strong></p>
+        <ul>
+          <li><strong>Explicit knowledge:</strong> Thông tin có tài liệu, có thể chuyển giao (quy trình viết, hướng dẫn, ADRs)</li>
+          <li><strong>Tacit knowledge:</strong> Kiến thức cá nhân, kinh nghiệm, chuyên môn — khó chuyển giao hơn. Cần mentoring, shadowing.</li>
+        </ul>
+        <p><strong>OPA (Organizational Process Assets):</strong> Chính sách, quy trình, templates, thông tin lịch sử của tổ chức. Lessons learned của bạn trở thành OPA cho các dự án tương lai.</p>
+        <p><strong>Lessons Learned Register:</strong> Ghi lại những gì đã hoạt động, những gì không, và khuyến nghị. Phải được capture XUYÊN SUỐT dự án, không chỉ ở closure.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📋</span> Knowledge Transfer Methods</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Method</th><th>Best For</th><th>Explicit/Tacit</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Documentation</strong></td><td>Processes, decisions, specs</td><td>Explicit</td><td>ADRs (Architecture Decision Records), runbooks, API docs</td></tr>
+          <tr><td><strong>Retrospectives</strong></td><td>Sprint/phase learning</td><td>Both</td><td>What worked, what didn't, action items — added to lessons learned</td></tr>
+          <tr><td><strong>Pair programming / Shadowing</strong></td><td>Technical skills, codebase knowledge</td><td>Tacit</td><td>Senior developer pairs with new member for key modules</td></tr>
+          <tr><td><strong>Knowledge sharing sessions</strong></td><td>Broad team education</td><td>Both</td><td>Tech talks, lunch &amp; learns, internal workshops</td></tr>
+          <tr><td><strong>Handover meetings</strong></td><td>PM/team transitions</td><td>Tacit + Explicit</td><td>Outgoing PM walks new PM through project status, key relationships, risks</td></tr>
+          <tr><td><strong>Communities of Practice</strong></td><td>Long-term capability building</td><td>Both</td><td>Cross-project PM community sharing templates and lessons</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Lessons Learned Template</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Lessons Learned Register Entry</div>
+<span class="c-key">ID</span>: LL-023
+<span class="c-key">Date</span>: Sprint 8 Retrospective
+<span class="c-key">Category</span>: Technical / Partner Integration
+<span class="c-key">What happened</span>: Partner Bank A sandbox had intermittent failures during integration testing,
+              causing 3x longer than planned test cycles (added $8K unplanned cost).
+
+<span class="c-key">Root cause</span>: No SLA defined for sandbox availability in partner agreement.
+             Partner not obligated to maintain sandbox stability.
+
+<span class="c-key">Impact</span>: Schedule: +2 days. Cost: +$8,000. Team morale: low (repeated rework)
+
+<span class="c-key">What worked</span>: Building a mock server as backup enabled development to continue
+             despite sandbox instability. PM escalated to partner PM promptly.
+
+<span class="c-key">What didn't work</span>: Assuming sandbox would be as stable as production environment.
+                 Not testing backup plan readiness early enough.
+
+<span class="c-key">Recommendation</span>: In all future partner integrations:
+  1. Include sandbox SLA in partner agreement (minimum 95% availability, 4h response SLA)
+  2. Build mock server in Sprint 1 as risk mitigation (not reactive)
+  3. Add "partner sandbox risk" to standard risk register template
+
+<span class="c-key">Applicable to</span>: All future partner integration projects, Partner onboarding process
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Knowledge Transfer</div>
+        <ul>
+          <li>Lessons learned: captured <strong>throughout</strong> the project lifecycle, not only at closure</li>
+          <li>In Agile: lessons learned happen at <strong>every retrospective</strong> — continuous improvement</li>
+          <li>Lessons learned → OPA (Organizational Process Assets) → available to future projects</li>
+          <li>Tacit knowledge transfer requires <strong>human interaction</strong> — cannot be fully documented</li>
+          <li>Knowledge transfer is PM's responsibility to <strong>plan for and execute</strong>, especially before key team members leave</li>
+          <li>Project closure without lessons learned = organizational failure. The learning should outlast the project.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Knowledge Continuity Plan</h4></div>
+      <p><strong>Context:</strong> The senior backend developer who built the credit decision engine of Project Alpha has announced resignation effective 6 weeks from now. This is a critical knowledge risk — the engine is complex, poorly documented, and only one person fully understands it.</p>
+      <p><strong>PM's knowledge transfer plan:</strong></p>
+      <ol>
+        <li><strong>Immediate (Week 1-2):</strong> Developer documents all ADRs (Architecture Decision Records) for the engine. Creates runbook with common operations, edge cases, and known limitations. This captures explicit knowledge.</li>
+        <li><strong>Pair programming (Week 2-4):</strong> Tech Lead assigned to pair with departing developer for 2 weeks. Goal: tacit knowledge transfer through working sessions. Tech Lead writes "understanding" notes after each session.</li>
+        <li><strong>Knowledge sharing session (Week 3):</strong> Developer presents credit engine architecture to whole team. Recording saved to Confluence. Q&A documented.</li>
+        <li><strong>Handover verification (Week 5):</strong> Tech Lead independently debugs two test scenarios without departing developer's help. Identifies gaps, asks follow-up questions.</li>
+        <li><strong>Final handover (Week 6):</strong> Departing developer available as reviewer for 30 days post-departure (contractual).</li>
+      </ol>
+      <p><strong>PMP lesson:</strong> Knowledge management is a risk mitigation strategy. Single points of knowledge are risks as much as technical dependencies. Plan for it proactively — don't wait for the resignation letter.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">Near project closure, the PM realizes no lessons learned have been documented during the project. What is the BEST action?</div>
+      <ul class="q-opts">
+        <li>A. Skip lessons learned documentation since the project is ending anyway</li>
+        <li>B. Conduct a retrospective with the team to capture as many lessons as possible before closure</li>
+        <li>C. Ask team members to individually email their lessons learned</li>
+        <li>D. Document only the major issues that occurred</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: B</strong> — Even if lessons learned weren't captured throughout (which is a mistake), a final retrospective/lessons learned session is better than nothing. The PM should gather the team to capture key learnings while memories are fresh. Option A fails the organization — these lessons could prevent future project failures. Option C produces disjointed information. Option D is too narrow — positive lessons (what worked) are equally valuable.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A key architect leaves the company 2 months before project completion. The most critical knowledge at risk is their deep understanding of the system's performance constraints, which is not documented anywhere. This is an example of:</div>
+    <ul class="q-opts">
+      <li>A. Explicit knowledge risk</li>
+      <li>B. Tacit knowledge risk — experiential knowledge not captured in documentation</li>
+      <li>C. OPA (Organizational Process Asset) loss</li>
+      <li>D. Scope change</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Tacit knowledge is experiential, intuitive, and context-dependent — it lives in people's heads, not in documents. An architect's deep understanding of system performance constraints (gained through trial, failure, and iteration) is classic tacit knowledge. It is the hardest type to transfer because it cannot simply be written down — it requires pairing, shadowing, and hands-on mentoring. Explicit knowledge (A) is already documented. While OPA loss (C) is a consequence, the root cause type of knowledge at risk is tacit.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">Which practice BEST ensures lessons learned from a project benefit future projects?</div>
+    <ul class="q-opts">
+      <li>A. Storing lessons learned in a shared folder only the PM can access</li>
+      <li>B. Formally adding lessons learned to the organization's process assets (OPA) with clear categorization, and referencing them during future project planning</li>
+      <li>C. Sending lessons learned via email at project closure</li>
+      <li>D. Keeping lessons learned within the project team</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Lessons learned only add value when they are accessible and actively used. Formally incorporating them into Organizational Process Assets (OPA) — with proper categorization (by project type, domain, risk area) — ensures they can be discovered and referenced during future project planning. All other options (A, C, D) create knowledge silos that prevent the lessons from benefiting the broader organization. At FinTech Company X, Project Alpha's lessons on Bank Partner A integration delays should inform planning for all future bank integration projects.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs capture tacit knowledge, generate lessons learned syntheses, create knowledge base articles, and design knowledge transfer plans for team transitions.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Lessons learned extraction session</span>
+Help me facilitate a lessons learned extraction session.
+Project phase: [end of sprint / end of phase / project close]
+Participants: [roles — PM, dev lead, QA, PO, etc.]
+Session duration: [60 / 90 minutes]
+Key events this phase: [major things that happened — wins, failures, surprises]
+Previous lessons learned status: [were they applied? which ones?]
+
+Design the session:
+1. Opening question to warm up the room (not generic "what went well")
+2. Structured activity for WHAT WORKED (with evidence — don't just say "communication was good")
+3. Structured activity for WHAT DIDN'T WORK (with root cause, not blame)
+4. Activity to identify WHAT WE WOULD DO DIFFERENTLY
+5. Prioritization: which 3 lessons are most valuable to capture and share?
+6. Action conversion: turn each key lesson into a specific recommendation for future projects
+7. Distribution plan: how do these lessons reach future PMs?
+
+Also: how to handle sensitive lessons (team conflict, sponsor issue, vendor failure) professionally.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Knowledge base article generation</span>
+I need to convert tacit team knowledge into a written knowledge base article.
+Topic: [process / technical / domain knowledge to document]
+What I know about this topic: [brain dump — rough notes, explanations]
+Target audience: [new team members / future PMs / external teams]
+Common mistakes related to this topic: [what people get wrong]
+Key dependencies or context needed to understand it: [background knowledge required]
+
+Generate a knowledge base article with:
+1. Title (clear, searchable)
+2. Summary (2 sentences — what this article teaches and who should read it)
+3. Context / Background (why this matters)
+4. Step-by-step process or key concepts
+5. Common mistakes and how to avoid them
+6. Examples from our project (anonymized if needed)
+7. Related documents / links
+8. Author and last-reviewed date
+
+Format for Confluence, length: 1-2 pages.
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Team transition knowledge transfer plan</span>
+A key team member [role: tech lead / domain expert / PM] is leaving the project. Help me design a knowledge transfer plan.
+Person leaving: [role, not name — what they know that's critical]
+Timeline: [when they leave — how many weeks available]
+Knowledge areas to transfer: [technical architecture / domain knowledge / stakeholder relationships / process / tools]
+Recipient(s): [who will receive the knowledge]
+Risk if knowledge is lost: [impact on project continuity]
+
+Create a Knowledge Transfer Plan:
+1. Knowledge audit: map what must be transferred vs. nice-to-have
+2. Transfer methods for each type:
+   - Explicit (documented): write it in Confluence
+   - Tacit (contextual): pair programming / shadowing / recorded sessions
+   - Relational: intro meetings with key stakeholders
+3. Week-by-week transfer schedule
+4. Knowledge validation: how do we verify the recipient "has it"?
+5. Remaining risk after transfer: what still won't be captured?
+6. Contingency: who to call if questions arise after departure
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Lessons Learned Register</div>
+<span class="c-comment">── CONFLUENCE: LESSONS LEARNED REGISTER ─────────────────</span>
+<span class="c-key">Project:</span>  [Project Alpha] | PM: [name] | Phase: [Sprint 8 / Project Close]
+<span class="c-key">Session:</span>  [YYYY-MM-DD] | Facilitator: [name] | Attendees: [count]
+
+<span class="c-comment">── LESSON ENTRY ──────────────────────────────────────────</span>
+<span class="c-key">ID:</span>           LL-[001]
+<span class="c-key">Category:</span>    [ ] People  [ ] Process  [ ] Technical  [ ] Stakeholder  [ ] Risk
+<span class="c-key">Type:</span>         [ ] What Worked  [ ] What Didn't Work  [ ] Surprise
+<span class="c-key">Description:</span> [Specific event or pattern observed — factual, not blaming]
+<span class="c-key">Root cause:</span>  [Why this happened]
+<span class="c-key">Impact:</span>      [Effect on project — quantified if possible]
+<span class="c-key">Recommendation:</span> [Specific, actionable advice for future projects — starts with a verb]
+<span class="c-key">Applicability:</span> [Which type of project would benefit from this lesson]
+<span class="c-key">Captured by:</span> [Name] | Date: [YYYY-MM-DD]
+
+<span class="c-comment">── LESSONS SUMMARY ───────────────────────────────────────</span>
+<span class="c-val">Top 3 lessons to apply immediately: [titles]</span>
+Shared to PMO knowledge base: [ ] Yes  [ ] No — reason: [if no]
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-2-task-15-issues.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>T15: Issues</span></a>
+    <a href="domain-2-task-17-closure.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T17: Project Closure</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>

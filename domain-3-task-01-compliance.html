@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T01: Compliance | Domain 3 | PMP Study Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar-overlay" id="overlay"></div>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<nav class="sidebar" id="sidebar"></nav>
+<main class="main-content" id="mainContent">
+<div class="content-wrapper">
+
+  <nav class="breadcrumb">
+    <a href="index.html">🏠 Home</a><span class="sep">›</span>
+    <a href="domain-3-overview.html">Domain 3: Business Environment</a><span class="sep">›</span>
+    <span>T01: Compliance</span>
+  </nav>
+
+  <div class="page-header">
+    <div class="tags">
+      <span class="tag tag-d3">Domain 3 · Business Environment</span>
+      <span class="tag tag-eco">Task 01</span>
+    </div>
+    <h1>Plan and Manage Project Compliance</h1>
+    <div class="title-vi">Lập kế hoạch và Quản lý Sự tuân thủ Dự án</div>
+    <p class="description">Compliance không bao giờ là tùy chọn — là non-negotiable constraint. PM phải identify tất cả compliance requirements sớm và ensure chúng được embedded vào project scope, không phải afterthought.</p>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">📖</span> Types of Compliance Requirements</h2>
+    <div class="bilingual">
+      <div class="bilingual-block en">
+        <div class="lang-label">🇺🇸 English</div>
+        <p>Compliance requirements come from multiple sources and all must be satisfied:</p>
+        <ul>
+          <li><strong>Legal compliance:</strong> Laws and regulations in the jurisdictions where the project operates. Non-compliance = legal liability.</li>
+          <li><strong>Regulatory compliance:</strong> Industry-specific rules from regulatory bodies (financial regulators, data protection authorities)</li>
+          <li><strong>Organizational compliance:</strong> Internal policies, governance standards, security policies, brand guidelines</li>
+          <li><strong>Contractual compliance:</strong> Obligations in contracts with customers, partners, vendors</li>
+          <li><strong>Ethical compliance:</strong> Professional and ethical standards — aligned with PMI Code of Ethics</li>
+        </ul>
+        <p><strong>PM's role:</strong> Identify all requirements early, include them in project scope, monitor compliance continuously, and escalate violations immediately.</p>
+        <p><strong>Key principle:</strong> When compliance conflicts with schedule or budget, compliance wins. A PM who skips compliance to meet a deadline creates organizational risk that far outweighs the project impact.</p>
+        <p><strong>Reference:</strong> <a href="https://www.pmi.org/about/ethics/code" target="_blank">PMI Code of Ethics and Professional Conduct</a></p>
+      </div>
+      <div class="bilingual-block vi">
+        <div class="lang-label">🇻🇳 Tiếng Việt</div>
+        <p>Compliance requirements đến từ nhiều nguồn và tất cả đều phải được thỏa mãn:</p>
+        <ul>
+          <li><strong>Legal compliance:</strong> Luật pháp tại các khu vực tài phán nơi dự án hoạt động</li>
+          <li><strong>Regulatory compliance:</strong> Quy tắc ngành cụ thể từ cơ quan quản lý (tài chính, bảo vệ dữ liệu)</li>
+          <li><strong>Organizational compliance:</strong> Chính sách nội bộ, tiêu chuẩn quản trị, chính sách bảo mật</li>
+          <li><strong>Contractual compliance:</strong> Nghĩa vụ trong hợp đồng với khách hàng, đối tác, nhà cung cấp</li>
+          <li><strong>Ethical compliance:</strong> Tiêu chuẩn chuyên nghiệp và đạo đức — aligned với PMI Code of Ethics</li>
+        </ul>
+        <p><strong>Nguyên tắc then chốt:</strong> Khi compliance xung đột với lịch trình hoặc ngân sách, compliance thắng.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🌏</span> Compliance in Fintech Context</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Compliance Area</th><th>Requirement</th><th>Impact on Project</th><th>PM Action</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Data Privacy (GDPR/Local)</strong></td><td>PII must be encrypted, consent required, right to deletion</td><td>All data models, APIs, logging must handle PII correctly</td><td>Include data privacy review in DoD; engage DPO early</td></tr>
+          <tr><td><strong>Financial Regulation</strong></td><td>Lending processes must meet BSP/OJK/BNM requirements</td><td>Credit decision logic must be auditable and documented</td><td>Engage compliance officer as stakeholder from Sprint 1</td></tr>
+          <tr><td><strong>Security Standards</strong></td><td>PCI-DSS for card data; SOC2 for data security</td><td>Architecture must meet security controls; annual audit</td><td>Security review in architectural decision gate</td></tr>
+          <tr><td><strong>Partner Contracts</strong></td><td>API SLAs, data sharing agreements, exclusivity clauses</td><td>Technical implementation must reflect contractual terms</td><td>Legal review of partner agreements before technical spec</td></tr>
+          <tr><td><strong>Employment Law</strong></td><td>Labor laws in VN and PH for team management</td><td>Overtime, remote work policies, contractor obligations</td><td>HR review of resourcing plans</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🔧</span> Compliance Management Approach</h2>
+    <div class="tmpl">
+      <div class="tmpl-label">Compliance Requirements Tracking</div>
+<span class="c-comment">ID    | Requirement          | Source        | Impact | Owner  | Evidence Required    | Status</span>
+<span class="c-key">C-01</span> | PII encryption at rest | Data Privacy  | HIGH   | Arch   | Pentest report       | ✅ Done
+<span class="c-key">C-02</span> | Audit log all credit   | BSP Reg §4.2  | HIGH   | Dev    | Audit trail review   | In Progress
+<span class="c-key">C-03</span> | Data retention 7 years | Tax Law       | MED    | DBA    | Retention policy doc | Planned
+<span class="c-key">C-04</span> | Partner DPA signed     | GDPR Art.28   | HIGH   | Legal  | Signed DPA copy      | ✅ Done
+<span class="c-key">C-05</span> | API rate limiting      | Partner SLA   | MED    | Dev    | Load test results    | Planned
+
+<span class="c-comment">── COMPLIANCE RISK ──────────────────────────────────────</span>
+Non-compliance consequences:
+  • Regulatory fines (up to % of revenue)
+  • License revocation
+  • Reputational damage
+  • Contract breach penalties
+  • Criminal liability (in some cases)
+
+<span class="c-val">RULE: Compliance requirements are NEVER negotiable for schedule.
+      If schedule conflict → scope-reduce other features, not compliance.</span>
+    </div>
+
+    <div class="box box-exam">
+      <span class="b-icon">🎯</span>
+      <div class="b-body">
+        <div class="b-title">Exam Tips — Compliance</div>
+        <ul>
+          <li><strong>Compliance is non-negotiable</strong> — on exam, if asked to choose between meeting deadline and compliance, choose compliance</li>
+          <li>PMI Code of Ethics: Honesty, Responsibility, Respect, Fairness. PM must demonstrate all four.</li>
+          <li>When a team member violates compliance, PM must <strong>address immediately</strong>, not ignore or cover up</li>
+          <li>Legal compliance in one jurisdiction ≠ compliance in another. International projects must consider all applicable laws.</li>
+          <li>PM has ethical obligation to report compliance violations through proper channels, even if it risks the project</li>
+          <li>Privacy impact assessments (PIA) should be part of project planning for data-handling projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">💼</span> Thực chiến / Scenario</h2>
+    <div class="scenario">
+      <div class="scenario-hdr"><span class="s-icon">🏢</span><h4>FinTech Company X — Compliance vs Deadline Conflict</h4></div>
+      <p><strong>Situation:</strong> 1 week before go-live. Compliance team raises a blocking issue: the loan application system logs user PII (National ID numbers) in plain text in application logs — a clear data privacy regulation violation in both VN and PH markets.</p>
+      <p><strong>Business pressure:</strong> Marketing has launched campaigns. Partner Bank A has prepared. Hundreds of signups. PM is asked: "Can we go live anyway and fix it in the next sprint?"</p>
+      <p><strong>PM's position:</strong> "No. Going live with this compliance violation would expose FinTech Company X to regulatory fines, potential license suspension, and breach of our data processing agreement with Bank Partner A. A 1-week delay to fix this properly is mandatory."</p>
+      <p><strong>Resolution:</strong> Dev team masks PII in logs (National ID → first 3 + last 3 digits). Compliance officer reviews and signs off. Partner Bank A notified of 1-week delay with reason. Go-live proceeds 7 days later, fully compliant.</p>
+      <p><strong>PMP lesson:</strong> Compliance problems never get cheaper if deferred. The PM who pushes back on this is protecting the company — and demonstrating PMP-level professional responsibility. Saying "yes" to going live in violation would be a career-defining mistake.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">✏️</span> Practice Questions</h2>
+    <div class="quiz">
+      <div class="q-num">Question 1</div>
+      <div class="q-text">The project is 2 days from launch. A developer discovers the system does not meet a mandatory data privacy regulation. Fixing it will delay launch by 1 week. The sponsor asks the PM to launch anyway and fix it post-launch. What should the PM do?</div>
+      <ul class="q-opts">
+        <li>A. Follow the sponsor's direction — they have the authority</li>
+        <li>B. Launch with a disclaimer noting the compliance issue</li>
+        <li>C. Refuse to launch in non-compliant state; present the legal and reputational risks to the sponsor and recommend delaying 1 week to fix</li>
+        <li>D. Let the team decide since it's a technical matter</li>
+      </ul>
+      <button class="ans-toggle">👁 Show Answer</button>
+      <div class="ans-reveal"><strong>✅ Answer: C</strong> — PMs have professional and ethical responsibility to ensure compliance. Even when the sponsor directs otherwise, the PM must present risks clearly and recommend the compliant course of action. The sponsor has organizational authority, but the PM has professional responsibility — they should make the risks explicit so the sponsor can make an informed decision. A PM who knowingly launches a non-compliant system has failed their professional duty under the PMI Code of Ethics.</div>
+    </div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 2</div>
+    <div class="q-text">A project team member discovers that a subcontractor is using pirated software to deliver project work. What should the PM do?</div>
+    <ul class="q-opts">
+      <li>A. Ignore it as long as the work quality is acceptable</li>
+      <li>B. Address it immediately — require the subcontractor to use licensed software, document the issue and corrective action, as this is both a legal compliance and ethical responsibility</li>
+      <li>C. Inform the team but not the subcontractor</li>
+      <li>D. Replace the subcontractor without explanation</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: B</strong> — Under the PMI Code of Ethics, PMs have responsibilities around honesty, responsibility, fairness, and respect — which extend to ensuring the project operates legally. Using pirated software exposes the organization to legal liability (copyright infringement), regardless of work quality. The PM must address it directly with the subcontractor, document the issue and the corrective action taken, and verify compliance. Ignoring it (A) makes the PM complicit. Replacing without explanation (D) fails the transparency principle.</div>
+  </div>
+
+  <div class="quiz">
+    <div class="q-num">Question 3</div>
+    <div class="q-text">A new government regulation requires additional security features that were not in the original project scope. The implementation will cost $40,000. Who should make the final decision on how to proceed?</div>
+    <ul class="q-opts">
+      <li>A. The PM, using the project contingency reserve</li>
+      <li>B. The development team, since it's a technical requirement</li>
+      <li>C. The Project Sponsor or CCB, after the PM presents the impact analysis and options</li>
+      <li>D. The legal team</li>
+    </ul>
+    <button class="ans-toggle">👁 Show Answer</button>
+    <div class="ans-reveal"><strong>✅ Answer: C</strong> — A regulatory change that adds $40,000 to project cost is a significant scope and budget decision that exceeds what the PM can authorize unilaterally. The PM's role is to assess the impact (scope, schedule, cost, risk), identify options (e.g., fast-track implementation, phased approach, delay launch until compliant), and present the analysis to the sponsor or CCB for decision. Using contingency without authorization (A) is unauthorized. The legal team (D) advises on requirements but does not make project decisions.</div>
+  </div>
+
+  <div class="section">
+    <h2><span class="ico">🤖</span> AI Tools for PMs</h2>
+
+    <div class="box box-ai">
+      <span class="b-icon">🤖</span>
+      <div class="b-body">
+        <div class="b-title">How AI Augments This Process</div>
+        <p>AI helps PMs identify compliance requirements, analyze regulatory impact on projects, generate compliance checklists, and track compliance posture across project phases.</p>
+      </div>
+    </div>
+
+    <h3>Sample Claude Prompts</h3>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Compliance requirement identification</span>
+Help me identify compliance requirements for my project.
+Industry: [fintech / healthcare / logistics / government]
+Geography: [countries where the project operates — e.g., Vietnam, Philippines, Singapore]
+Data handled: [personal data / financial data / health data / government data]
+Project type: [customer-facing app / internal system / data platform / payment processing]
+Regulations I'm already aware of: [list]
+Regulations I'm unsure about: [list areas of uncertainty]
+
+Identify compliance requirements across:
+1. Data privacy: [GDPR / PDPA / local equivalents — what applies]
+2. Financial regulations: [central bank requirements, AML/KYC, consumer protection]
+3. Information security: [ISO 27001, SOC2, PCI-DSS — which apply]
+4. Accessibility: [WCAG requirements if customer-facing]
+5. Industry-specific: [any sector regulations]
+
+For each requirement:
+- What it mandates
+- Penalty for non-compliance
+- How to demonstrate compliance (audit trail / certifications / documentation)
+- Who owns it in the project (legal, security team, PM)
+- Timeline to achieve compliance before go-live
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Compliance gap analysis</span>
+I need to run a compliance gap analysis for my project before go-live.
+Project: [name and description]
+Applicable regulations: [list regulations that apply]
+Current compliance status per area:
+  [Regulation 1]: [what we've done / what's missing]
+  [Regulation 2]: [what we've done / what's missing]
+  [continue]
+Go-live date: [YYYY-MM-DD]
+Days remaining: [count]
+Legal/compliance team available: [yes — who / limited / none]
+
+Perform a gap analysis:
+1. For each regulation: current status (Green/Amber/Red), specific gaps, remediation actions needed
+2. Priority order for closing gaps (by risk level and time-to-close)
+3. Items that could block go-live vs. items that can be closed in parallel with operations
+4. Estimated effort to close each gap
+5. Recommendation: is this project ready to go live? What's the minimum compliance bar?
+6. Ongoing compliance monitoring plan post-launch
+    </div>
+
+    <div class="prompt-block">
+      <span class="prompt-use">Compliance-related change request analysis</span>
+A regulatory change has been announced that affects my project. Help me analyze the impact.
+Regulation change: [what changed — new law / amended regulation / new central bank circular]
+Effective date: [when it takes effect]
+Project context: [current phase, days to planned go-live]
+What the regulation requires: [specific technical or process changes needed]
+Current architecture/process: [what we have now]
+Gap: [what we need to add or change]
+
+Analyze:
+1. Is this a hard deadline (cannot go live without it) or a transitional requirement?
+2. Technical impact: what specifically must change in the system?
+3. Process impact: what workflows or procedures must change?
+4. Effort estimate and timeline feasibility
+5. Change request type: emergency regulatory change (fast-track CCB)
+6. Draft the change request documentation
+7. Communication plan: regulator, partner banks, operations team
+    </div>
+
+    <h3>Jira / Confluence Template</h3>
+
+    <div class="tmpl">
+      <div class="tmpl-label">Confluence — Compliance Tracking Dashboard</div>
+<span class="c-comment">── CONFLUENCE: COMPLIANCE TRACKING DASHBOARD ────────────</span>
+<span class="c-key">Project:</span>   [Project Alpha] | Markets: [VN / PH] | Last updated: [YYYY-MM-DD]
+<span class="c-key">Go-live:</span>   [YYYY-MM-DD] | Days remaining: [count]
+
+<span class="c-comment">── COMPLIANCE STATUS BY REGULATION ──────────────────────</span>
+Regulation      | Status | Owner      | Gap                    | Action Due
+────────────────|────────|────────────|────────────────────────|──────────
+PCI-DSS Level 2 | 🟡     | Security   | Penetration test needed | Sprint 10
+BSP Circular XXX| 🔴     | Legal+PM   | Cooling-off feature missing | Sprint 9
+PDPA (PH)       | 🟢     | Legal      | All controls in place  | Ongoing
+AML/KYC         | 🟢     | Compliance | Processes documented   | Ongoing
+WCAG 2.1 AA     | 🟡     | Frontend   | Color contrast issues  | Sprint 10
+
+<span class="c-comment">── GO-LIVE BLOCKERS ──────────────────────────────────────</span>
+<span class="c-key">Hard blocks:</span>  [Regulations that MUST be green before go-live]
+<span class="c-key">Soft items:</span>   [Items that can be remediated post-launch with plan]
+
+<span class="c-comment">── AUDIT TRAIL ───────────────────────────────────────────</span>
+<span class="c-val">Evidence folder: [Confluence link] | Legal sign-off: [ ] Obtained  [ ] Pending</span>
+    </div>
+  </div>
+
+  <div class="nav-footer">
+    <a href="domain-3-overview.html" class="nav-btn">← <span><span class="nb-dir">Trước</span>Domain 3 Overview</span></a>
+    <a href="domain-3-task-02-benefits-value.html" class="nav-btn"><span><span class="nb-dir">Tiếp theo →</span>T02: Benefits &amp; Value</span></a>
+  </div>
+
+</div>
+</main>
+<script src="sidebar.js"></script>
+<script src="common.js"></script>
+</body>
+</html>
